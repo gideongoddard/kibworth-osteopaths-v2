@@ -1,0 +1,24 @@
+.wrapper {
+    height: 50px;
+    background-color: var(--accent-red-500);
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
