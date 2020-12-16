@@ -1,5 +1,5 @@
 .wrapper {
-    height: 50px;
+    min-height: 50px;
     background-color: var(--accent-red-500);
     color: white;
 }
@@ -11,7 +11,9 @@
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    height: 100%;
+    min-height: 50px;
+    padding: 5px 0;
+    text-align: center;
 }
 
 .content a {
