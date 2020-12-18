@@ -4,7 +4,7 @@ import AlertBar from "../components/alertBar/AlertBar"
 import Layout from "../components/layout/Layout"
 import HomeStyles from "./index.module.css"
 import TxtImg from "../components/txtImg/TxtImg"
-import Button from "../components/Button/Button"
+import Button from "../components/button/Button"
 
 export default function Home({ data }) {
   return (
