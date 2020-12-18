@@ -33,6 +33,29 @@ export default function Home({ data }) {
         <p><em>All Osteopaths must be registered with the <a href="https://www.osteopathy.org.uk/home/" target="_blank" rel="noopener noreferrer">General Oteopathic Council</a>, and are fully insured so you can be sure you and your family are in safe hands.</em></p>
       </TxtImg>
       <Testimonial  quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
+      <TxtImg imgSrc={data.pilates.childImageSharp.fluid} imgAlt="Woman doing a Pilates pose">
+        <h2>Pilates</h2>
+        <p>Pilates is known for helping core strength, posture, balance, flexibility, increasing strength, and reducing injury risk. Pilates is also excellent for post injury rehabilitation. Emily is specially trained in pre and post natal Pilates.</p>
+        <p>Find out more about Pilates, how it can help you and how to join our classes below.</p>
+        <Button to="/pilates" type="primary">About Pilates</Button>
+      </TxtImg>
+      <section className={HomeStyles.conditionsSection}>
+        <div className={HomeStyles.conditionsContainer}>
+          <h2>Conditions we treat</h2>
+          <p>We take a very patient-centred approach and will always take the time to understand your individual symptoms before explaining and recommending any particular treatment.</p>
+          <p>Commonly treated conditions include:</p>
+          <ul>
+            <li>Back and neck pain</li>
+            <li>Postural problems</li>
+            <li>Sporting injuries</li>
+            <li>Muscle and joint deterioration</li>
+            <li>Restricted mobility</li>
+            <li>Occupational ill-health</li>
+          </ul>
+          <p>More information about these and other conditions that we treat can be found below.</p>
+          <Button to="/conditions" type="primary" style={{margin: "auto"}}>Find out more</Button>
+        </div>
+      </section>
     </Layout>
   )
 }
@@ -49,6 +72,13 @@ export const query = graphql`
     emily: file(relativePath: {eq: "images/emily-skeleton-color.jpeg"}) {
       childImageSharp {
         fluid(maxWidth: 475, quality: 72) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    pilates: file(relativePath: {eq: "images/pilates.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid
         }
       }

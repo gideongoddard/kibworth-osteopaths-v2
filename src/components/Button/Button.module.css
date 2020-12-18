@@ -10,6 +10,7 @@
     box-shadow: var(--shadow-xs);
     color: white;
     transition: 300ms;
+    text-align: center;
 }
 
 .primary {
