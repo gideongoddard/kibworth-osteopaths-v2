@@ -3,8 +3,9 @@ import { graphql } from "gatsby"
 import AlertBar from "../components/AlertBar/AlertBar"
 import Layout from "../components/layout/Layout"
 import HomeStyles from "./index.module.css"
-import TxtImg from "../components/txtImg/TxtImg"
+import TxtImg from "../components/TxtImg/TxtImg"
 import Button from "../components/Button/Button"
+import Testimonial from "../components/Testimonial/Testimonial"
 
 export default function Home({ data }) {
   return (
@@ -31,6 +32,7 @@ export default function Home({ data }) {
         <p>Osteopaths diagnose and treat musculoskeletal problems/injuries using hands on techniques that can help to reduce pain, and restore normal function.</p>
         <p><em>All Osteopaths must be registered with the <a href="https://www.osteopathy.org.uk/home/" target="_blank" rel="noopener noreferrer">General Oteopathic Council</a>, and are fully insured so you can be sure you and your family are in safe hands.</em></p>
       </TxtImg>
+      <Testimonial  quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
     </Layout>
   )
 }
