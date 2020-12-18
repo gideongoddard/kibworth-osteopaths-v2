@@ -35,12 +35,12 @@
     text-align: center;
 }
 
-.conditionsContainer ul {
-    columns: auto 2;
-}
-
 @media only screen and (min-width: 750px) {
     .heroBanner {
         height: 70vh;
+    }
+
+    .conditionsContainer ul {
+        columns: auto 2;
     }
 }
