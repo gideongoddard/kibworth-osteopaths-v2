@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import AlertBar from "../components/AlertBar/AlertBar"
 import Layout from "../components/layout/Layout"
 import HomeStyles from "./index.module.css"
-import TxtImg from "../components/TxtImg/TxtImg"
+import TxtImg from "../components/txtImg/TxtImg"
 import Button from "../components/Button/Button"
 import Testimonial from "../components/Testimonial/Testimonial"
 
