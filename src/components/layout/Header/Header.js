@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone, faEnvelope, faBars, faTimes, faAngleDown } from "@fortawesome/free-solid-svg-icons"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Button from "../../Button/Button"
 
 // Check media query min-width
 // Add analytics events
@@ -60,6 +61,7 @@ export default function Header() {
                         <Link className={HeaderStyles.navItem} to="/about">About</Link>
                         <Link className={HeaderStyles.navItem} to="/faq">FAQ</Link>
                         <Link className={HeaderStyles.navItem} to="/appointments">Appointments</Link>
+                        <Button to="/design-system" type="accent" style={{marginLeft: 20, textTransform: "none"}}>Design System</Button>
                     </nav>
                 </div>
             </div>

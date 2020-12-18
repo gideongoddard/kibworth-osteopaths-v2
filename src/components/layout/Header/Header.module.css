@@ -1,6 +1,6 @@
 .contactBar {
     height: 50px;
-    background-color: var(--neutral-400);
+    background-color: var(--neutral-200);
 }
 
 .contactBar a {
@@ -11,7 +11,8 @@
 }
 
 .contactBar a:hover {
-    color: var(--primary-500);
+    color: var(--primary-600);
+    text-decoration: none;
 }
 
 .contactDetails {
@@ -89,7 +90,7 @@ nav {
 
 .navItem, .subNavItem {
     text-decoration: none;
-    color: var(--neutral-600);
+    color: var(--neutral-800);
     padding: 15px 5px;
     margin-left: 15px;
 }
@@ -99,7 +100,8 @@ nav {
 }
 
 .navItem:hover, .subNavItem:hover {
-    color: var(--primary-500);
+    color: var(--primary-600);
+    text-decoration: none;
 }
 
 .subNavIcon {
@@ -155,8 +157,8 @@ nav {
     .subNav {
         position: absolute;
         top: 150px;
-        border-top: 3px solid var(--primary-500);
-        box-shadow: 0 3px 6px hsla(0, 0%, 0%, .1);
+        border-top: 5px solid var(--primary-600);
+        box-shadow: var(--shadow-m);
         padding: 10px 0 0 0;
         background-color: white;
     }
