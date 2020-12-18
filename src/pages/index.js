@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import AlertBar from "../components/alertBar/AlertBar"
+import AlertBar from "../components/AlertBar/AlertBar"
 import Layout from "../components/layout/Layout"
 import HomeStyles from "./index.module.css"
 import TxtImg from "../components/txtImg/TxtImg"
-import Button from "../components/button/Button"
+import Button from "../components/Button/Button"
 
 export default function Home({ data }) {
   return (

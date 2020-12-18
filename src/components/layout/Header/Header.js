@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone, faEnvelope, faBars, faTimes, faAngleDown } from "@fortawesome/free-solid-svg-icons"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Button from "../../button/Button"
+import Button from "../../Button/Button"
 
 // Check media query min-width
 // Add analytics events
