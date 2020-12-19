@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 
 function TxtImg(props) {
     return (
-        <section className={TxtImgStyles.section} style={{backgroundColor: props.backgroundColor}}>
+        <section className={TxtImgStyles.section} style={{backgroundColor: props.backgroundColor, color: props.color}}>
             {
                 props.heading ? (<h2 className={TxtImgStyles.sectionHeading}>{props.heading}</h2>) : (<></>)
             }
@@ -23,6 +23,7 @@ function TxtImg(props) {
 
 TxtImg.propTypes = {
     backgroundColor: PropTypes.string,
+    color: PropTypes.string,
     heading: PropTypes.string,
     imgSrc: PropTypes.object.isRequired,
     imgAlt: PropTypes.string.isRequired,

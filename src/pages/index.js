@@ -53,9 +53,13 @@ export default function Home({ data }) {
             <li>Occupational ill-health</li>
           </ul>
           <p>More information about these and other conditions that we treat can be found below.</p>
-          <Button to="/conditions" type="primary" style={{margin: "auto"}}>Find out more</Button>
+          <Button to="/conditions" type="primary">Find out more</Button>
         </div>
       </section>
+      <TxtImg imgSrc={data.prestige.childImageSharp.fluid} imgAlt="Prestige Award" backgroundColor="var(--primary-500)" color="white" heading="Osteopath of the year!" reverse={true}>
+        <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year.</p>
+        <p>It's wonderful to receive this kind of recognition but hopefully it's a reflection of our approach of always putting patient wellbeing first.</p>
+      </TxtImg>
     </Layout>
   )
 }
@@ -77,6 +81,13 @@ export const query = graphql`
       }
     }
     pilates: file(relativePath: {eq: "images/pilates.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 72) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    prestige: file(relativePath: {eq: "images/prestige-award.jpeg"}) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid

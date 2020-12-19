@@ -61,7 +61,7 @@ export default function Header() {
                         <Link className={HeaderStyles.navItem} to="/about">About</Link>
                         <Link className={HeaderStyles.navItem} to="/faq">FAQ</Link>
                         <Link className={HeaderStyles.navItem} to="/appointments">Appointments</Link>
-                        <Button to="/design-system" type="accent" style={{marginLeft: 20, textTransform: "none"}}>Design System</Button>
+                        <Button to="/design-system" type="accent" style={{margin: "20px 0 20px 20px" , textTransform: "none"}}>Design System</Button>
                     </nav>
                 </div>
             </div>
