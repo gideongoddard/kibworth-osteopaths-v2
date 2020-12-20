@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import AlertBar from "../components/AlertBar/AlertBar"
-import Layout from "../components/layout/Layout"
+import Layout from "../components/Layout/Layout"
 import HomeStyles from "./index.module.css"
 import TxtImg from "../components/txtImg/TxtImg"
 import Button from "../components/Button/Button"
