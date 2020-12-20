@@ -70,6 +70,10 @@
         width: 45%;
     }
 
+    .dayTime {
+        grid-template-columns: 140px 1fr;
+    }
+
     .buttonContainer {
         justify-content: space-around;
     }
