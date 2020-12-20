@@ -30,8 +30,8 @@ export default function Bookings() {
                     </div>
                 </div>
                 <div className={BookingsStyles.buttonContainer}>
-                    <Button type="primary" to="#">Call now</Button>
-                    <Button type="primary" to="#">Email now</Button>
+                    <Button type="primary" contact={true} to="tel:+447761664325">Call now</Button>
+                    <Button type="primary" contact={true} to="mailto:info@kibworthosteopaths.co.uk">Email now</Button>
                 </div>
             </div>
         </section>

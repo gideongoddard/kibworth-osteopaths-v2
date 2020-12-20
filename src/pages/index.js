@@ -21,7 +21,7 @@ export default function Home({ data }) {
         <h2>What is Osteopathy?</h2>
         <p>Osteopathic treatment focuses on the musculoskeletal system. All treatments are based on a carefully derived diagnosis which is in turn based on a thorough case history and examination.</p>
         <p>Treatment is tailored to each individual patient, using a combination of soft-tissue release work, specific joint mobilisation techniques and much more. Advice on self-help is provided to help keep the recovery process active to help prevent the injury reoccurring or keep long term issues manageable.</p>
-        <Button to="/osteopathy" type="primary">About Osteopathy</Button>
+        <Button to="/osteopathy" type="primary" contact={false}>About Osteopathy</Button>
       </TxtImg>
       <TxtImg backgroundColor="var(--neutral-200)" imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily Coombes, Osteopath" imgRotate={true} reverse={true} heading="Emily Coombes (B'Ost Registered Osteopath)">
         <p>Emily was trained at what is now the Univerity College of Osteopathy in London (formerly the British School of Osteopathy) and qualified in 2009. She has extensive experience in structural osteopathy and has attained post-graduate qualifications in:</p>
@@ -38,7 +38,7 @@ export default function Home({ data }) {
         <h2>Pilates</h2>
         <p>Pilates is known for helping core strength, posture, balance, flexibility, increasing strength, and reducing injury risk. Pilates is also excellent for post injury rehabilitation. Emily is specially trained in pre and post natal Pilates.</p>
         <p>Find out more about Pilates, how it can help you and how to join our classes below.</p>
-        <Button to="/pilates" type="primary">About Pilates</Button>
+        <Button to="/pilates" type="primary" contact={false}>About Pilates</Button>
       </TxtImg>
       <section className={HomeStyles.conditionsSection}>
         <div className={HomeStyles.conditionsContainer}>
@@ -54,7 +54,7 @@ export default function Home({ data }) {
             <li>Occupational ill-health</li>
           </ul>
           <p>More information about these and other conditions that we treat can be found below.</p>
-          <Button to="/conditions" type="primary">Find out more</Button>
+          <Button to="/conditions" type="primary" contact={false}>Find out more</Button>
         </div>
       </section>
       <TxtImg imgSrc={data.prestige.childImageSharp.fluid} imgAlt="Prestige Award" backgroundColor="var(--primary-500)" color="white" heading="Osteopath of the year!" reverse={true}>
