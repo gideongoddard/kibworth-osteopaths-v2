@@ -1,0 +1,80 @@
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.dayTime {
+    display: grid;
+    grid-gap: 0 10px;
+    grid-template-columns: 120px 1fr;
+}
+
+.day, .time {
+    margin: 3px 0;
+}
+
+.day {
+    font-weight: 600;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonContainer a {
+    width: 47.5%;
+}
+
+.schedule {
+    padding: 20px;
+    margin: 30px 0;
+    background-color: var(--primary-100);
+    border-radius: 10px;
+    box-shadow: var(--shadow-xs);
+}
+
+.schedule h3 {
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 900px) {
+    .section h2 {
+        text-align: center;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .container {
+        background-color: var(--primary-200);
+        border-radius: 10px;
+    }
+
+    .flexContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .schedule {
+        padding: 2.5%;
+        width: 45%;
+    }
+
+    .buttonContainer {
+        justify-content: space-around;
+    }
+
+    .buttonContainer a {
+        width: 45%;
+    }
+}

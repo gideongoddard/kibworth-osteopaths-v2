@@ -6,6 +6,7 @@ import HomeStyles from "./index.module.css"
 import TxtImg from "../components/txtImg/TxtImg"
 import Button from "../components/Button/Button"
 import Testimonial from "../components/Testimonial/Testimonial"
+import Bookings from "../components/Bookings/Bookings"
 
 export default function Home({ data }) {
   return (
@@ -60,6 +61,7 @@ export default function Home({ data }) {
         <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year.</p>
         <p>It's wonderful to receive this kind of recognition but hopefully it's a reflection of our approach of always putting patient wellbeing first.</p>
       </TxtImg>
+      <Bookings />
     </Layout>
   )
 }
