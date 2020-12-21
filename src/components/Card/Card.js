@@ -1,5 +1,5 @@
 import React from "react"
-import CardStyles from "./card.module.css"
+import CardStyles from "./Card.module.css"
 import Img from "gatsby-image"
 import Button from "../Button/Button"
 import { Link } from "gatsby"
