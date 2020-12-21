@@ -9,6 +9,9 @@
     text-align: center;
     padding: calc(5em + 2vw) 5%;
     background-color: var(--primary-300);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .section h1 {
