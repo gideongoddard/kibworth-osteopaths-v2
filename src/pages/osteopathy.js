@@ -7,6 +7,8 @@ import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import TxtImg from "../components/TxtImg/TxtImg"
 import OsteopathyStyles from "./osteopathy.module.css"
 import Testimonial from "../components/Testimonial/Testimonial"
+import Cards from "../components/Cards/Cards"
+import Card from "../components/Card/Card"
 
 export default function Osteopathy({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
@@ -15,7 +17,7 @@ export default function Osteopathy({ data }) {
             <Title backgroundImage={Banner} backgroundPosition="right" title="Osteopathy" />
             <BreadcrumbBar currentPage="Osteopathy" parentPages={parentPages} />
             <section className={OsteopathyStyles.section}>
-                <div className={OsteopathyStyles.container}>
+                <div className={OsteopathyStyles.narrowContainer}>
                     <h2>What is Osteopathy?</h2>
                     <p>Osteopaths look at the musculoskeletal system as a whole, and understand that the physical structure of the body is related to the function of the body. The musculoskeletal system comprises of your skeleton (joints), muscles, discs, ligaments and tendons. Injury to these structures can affect the function of them, which can then result in pain.</p>
                     <p>Why an injury or pain has occured can be very complex, and Osteopaths understand that this needs to be explored and understood. Most chronic (long term) injuries tend to be due to poor postural habits, or an overuse of structures.</p>
@@ -33,6 +35,40 @@ export default function Osteopathy({ data }) {
                 </div>
             </section>
             <Testimonial quote="5 star Osteopath! Emily takes time to listen to individual issues and improves mobility and strength. Highly recommended." />
+            <section className={OsteopathyStyles.section}>
+                <div className={OsteopathyStyles.container}>
+                    <h2 style={{textAlign: "center"}}>Osteopathy at Kibworth Osteopaths & Pilates</h2>
+                    <Cards>
+                        <Card 
+                            imgSrc={data.baby.childImageSharp.fluid}
+                            imgAlt="Baby lying down"
+                            heading="Cranial Osteopathy"
+                            description="Find out more about Cranial Osteopathy here at Kibworth Osteopaths & Pilates"
+                            linkType="button"
+                            linkTo="/osteopathy/cranial-osteopathy"
+                            linkText="Cranial Osteopathy"
+                        />
+                        <Card 
+                            imgSrc={data.treatmentRoom.childImageSharp.fluid}
+                            imgAlt="Inside of a treatment room"
+                            heading="What to expect"
+                            description="Find out what to expect when making an appointment with an Osteopath"
+                            linkType="button"
+                            linkTo="/osteopathy/what-to-expect"
+                            linkText="What to expect"
+                        />
+                        <Card 
+                            imgSrc={data.theManor.childImageSharp.fluid}
+                            imgAlt="Outside of a Kibworth Osteopaths & Pilates"
+                            heading="Appointments"
+                            description="Everything you need to know about bookings at Kibworth Osteopaths & Pilates"
+                            linkType="button"
+                            linkTo="/appointments"
+                            linkText="Book now"
+                        />
+                    </Cards>
+                </div>
+            </section>
         </Layout>
     )
 }
@@ -42,6 +78,27 @@ export const query = graphql`
         hands: file(relativePath: {eq: "images/hands.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1000, quality: 72) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        baby: file(relativePath: {eq: "images/baby-lying-down.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 800, quality: 72) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        treatmentRoom: file(relativePath: {eq: "images/treatment-room-card.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 800, quality: 72) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        theManor: file(relativePath: {eq: "images/the-manor-sign-card.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 800, quality: 72) {
                     ...GatsbyImageSharpFluid
                 }
             }

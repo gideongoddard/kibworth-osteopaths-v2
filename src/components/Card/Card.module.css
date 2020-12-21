@@ -1,0 +1,39 @@
+.card {
+    box-shadow: var(--shadow-s);
+    margin-bottom: 30px;
+}
+
+.txtContainer {
+    padding: 5px 15px;
+}
+
+.txtContainer h3 {
+    font-size: var(--type-s);
+}
+
+.txtContainer p {
+    font-size: var(--type-xxs);
+    color: var(--neutral-600);
+}
+
+@media only screen and (min-width: 900px) {
+    .card {
+        margin: 0;
+    }
+
+    .cardImg {
+        height: 190px;
+        width: auto;
+    }
+
+    .txtContainer {
+        height: calc(100% - 190px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .txtContainer p {
+        margin: 5px 0;
+    }
+}
