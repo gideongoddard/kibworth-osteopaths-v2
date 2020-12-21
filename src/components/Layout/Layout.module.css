@@ -72,6 +72,11 @@ h3 {
     font-weight: 500;
 }
 
+h4 {
+    font-size: var(--type-s);
+    font-weight: 500;
+}
+
 p, li {
     font-size: var(--type-xs);
     line-height: 1.5em;
