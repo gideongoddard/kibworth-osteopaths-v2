@@ -29,7 +29,7 @@ export default function Osteopathy({ data }) {
                 <p>Injuries can occur at any age or stage of life. I am qualified to work with patients from birth onwards. Osteopathy is suitable for all of the family, no matter how young or old. See <Link to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link> for more information on treatment for babies.</p>
             </TxtImg>
             <section className={OsteopathyStyles.section}>
-                <div className={OsteopathyStyles.container}>
+                <div className={OsteopathyStyles.narrowContainer}>
                     <p>Injuries to the musculoskeletal system are treated by Osteopaths with a variety of hands-on techniques, including specific joint mobilisation, soft tissue release and much more. Here at Kibworth Osteopaths & Pilates, specific taping techniques are also used where appropriate to help support injured structures. Each patient is different, so treatment is tailored to them, as well as any advice offered.</p>
                     <p>Osteopaths train for 4 years at university, and are required to do 30 hours a year of continual professional development, so you can be assured that our knowledge is up to date, and you as well as your family are in safe hands.</p>
                 </div>
