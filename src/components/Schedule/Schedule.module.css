@@ -1,0 +1,36 @@
+.schedule {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: var(--primary-100);
+    border-radius: 10px;
+    box-shadow: var(--shadow-xs);
+}
+
+.schedule h3 {
+    margin-top: 0;
+}
+
+.dayTime {
+    display: grid;
+    grid-gap: 0 10px;
+    grid-template-columns: 120px 1fr;
+}
+
+.day, .time {
+    margin: 3px 0;
+}
+
+.day {
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 900px) {
+    .schedule {
+        padding: 2.5%;
+        width: 45%;
+    }
+
+    .dayTime {
+        grid-template-columns: 140px 1fr;
+    }
+}

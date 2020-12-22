@@ -1,6 +1,5 @@
 .primary, .accent, .neutral {
-    display: block;
-    width: fit-content;
+    display: inline-block;
     font-size: var(--type-xs);
     text-decoration: none;
     text-transform: uppercase;

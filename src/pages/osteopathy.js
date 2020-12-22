@@ -61,7 +61,7 @@ export default function Osteopathy({ data }) {
                             imgSrc={data.theManor.childImageSharp.fluid}
                             imgAlt="Outside of a Kibworth Osteopaths & Pilates"
                             heading="Appointments"
-                            description="Everything you need to know about bookings at Kibworth Osteopaths & Pilates"
+                            description="All you need to know about bookings at Kibworth Osteopaths & Pilates"
                             linkType="button"
                             linkTo="/appointments"
                             linkText="Book now"
