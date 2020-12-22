@@ -6,6 +6,9 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import Img from "gatsby-image"
 
 export default function Footer() {
+    const date = new Date()
+    const year = date.getFullYear()
+
     return (
         <footer>
             <div className={FooterStyles.container}>
@@ -59,7 +62,7 @@ export default function Footer() {
             </div>
             <div className={FooterStyles.bottom}>
                 <div className={FooterStyles.copyright}>
-                    <span>2020 © - Kibworth Osteopaths & Pilates</span>
+                    <span>{year} © - Kibworth Osteopaths & Pilates</span>
                 </div>
                 <div className={FooterStyles.credit}>
                     <span>Website by <a href="https://gideongoddard.co.uk" target="_blank" rel="noopener noreferrer">Gideon Goddard Digital</a></span>
