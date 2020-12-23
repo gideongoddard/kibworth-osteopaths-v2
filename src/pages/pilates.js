@@ -55,7 +55,7 @@ export default function Pilates({ data }) {
                     <p>Classes are either held at The Fitness Box @ The Manor in Tur Langton or at the Market Harborough Congregational Church.</p>
                 </div>
                 <div className={PilatesStyles.container}>
-                    <div className={PilatesStyles.flexContainer}>
+                    <div className={PilatesStyles.gridContainer}>
                         <Schedule type="Pilates" displayHeading={false} />
                         <div className={PilatesStyles.txtContainer}>
                             <p>Class sizes are 8 participants per class, and cost £12 per class. One-to-one classes are also available at £17.</p>

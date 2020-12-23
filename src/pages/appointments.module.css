@@ -8,10 +8,25 @@
     margin: auto;
 }
 
-.narrowContainer {
-    width: 90%;
-    max-width: 750px;
-    margin: auto;
+.container h2 {
+    text-align: center;
+}
+
+.boxContentContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.boxContentContainer p {
+    margin: 5px 0;
+}
+
+.lowContrast {
+    color: var(--primary-700);
+}
+
+.address p {
+    margin: 5px 0;
 }
 
 .buttonContainer {
@@ -23,25 +38,10 @@
     width: 47.5%;
 }
 
-.gridContainer {
-    margin-top: 30px;
-}
-
 @media only screen and (min-width: 900px) {
-    .narrowContainer {
-        text-align: center;
-    }
-
     .gridContainer {
-        margin: 50px 0 20px 0;
         display: grid;
-        grid-gap: 0 5%;
         grid-template-columns: 47.5% 47.5%;
-    }
-
-    .flexContainer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        grid-gap: 5%;
     }
 }

@@ -3,6 +3,7 @@
     border-radius: 10px;
     margin-bottom: 30px;
     background-color: var(--primary-200);
+    width: 100%;
 }
 
 .heading {

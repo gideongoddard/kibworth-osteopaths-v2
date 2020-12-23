@@ -16,10 +16,12 @@
 .buttonContainer {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .buttonContainer a {
     width: 47.5%;
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 900px) {
@@ -34,16 +36,18 @@
         border-radius: 10px;
     }
 
-    .flexContainer {
-        display: flex;
-        justify-content: space-around;
+    .gridContainer {
+        padding: 2.5%;
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        grid-gap: 20px 5%;
     }
 
     .buttonContainer {
-        justify-content: space-around;
+        padding: 0 2.5%;
     }
 
     .buttonContainer a {
-        width: 45%;
+        margin-bottom: 30px;
     }
 }

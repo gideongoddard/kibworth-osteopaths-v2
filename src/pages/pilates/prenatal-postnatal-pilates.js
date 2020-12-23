@@ -67,7 +67,7 @@ export default function PrenatalPostnatalPilates() {
                     <p>Classes are either held at The Fitness Box @ The Manor in Tur Langton or at the Market Harborough Congregational Church.</p>
                 </div>
                 <div className={PrePostStyles.container}>
-                    <div className={PrePostStyles.flexContainer}>
+                    <div className={PrePostStyles.gridContainer}>
                         <Schedule type="Pilates" displayHeading={false} />
                         <div className={PrePostStyles.txtContainer}>
                             <p>Classes cost £12 per class. To avoid disappointment, I request that participants ‘book their mat’ for a 6 week block (total payment for a 6 week block is £72).</p>
@@ -77,9 +77,9 @@ export default function PrenatalPostnatalPilates() {
                         </div>
                     </div>
                     <div className={PrePostStyles.buttonContainer}>
-                            <Button type="primary" contact={true} to="tel:+447761664325">Call now</Button>
-                            <Button type="primary" contact={true} to="mailto:info@kibworthosteopaths.co.uk">Email now</Button>
-                        </div>
+                        <Button type="primary" contact={true} to="tel:+447761664325">Call now</Button>
+                        <Button type="primary" contact={true} to="mailto:info@kibworthosteopaths.co.uk">Email now</Button>
+                    </div>
                 </div>
             </section>
         </Layout>

@@ -35,7 +35,7 @@ export default function Osteopathy({ data }) {
                 </div>
             </section>
             <Testimonial quote="5 star Osteopath! Emily takes time to listen to individual issues and improves mobility and strength. Highly recommended." />
-            <section className={OsteopathyStyles.section}>
+            <section className={OsteopathyStyles.section} style={{paddingBottom: 20}}>
                 <div className={OsteopathyStyles.container}>
                     <h2 style={{textAlign: "center"}}>Osteopathy at Kibworth Osteopaths & Pilates</h2>
                     <Cards>

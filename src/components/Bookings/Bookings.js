@@ -8,7 +8,7 @@ export default function Bookings() {
         <section className={BookingsStyles.section}>
             <h2>Make a booking</h2>
             <div className={BookingsStyles.container}>
-                <div className={BookingsStyles.flexContainer}>
+                <div className={BookingsStyles.gridContainer}>
                     <Schedule type="Osteopathy" displayHeading={true} />
                     <Schedule type="Pilates" displayHeading={true} />
                 </div>
