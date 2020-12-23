@@ -4,6 +4,7 @@ import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import FAQStyles from "./faq.module.css"
 import Box from "../components/Box/Box"
+import Contents from "../components/Contents/Contents"
 
 export default function FAQ() {
     const parentPages = [{name: "Home", path: "/"}]
@@ -81,18 +82,7 @@ export default function FAQ() {
             <BreadcrumbBar currentPage="FAQ" parentPages={parentPages} />
             <section className={`${FAQStyles.section} ${FAQStyles.gridContainer}`}>
                 <div className={FAQStyles.contentsContainer}>
-                    <div className={FAQStyles.contentsBox}>
-                        <div className={FAQStyles.contentsBoxHeading}>
-                            <h3>FAQ Contents</h3>
-                        </div>
-                        <div className={FAQStyles.contentsBoxBody}>
-                            <ul>
-                                {faq.map(faq => {
-                                    return (<li key={faq.id}><a href={`#faq-${faq.id}`}>{faq.question}</a></li>)
-                                })}
-                            </ul>
-                        </div>
-                    </div>
+                    <Contents heading="FAQ Contents" contents={faq} />
                 </div>
                 <div className={FAQStyles.faqContainer}>
                     {

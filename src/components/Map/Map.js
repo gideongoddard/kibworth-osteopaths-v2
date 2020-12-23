@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 if (typeof window !== 'undefined') {
-    const location = {lat: 52.586731, lng: -1.022502}
+    const location = {lat: 52.544381, lng: -0.955908}
     window.initMap = function() {
         const map = new window.google.maps.Map(document.getElementById('map'), {
             center: location,
