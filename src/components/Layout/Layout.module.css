@@ -86,7 +86,7 @@ ul {
     list-style-type: square;
 }
 
-li::marker {
+ul li::marker {
     color: var(--primary-500);
 }
 

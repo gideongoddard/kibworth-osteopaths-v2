@@ -16,14 +16,14 @@
 }
 
 .infoBox {
-    background-color: var(--primary-300);
+    background-color: var(--primary-200);
     padding: 7% 5%;
     border-radius: 10px;
     box-shadow: var(--shadow-s);
 }
 
 .infoOuter {
-    background-color: var(--primary-500);
+    background-color: var(--primary-600);
     color: white;
     border-left: 7px solid white;
     display: grid;
