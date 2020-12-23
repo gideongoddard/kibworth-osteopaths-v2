@@ -20,13 +20,13 @@ if (typeof window !== 'undefined') {
     }           
 }
 
-export default function Map() {
+export default function Map(props) {
     return (
         <section style={{padding: 0}}>
             <Helmet>
                 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3oKr-gZDywgtyt2vpGhrQ3s1HqjcT-M4&callback=initMap"></script>
             </Helmet>
-            <div id="map" style={{ height: 350, width: '100%'}}></div>
+            <div id="map" style={{ height: props.height, width: '100%'}}></div>
         </section>
     )
 }

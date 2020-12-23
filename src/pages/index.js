@@ -7,6 +7,7 @@ import TxtImg from "../components/TxtImg/TxtImg"
 import Button from "../components/Button/Button"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Bookings from "../components/Bookings/Bookings"
+import Map from "../components/Map/Map"
 
 export default function Home({ data }) {
   return (
@@ -62,6 +63,7 @@ export default function Home({ data }) {
         <p>It's wonderful to receive this kind of recognition but hopefully it's a reflection of our approach of always putting patient wellbeing first.</p>
       </TxtImg>
       <Bookings />
+      <Map height="450px" />
     </Layout>
   )
 }

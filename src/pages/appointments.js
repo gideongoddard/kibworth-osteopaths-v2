@@ -55,7 +55,7 @@ export default function Appointments() {
                     <div className={AppointmentsStyles.gridContainer}>
                         <div className={AppointmentsStyles.mapContainer}>
                             <p>We're based at <strong>The Manor, Tur Langton</strong> and you can find us as shown on the map below.</p>
-                            <Map />
+                            <Map height="350px" />
                         </div>
                         <div className={AppointmentsStyles.addressContainer}>
                             <p>When arriving, come into The Manor up the drive, turn right and you'll find us on the right-hand side next to Natural Structures. You'll be able to park either in front of the practice or in the customer car park.</p>
