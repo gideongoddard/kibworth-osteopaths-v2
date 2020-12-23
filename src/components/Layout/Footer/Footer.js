@@ -24,6 +24,7 @@ export default function Footer() {
                         <li><Link to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link></li>
                         <li><Link to="/about">About us</Link></li>
                         <li><Link to="/faq">FAQs</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/privacy">Privacy Policy</Link></li>
                     </ul>
                 </div>

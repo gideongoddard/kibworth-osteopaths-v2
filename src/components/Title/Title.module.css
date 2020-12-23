@@ -7,7 +7,7 @@
     align-items: center;
     margin: auto;
     text-align: center;
-    padding: calc(5em + 2vw) 5%;
+    
     background-color: var(--primary-300);
     background-position: center;
     background-size: cover;
@@ -17,7 +17,6 @@
 .section h1 {
     font-size: var(--type-xxl);
     font-weight: 300;
-    text-transform: uppercase;
     margin: 20px 0;
     line-height: 1.25em;
 }
@@ -26,4 +25,5 @@
     font-size: var(--type-m);
     font-weight: 400;
     margin: 20px;
+    color: var(--primary-700);
 }

@@ -5,6 +5,19 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-react-helmet`,
         {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 900,
+                        },
+                    },
+                ],
+            },
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
               name: `src`,
