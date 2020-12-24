@@ -4,7 +4,7 @@ date: "2020-02-23"
 featuredImage: ../../images/pregnancy.jpg
 ---
 
-<h2>Let's dispel some myths about exercising whilst pregnant...</h2>
+<h3>Let's dispel some myths about exercising whilst pregnant...</h3>
 
 Being pregnant is an amazing yet physically tough experience, and lots of people think that they cannot continue exercising. This is not necessarily true (there are medical exemptions of course). The American College of Sports Medicine recommend that pregnant ladies can do 150 minutes a week of cardio, and the Royal College of Gynaecologists and Obstetricians recommend exercise sessions are kept to 45 minute sessions.
 

@@ -14,4 +14,8 @@ So many of us, when we wake up, will just spring forwards and try to get out of 
     <li>As you push upwards with that hand, lower your feet off the bed so that you’re using the weight of your lower legs and the force through your arm in tandem.</li>
 </ol>
 
-This will keep the lower back nice and straight and avoid any unnecessary strain going through it. So give that a practice! Watch the video above where I walk you through this.
+This will keep the lower back nice and straight and avoid any unnecessary strain going through it. So give that a practice! Watch the video below where I walk you through this.
+
+<div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iGgXVz8-DHc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
