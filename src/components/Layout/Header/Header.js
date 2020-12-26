@@ -46,18 +46,20 @@ export default function Header() {
                             navOpen ? (<FontAwesomeIcon icon={faTimes} onClick={() => setNavOpen(false)} />) : (<FontAwesomeIcon icon={faBars} onClick={() => setNavOpen(true)} />)
                         }
                     </div>
-                    <nav style={{ right: navOpen ? 0 : "-100%" }}>
-                        <Link className={HeaderStyles.navItem} to="/osteopathy" onMouseOver={() => setOsteoSubnavOpen(true)} onMouseOut={() => setOsteoSubnavOpen(false)}>Osteopathy <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} />
+                    <nav style={{height: navOpen ? "max-content" : 0}}>
+                        <div onMouseOver={() => setOsteoSubnavOpen(true)} onMouseOut={() => setOsteoSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
+                            <Link className={HeaderStyles.navItem} to="/osteopathy">Osteopathy <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
                             <div className={osteoSubnavOpen ? `${HeaderStyles.osteoSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.osteoSubnavClosed} ${HeaderStyles.subNav}`}>
                                 <Link className={HeaderStyles.subNavItem} to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link>
                                 <Link className={HeaderStyles.subNavItem} to="/osteopathy/what-to-expect">What to expect</Link>
                             </div>
-                        </Link>
-                        <Link className={HeaderStyles.navItem} to="/pilates" onMouseOver={() => setPilatesSubnavOpen(true)} onMouseOut={() => setPilatesSubnavOpen(false)}>Pilates <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} />
-                            <div className={pilatesSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.pilatesSubnavClosed} ${HeaderStyles.subNav}`}>
-                                <Link className={HeaderStyles.subNavItem} to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link>
-                            </div>
-                        </Link>
+                        </div>
+                        <div onMouseOver={() => setPilatesSubnavOpen(true)} onMouseOut={() => setPilatesSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
+                            <Link className={HeaderStyles.navItem} to="/pilates">Pilates <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
+                                <div className={pilatesSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.pilatesSubnavClosed} ${HeaderStyles.subNav}`}>
+                                    <Link className={HeaderStyles.subNavItem} to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link>
+                                </div>
+                        </div>
                         <Link className={HeaderStyles.navItem} to="/about">About</Link>
                         <Link className={HeaderStyles.navItem} to="/faq">FAQ</Link>
                         <Link className={HeaderStyles.navItem} to="/appointments">Appointments</Link>
