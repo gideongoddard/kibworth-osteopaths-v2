@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import AlertBar from "../components/AlertBar/AlertBar"
-import Layout from "../components/Layout/Layout"
 import HomeStyles from "./index.module.css"
 import TxtImg from "../components/TxtImg/TxtImg"
 import Button from "../components/Button/Button"
@@ -11,7 +10,7 @@ import Map from "../components/Map/Map"
 
 export default function Home({ data }) {
   return (
-    <Layout>
+    <>
       <AlertBar>
         <a href="https://youtu.be/n1K2m3bwL7g" target="_blank" rel="noopener noreferrer"><strong>WATCH:</strong> What to expect from your Osteopathic appointment during COVID-19</a>
       </AlertBar>
@@ -64,7 +63,7 @@ export default function Home({ data }) {
       </TxtImg>
       <Bookings />
       <Map height="450px" />
-    </Layout>
+    </>
   )
 }
 

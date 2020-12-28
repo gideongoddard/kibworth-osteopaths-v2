@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import Schedule from "../components/Schedule/Schedule"
@@ -13,7 +12,7 @@ export default function Appointments() {
     const parentPages = [{name: "Home", path: "/"}]
     
     return (
-        <Layout>
+        <>
             <Title title="Appointments" />
             <BreadcrumbBar currentPage="Appointments" parentPages={parentPages} />
             <section className={AppointmentsStyles.section}>
@@ -74,6 +73,6 @@ export default function Appointments() {
                 </div>
             </section>
             <Testimonial quote="I wish I could give more than 5 stars. I can't recommend Emily enough. She's seen both my children and with my daughter she cured her colic within 4 sessions, with me seeing a massive difference from session 1. Emily listens to everything and is thoroughly understanding of your feelings as a parent and never makes you feel that your ideas are not important. She is fantastic!" />
-        </Layout>
+        </>
     )
 }

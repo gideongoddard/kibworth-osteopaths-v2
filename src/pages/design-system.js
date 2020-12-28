@@ -6,11 +6,10 @@ import DesignSystemStyles from "./design-system.module.css"
 import TypeScale from "../components/DesignSystem/TypeScale/TypeScale"
 import Button from "../components/Button/Button"
 import Title from "../components/Title/Title"
-import Layout from "../components/Layout/Layout"
 
 export default function StyleGuide() {
     return (
-        <Layout>
+        <>
           <Title
             title="Website design system"
             subtitle={`"Systematise everything"`}
@@ -90,6 +89,6 @@ export default function StyleGuide() {
               <Button type="neutral" to="#">Neutral button</Button>
             </div>
           </DesignSystemSection>
-        </Layout>
+        </>
     )
   }

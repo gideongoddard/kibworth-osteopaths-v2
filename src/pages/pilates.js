@@ -1,7 +1,6 @@
 import { graphql } from "gatsby"
 import React from "react"
 import PilatesStyles from "./pilates.module.css"
-import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import Banner from "../images/pilates-banner.jpg"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
@@ -13,7 +12,7 @@ import Button from "../components/Button/Button"
 export default function Pilates({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <Layout>
+        <>
             <Title title="Pilates" backgroundImage={Banner} />
             <BreadcrumbBar currentPage="Pilates" parentPages={parentPages} />
             <TxtImg imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily standing with a skeleton">
@@ -69,7 +68,7 @@ export default function Pilates({ data }) {
                         </div>
                 </div>
             </section>
-        </Layout>
+        </>
     )
 }
 

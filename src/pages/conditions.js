@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import ConditionsStyles from "./conditions.module.css"
@@ -65,7 +64,7 @@ export default function Conditions({ data }) {
     ]
 
     return (
-        <Layout>
+        <>
             <Title title="Conditions we treat" />
             <BreadcrumbBar currentPage="Conditions" parentPages={parentPages} />
             <section className={ConditionsStyles.section}>
@@ -100,7 +99,7 @@ export default function Conditions({ data }) {
                     </div>
                 </div>
             </section>
-        </Layout>
+        </>
     )
 }
 

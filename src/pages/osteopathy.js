@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import Banner from "../images/neck-treatment-banner.jpg"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
@@ -13,7 +12,7 @@ import Card from "../components/Card/Card"
 export default function Osteopathy({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <Layout>
+        <>
             <Title backgroundImage={Banner} backgroundPosition="right" title="Osteopathy" />
             <BreadcrumbBar currentPage="Osteopathy" parentPages={parentPages} />
             <section className={OsteopathyStyles.section}>
@@ -69,7 +68,7 @@ export default function Osteopathy({ data }) {
                     </Cards>
                 </div>
             </section>
-        </Layout>
+        </>
     )
 }
 

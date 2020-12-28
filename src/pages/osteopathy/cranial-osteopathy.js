@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import CranialStyles from "./cranial-osteopathy.module.css"
@@ -10,7 +9,7 @@ export default function CranialOsteopathy({ data }) {
     const parentPages = [{name: "Home", path: "/"}, {name: "Osteopathy", path: "/osteopathy"}]
 
     return (
-        <Layout>
+        <>
             <Title title="Cranial Osteopathy" />
             <BreadcrumbBar currentPage="Cranial Osteopathy" parentPages={parentPages} />
             <section className={CranialStyles.section}>
@@ -29,7 +28,7 @@ export default function CranialOsteopathy({ data }) {
                     <p>Here at Kibworth Osteopaths & Pilates, as with adult patients, a full paediatric case history is always taken, (this helps us establish if there are any other reasons for the baby’s symptoms, i.e. lactose intolerance/cow’s milk protein allergy) and paediatric tests are always conducted, for example checking for tongue-tie. Doing these things ensures that no referral is needed to the doctor.</p>
                 </div>
             </section>
-        </Layout>
+        </>
     )
 }
 

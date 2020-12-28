@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import FAQStyles from "./faq.module.css"
@@ -77,7 +76,7 @@ export default function FAQ() {
     ]
 
     return (
-        <Layout>
+        <>
             <Title title="Frequently asked questions" />
             <BreadcrumbBar currentPage="FAQ" parentPages={parentPages} />
             <section className={`${FAQStyles.section} ${FAQStyles.gridContainer}`}>
@@ -96,6 +95,6 @@ export default function FAQ() {
                     }
                 </div>
             </section>    
-        </Layout>
+        </>
     )
 }

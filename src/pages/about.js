@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import TxtImg from "../components/TxtImg/TxtImg"
@@ -11,7 +10,7 @@ import Bookings from "../components/Bookings/Bookings"
 export default function About({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <Layout>
+        <>
             <Title title="About" />
             <BreadcrumbBar currentPage="About" parentPages={parentPages} />
             <TxtImg imgSrc={data.emilySkeleton.childImageSharp.fluid} imgAlt="Emily standing with a skeleton" imgRotate={true}>
@@ -33,7 +32,7 @@ export default function About({ data }) {
               <p>In my spare time, I am either outside with my family and dogs, walking or camping, or I am curled up with a book and my cat!</p>
             </TxtImg>
             <Bookings />
-        </Layout>
+        </>
     )
 }
 

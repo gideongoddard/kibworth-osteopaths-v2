@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import Img from "gatsby-image"
 import ArticleStyles from "./blog-article.module.css"
 import { Link } from "gatsby"
@@ -11,7 +10,7 @@ export default function Article({ data }) {
 
     let featuredImgFluid = article.frontmatter.featuredImage.childImageSharp.fluid
     return (
-        <Layout>
+        <>
             <Title title={article.frontmatter.title} subtitle={article.frontmatter.date} />
             <BreadcrumbBar currentPage={article.frontmatter.title} parentPages={[{name: "Home", path: "/"}, {name: "Blog", path: "/blog"}]} />
             <section className={ArticleStyles.section}>
@@ -28,7 +27,7 @@ export default function Article({ data }) {
                     ))}
                 </div>
             </section>
-        </Layout>
+        </>
     )
 }
 

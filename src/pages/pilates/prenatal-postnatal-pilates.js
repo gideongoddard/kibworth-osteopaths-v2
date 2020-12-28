@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import PrePostStyles from "./prenatal-postnatal-pilates.module.css"
@@ -11,7 +10,7 @@ import Button from "../../components/Button/Button"
 export default function PrenatalPostnatalPilates() {
     const parentPages = [{name: "Home", path: "/"}, {name: "Pilates", path: "/pilates"}]
     return (
-        <Layout>
+        <>
             <Title title="Prenatal & Postnatal Pilates" />
             <BreadcrumbBar currentPage="Prenatal & Postnatal Pilates" parentPages={parentPages} />
             <section className={PrePostStyles.section}>
@@ -82,6 +81,6 @@ export default function PrenatalPostnatalPilates() {
                     </div>
                 </div>
             </section>
-        </Layout>
+        </>
     )
 }
