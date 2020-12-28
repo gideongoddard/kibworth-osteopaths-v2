@@ -4,10 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone, faEnvelope, faBars, faTimes, faAngleDown } from "@fortawesome/free-solid-svg-icons"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Button from "../../Button/Button"
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
-// Check media query min-width
-// Add analytics events
 export default function Header() {
     const [navOpen, setNavOpen] = useState(false)
     const [osteoSubnavOpen, setOsteoSubnavOpen] = useState(false)
@@ -17,8 +15,20 @@ export default function Header() {
         <header>
             <div className={HeaderStyles.contactBar}>
                 <div className={HeaderStyles.contactDetails}>
-                    <a className={HeaderStyles.tel} href="tel:+447761664325"><FontAwesomeIcon icon={faPhone} /> 07761 664 325</a>
-                    <a className={HeaderStyles.email} href="mailto:info@kibworthosteopaths.co.uk"><FontAwesomeIcon icon={faEnvelope} /> info@kibworthosteopaths.co.uk</a>
+                    <a className={HeaderStyles.tel} href="tel:+447761664325" onClick={e => {
+                        trackCustomEvent({
+                            category: "contact",
+                            action: "click",
+                            label: "telephone",
+                        })
+                    }}><FontAwesomeIcon icon={faPhone} /> 07761 664 325</a>
+                    <a className={HeaderStyles.email} href="mailto:info@kibworthosteopaths.co.uk" onClick={e => {
+                        trackCustomEvent({
+                            category: "contact",
+                            action: "click",
+                            label: "email",
+                        })
+                    }}><FontAwesomeIcon icon={faEnvelope} /> info@kibworthosteopaths.co.uk</a>
                 </div>
             </div>
             <div className={HeaderStyles.navBar}>
