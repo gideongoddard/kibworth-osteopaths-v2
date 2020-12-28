@@ -23,7 +23,7 @@ export default function Header() {
             </div>
             <div className={HeaderStyles.navBar}>
                 <div className={HeaderStyles.navContainer}>
-                    <Link to="/" className={HeaderStyles.logo}>
+                    <Link to="/" className={HeaderStyles.logo} onClick={() => setNavOpen(false)}>
                         <StaticQuery
                             query={graphql`
                                 query {
@@ -46,7 +46,7 @@ export default function Header() {
                             navOpen ? (<FontAwesomeIcon icon={faTimes} onClick={() => setNavOpen(false)} />) : (<FontAwesomeIcon icon={faBars} onClick={() => setNavOpen(true)} />)
                         }
                     </div>
-                    <nav style={{height: navOpen ? "max-content" : 0}}>
+                    <nav style={{height: navOpen ? "max-content" : 0}} onClick={() => setNavOpen(false)}>
                         <div onMouseOver={() => setOsteoSubnavOpen(true)} onMouseOut={() => setOsteoSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
                             <Link className={HeaderStyles.navItem} to="/osteopathy">Osteopathy <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
                             <div className={osteoSubnavOpen ? `${HeaderStyles.osteoSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.osteoSubnavClosed} ${HeaderStyles.subNav}`}>

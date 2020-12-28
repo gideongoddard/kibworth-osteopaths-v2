@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import AlertBar from "../components/AlertBar/AlertBar"
 import HomeStyles from "./index.module.css"
@@ -11,6 +12,12 @@ import Map from "../components/Map/Map"
 export default function Home({ data }) {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="description" content="Kibworth Osteopaths & Pilates offer Osteopathy treatment and Pilates instruction to provide you with the best recovery, rehabilitation and management for a range of injuries and conditions." />
+        <title>Kibworth Osteopaths & Pilates | Leicestershire</title>
+        <html lang="en"></html>
+      </Helmet>
       <AlertBar>
         <a href="https://youtu.be/n1K2m3bwL7g" target="_blank" rel="noopener noreferrer"><strong>WATCH:</strong> What to expect from your Osteopathic appointment during COVID-19</a>
       </AlertBar>

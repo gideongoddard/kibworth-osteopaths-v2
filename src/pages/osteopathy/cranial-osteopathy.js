@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import CranialStyles from "./cranial-osteopathy.module.css"
@@ -10,6 +11,11 @@ export default function CranialOsteopathy({ data }) {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Cranial Osteopathy | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title title="Cranial Osteopathy" />
             <BreadcrumbBar currentPage="Cranial Osteopathy" parentPages={parentPages} />
             <section className={CranialStyles.section}>
