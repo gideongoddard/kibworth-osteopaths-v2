@@ -4,6 +4,7 @@ import ArticleStyles from "./blog-article.module.css"
 import { Link } from "gatsby"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import Title from "../components/Title/Title"
+import { Helmet } from "react-helmet"
 
 export default function Article({ data }) {
     const article = data.markdownRemark
@@ -11,6 +12,12 @@ export default function Article({ data }) {
     let featuredImgFluid = article.frontmatter.featuredImage.childImageSharp.fluid
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content={article.excerpt} />
+                <title>{article.frontmatter.title} | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title title={article.frontmatter.title} subtitle={article.frontmatter.date} />
             <BreadcrumbBar currentPage={article.frontmatter.title} parentPages={[{name: "Home", path: "/"}, {name: "Blog", path: "/blog"}]} />
             <section className={ArticleStyles.section}>
@@ -41,11 +48,12 @@ export const query = graphql`
                 featuredImage {
                     childImageSharp {
                         fluid(maxWidth: 960, quality: 72) {
-                            ...GatsbyImageSharpFluid_noBase64
+                            ...GatsbyImageSharpFluid
                         }
                     }
                 }
             }
+            excerpt
         }
         allMarkdownRemark(limit: 3, sort: { fields: [frontmatter___date], order: DESC }) {
             totalCount

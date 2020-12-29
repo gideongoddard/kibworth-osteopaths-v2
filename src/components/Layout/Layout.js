@@ -37,7 +37,7 @@ class Layout extends React.Component {
                     </ul>
                     <p>Please contact me for any further information.</p>
                     <p>Stay safe,</p>
-                    <p>Emily 🤲</p>
+                    <p>Emily <span role="img" aria-label="Open Hands Sign Emoji, representing openness.">🤲</span></p>
                 </Modal>
                 <Header />
                 <main>

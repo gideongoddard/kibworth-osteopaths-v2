@@ -6,11 +6,18 @@ import { graphql } from "gatsby"
 import Testimonial from "../components/Testimonial/Testimonial"
 import AboutStyles from "./about.module.css"
 import Bookings from "../components/Bookings/Bookings"
+import { Helmet } from "react-helmet"
 
 export default function About({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content="Kibworth Osteopaths & Pilates was founded in 2017 by Emily Coombes, an experienced Osteopath who is passionate about helping people with injury prevention & rehabilitation." />
+                <title>About us | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title title="About" />
             <BreadcrumbBar currentPage="About" parentPages={parentPages} />
             <TxtImg imgSrc={data.emilySkeleton.childImageSharp.fluid} imgAlt="Emily standing with a skeleton" imgRotate={true}>

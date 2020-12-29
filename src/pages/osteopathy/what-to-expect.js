@@ -3,12 +3,19 @@ import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import ExpectStyles from "./what-to-expect.module.css"
 import Box from "../../components/Box/Box"
+import { Helmet } from "react-helmet"
 
 export default function WhatToExpect() {
     const parentPages = [{name: "Home", path: "/"}, {name: "Osteopathy", path: "/osteopathy"}]
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content="Find out what to expect and how we'll ensure the best care for you when you book an Osteopathy appointment with us." />
+                <title>What to expect | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title title="What to expect" />
             <BreadcrumbBar currentPage="What to expect" parentPages={parentPages} />
             <section className={ExpectStyles.section}>

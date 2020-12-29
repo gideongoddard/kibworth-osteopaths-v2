@@ -4,6 +4,7 @@ import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import FAQStyles from "./faq.module.css"
 import Box from "../components/Box/Box"
 import Contents from "../components/Contents/Contents"
+import { Helmet } from "react-helmet"
 
 export default function FAQ() {
     const parentPages = [{name: "Home", path: "/"}]
@@ -77,6 +78,12 @@ export default function FAQ() {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content="We have the answers to your frequently asked questions about seeing an Osteopath." />
+                <title>FAQ | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title title="Frequently asked questions" />
             <BreadcrumbBar currentPage="FAQ" parentPages={parentPages} />
             <section className={`${FAQStyles.section} ${FAQStyles.gridContainer}`}>

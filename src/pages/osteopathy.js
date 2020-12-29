@@ -8,11 +8,18 @@ import OsteopathyStyles from "./osteopathy.module.css"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Cards from "../components/Cards/Cards"
 import Card from "../components/Card/Card"
+import { Helmet } from "react-helmet"
 
 export default function Osteopathy({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content="Osteopathy looks at the often complex relationships between the different physical structures of the body in order to understand why injury or pain has occured and how to aid recovery." />
+                <title>Osteopathy | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title backgroundImage={Banner} backgroundPosition="right" title="Osteopathy" />
             <BreadcrumbBar currentPage="Osteopathy" parentPages={parentPages} />
             <section className={OsteopathyStyles.section}>

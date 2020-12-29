@@ -7,11 +7,18 @@ import Pre from "../../images/noun_pregnant.svg"
 import Schedule from "../../components/Schedule/Schedule"
 import Button from "../../components/Button/Button"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
+import { Helmet } from "react-helmet"
 
 export default function PrenatalPostnatalPilates() {
     const parentPages = [{name: "Home", path: "/"}, {name: "Pilates", path: "/pilates"}]
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content="Book our prenatal & postnatal pilates classes to get the benefit of our in-depth understanding of recovering from birth and the physical demands of caring for a newborn." />
+                <title>Prenatal & Postnatal Pilates | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title title="Prenatal & Postnatal Pilates" />
             <BreadcrumbBar currentPage="Prenatal & Postnatal Pilates" parentPages={parentPages} />
             <section className={PrePostStyles.section}>

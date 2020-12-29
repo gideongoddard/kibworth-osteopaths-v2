@@ -8,12 +8,19 @@ import Testimonial from "../components/Testimonial/Testimonial"
 import AppointmentsStyles from "./appointments.module.css"
 import Map from "../components/Map/Map"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
+import { Helmet } from "react-helmet"
 
 export default function Appointments() {
     const parentPages = [{name: "Home", path: "/"}]
     
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content="Make an appointment with an Osteopath or book your Pilates classes." />
+                <title>Make a booking | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title title="Appointments" />
             <BreadcrumbBar currentPage="Appointments" parentPages={parentPages} />
             <section className={AppointmentsStyles.section}>

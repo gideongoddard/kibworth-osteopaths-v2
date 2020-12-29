@@ -9,11 +9,18 @@ import Box from "../components/Box/Box"
 import Schedule from "../components/Schedule/Schedule"
 import Button from "../components/Button/Button"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
+import { Helmet } from "react-helmet"
 
 export default function Pilates({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="description" content="Regular Pilates can help reduce injury risk, enhance core stability, increase strength and improve posture, flexibility & balance." />
+                <title>Pilates | Kibworth Osteopaths & Pilates</title>
+                <html lang="en"></html>
+            </Helmet>
             <Title title="Pilates" backgroundImage={Banner} />
             <BreadcrumbBar currentPage="Pilates" parentPages={parentPages} />
             <TxtImg imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily standing with a skeleton">

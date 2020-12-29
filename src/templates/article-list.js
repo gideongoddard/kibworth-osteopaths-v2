@@ -13,6 +13,12 @@ export default class Blog extends React.Component {
 
         return (
             <>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Read the latest news and views from Kibworth Osteopaths & Pilates." />
+                    <title>Blog | Kibworth Osteopaths & Pilates</title>
+                    <html lang="en"></html>
+                </Helmet>
                 <Title title="Blog" subtitle="The latest news and views from Kibworth Osteopaths & Pilates" />
                 <BreadcrumbBar currentPage="Blog" parentPages={[{name: "Home", path: "/"}]} />
                 <section className={ListingStyles.section}>

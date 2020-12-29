@@ -13,6 +13,7 @@ export default function CranialOsteopathy({ data }) {
         <>
             <Helmet>
                 <meta charSet="utf-8" />
+                <meat name="description" content="Cranial Osteopathy can help your baby with managing sickness, wind and feeding difficulties, as well as releasing strain and tension in the musculoskeletal system following birth." />
                 <title>Cranial Osteopathy | Kibworth Osteopaths & Pilates</title>
                 <html lang="en"></html>
             </Helmet>
