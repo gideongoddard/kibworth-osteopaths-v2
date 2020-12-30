@@ -1,0 +1,48 @@
+.section {
+    padding: 50px 0;
+    background-color: var(--neutral-200);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.profile {
+    box-shadow: var(--shadow-m);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.img {
+    max-width: 80%;
+    margin: auto;
+    border: 5px solid var(--primary-500);
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 800px) {
+    .profile {
+        padding: 40px;
+    }
+
+    .flexContainer {
+        display: flex;
+    }
+
+    .img {
+        width: 30%;
+    }
+
+    .txtContainer {
+        width: 70%;
+        margin-left: 50px;
+    }
+}
