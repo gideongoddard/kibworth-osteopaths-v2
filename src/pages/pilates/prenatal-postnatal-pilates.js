@@ -79,7 +79,7 @@ export default function PrenatalPostnatalPilates() {
                         <div className={PrePostStyles.txtContainer}>
                             <p>Classes cost £12 per class. To avoid disappointment, I request that participants ‘book their mat’ for a 6 week block (total payment for a 6 week block is £72).</p>
                             <p>If after 2 sessions you decide that Pilates is not for you, you will be refunded for the classes that have not been used. Classes missed for prolonged illness or injury are also refunded (2 or more).</p>
-                            <p>One-to-one classes are also available at £17.</p>
+                            <p>One-to-one classes are also available at £25.</p>
                             <p>If you think Pilates sounds like something you would like to try or if you have any questions, please get in touch.</p>
                         </div>
                     </div>
