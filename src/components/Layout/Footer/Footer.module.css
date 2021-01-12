@@ -30,9 +30,15 @@ footer {
 
 .accreditations {
     margin: 20px 0;
-    width: 270px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 125px 125px;
+    grid-gap: 15px;
+}
+
+.cepa {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
 }
 
 .copyright, .credit {

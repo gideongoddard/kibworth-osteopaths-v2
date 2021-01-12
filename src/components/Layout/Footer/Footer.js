@@ -50,12 +50,20 @@ export default function Footer() {
                                         }
                                     }
                                 }
+                                cepa: file(relativePath: {eq: "images/prestige-award.jpeg"}) {
+                                    childImageSharp {
+                                        fixed(width: 265, quality: 72) {
+                                            ...GatsbyImageSharpFixed
+                                        }
+                                    }
+                                }
                             }
                         `}
                         render={data => (
                             <div className={FooterStyles.accreditations}>
                                 <Img fixed={data.hfe.childImageSharp.fixed} alt="HFE endorsement" />
                                 <Img fixed={data.goc.childImageSharp.fixed} alt="General Osteopathic Council registration mark" />
+                                <Img className={FooterStyles.cepa} fixed={data.cepa.childImageSharp.fixed} alt="Osteopath of the Year logo" />
                             </div>
                         )}
                     />
