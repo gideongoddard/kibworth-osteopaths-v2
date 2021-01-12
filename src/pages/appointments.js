@@ -38,8 +38,8 @@ export default function Appointments() {
                     <div className={AppointmentsStyles.gridContainer}>
                         <Box heading="Osteopathy fees">
                             <div className={AppointmentsStyles.boxContentContainer}>
-                                <p>Adult appointments</p><p>£38</p>
-                                <p>Paediatric appointments</p><p>£30</p>
+                                <p>Adult appointments</p><p>£40</p>
+                                <p>Paediatric appointments</p><p>£32</p>
                             </div>
                         </Box>
                         <Box heading="Pilates fees">

@@ -22,7 +22,7 @@ export default function FAQ() {
         {
             id: 3,
             question: "How much does treatment cost?",
-            answer: <><p>Adult appointments are £38</p><p>Paediatric appointments are £30.</p></>,
+            answer: <><p>Adult appointments are £40</p><p>Paediatric appointments are £32.</p></>,
         },
         {
             id: 4,
