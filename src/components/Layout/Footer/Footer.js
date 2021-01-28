@@ -38,21 +38,28 @@ export default function Footer() {
                             query {
                                 hfe: file(relativePath: {eq: "images/hfe-endorsement.png"}) {
                                     childImageSharp {
-                                        fixed(width: 125, quality: 72) {
+                                        fixed(width: 85, quality: 72) {
                                             ...GatsbyImageSharpFixed
                                         }
                                     }
                                 }
                                 goc: file(relativePath: {eq: "images/Emily-Coombes-GOC-Logo.png"}) {
                                     childImageSharp {
-                                        fixed(width: 125, quality: 72) {
+                                        fixed(width: 85, quality: 72) {
                                             ...GatsbyImageSharpFixed
                                         }
                                     }
                                 }
                                 cepa: file(relativePath: {eq: "images/prestige-award.jpeg"}) {
                                     childImageSharp {
-                                        fixed(width: 265, quality: 72) {
+                                        fixed(width: 275, quality: 72) {
+                                            ...GatsbyImageSharpFixed
+                                        }
+                                    }
+                                }
+                                mhfa: file(relativePath: {eq: "images/mhfa.png"}) {
+                                    childImageSharp {
+                                        fixed(width: 85, quality: 72) {
                                             ...GatsbyImageSharpFixed
                                         }
                                     }
@@ -61,6 +68,7 @@ export default function Footer() {
                         `}
                         render={data => (
                             <div className={FooterStyles.accreditations}>
+                                <Img fixed={data.mhfa.childImageSharp.fixed} alt="MHFA England accreditation logo" />
                                 <Img fixed={data.hfe.childImageSharp.fixed} alt="HFE endorsement" />
                                 <Img fixed={data.goc.childImageSharp.fixed} alt="General Osteopathic Council registration mark" />
                                 <Img className={FooterStyles.cepa} fixed={data.cepa.childImageSharp.fixed} alt="Osteopath of the Year logo" />
