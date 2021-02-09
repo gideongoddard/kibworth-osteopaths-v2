@@ -33,7 +33,7 @@
 @media only screen and (min-width: 900px) {
     .section {
         display: grid;
-        grid-template-columns: 1fr 250px;
+        grid-template-columns: 1fr 300px;
         grid-gap: 0 50px;
     }
 

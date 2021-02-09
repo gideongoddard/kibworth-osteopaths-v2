@@ -115,6 +115,7 @@ a:hover {
   }
 
   .disclaimer {
+      margin-top: 40px;
       border-radius: 10px;
       padding: calc(20px + 2vw);
       background-color: var(--neutral-200);
