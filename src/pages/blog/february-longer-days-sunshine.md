@@ -6,7 +6,7 @@ featuredImage: ../../images/love-your-body.png
 
 Things continue to be tough and different for many, and whether you are continuing to work from home, balancing home schooling, or like me, at work with my children at school, you are all doing amazingly well.
  
-Since my last Blog, I have become a qualified mental health first aider, this is as important because your mental health is as important as your physical health (in fact mental health and physical health are intertwined).
+Since my last Blog, I have become a qualified mental health first aider, this is important because your mental health is as important as your physical health (in fact mental health and physical health are intertwined).
  
 February has also been the month to celebrate all things LOVE and never has it been more important to value those near and dear to us. I passionately believe that any love must first begin with looking after ourselves, mentally as I mentioned above, and physically in how we pay attention to our own body.
  
