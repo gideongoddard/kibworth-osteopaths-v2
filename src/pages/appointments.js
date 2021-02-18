@@ -46,7 +46,7 @@ export default function Appointments() {
                             <div className={AppointmentsStyles.boxContentContainer}>
                                 <p>6 x 1hr group class</p><p>£53.40</p>
                                 <p className={AppointmentsStyles.lowContrast}><em>Cost per group class</em></p><p className={AppointmentsStyles.lowContrast}><em>£8.90</em></p>
-                                <p>1hr one-to-one class</p><p>£25</p>
+                                <p>1hr one-to-one class</p><p>£35</p>
                             </div>
                         </Box>
                     </div>
