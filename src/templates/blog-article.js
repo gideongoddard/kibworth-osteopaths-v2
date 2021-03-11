@@ -14,8 +14,21 @@ export default function Article({ data }) {
         <>
             <Helmet>
                 <meta charSet="utf-8" />
-                <meta name="description" content={article.excerpt} />
                 <title>{article.frontmatter.title} | Kibworth Osteopaths & Pilates</title>
+                <meta name="description" content={article.excerpt} />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={`https://kibworthosteopaths.co.uk${article.fields.slug}`} />
+                <meta property="og:title" content={`${article.frontmatter.title} | Kibworth Osteopaths & Pilates`} />
+                <meta property="og:description" content={article.excerpt} />
+                <meta property="og:image" content={article.frontmatter.featuredImage.childImageSharp.fluid} />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content={`https://kibworthosteopaths.co.uk${article.fields.slug}`} />
+                <meta name="twitter:title" content={`${article.frontmatter.title} | Kibworth Osteopaths & Pilates`} />
+                <meta name="twitter:description" content={article.excerpt} />
+                <meta name="twitter:image" content={article.frontmatter.featuredImage.childImageSharp.fluid} />
+
                 <html lang="en"></html>
             </Helmet>
             <Title title={article.frontmatter.title} subtitle={article.frontmatter.date} />
@@ -52,6 +65,9 @@ export const query = graphql`
                         }
                     }
                 }
+            }
+            fields {
+                slug
             }
             excerpt
         }
