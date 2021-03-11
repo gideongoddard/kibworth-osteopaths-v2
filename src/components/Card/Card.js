@@ -7,8 +7,10 @@ import { Link } from "gatsby"
 export default function Card(props) {
     return (
         <div className={CardStyles.card}>
-            <Img className={CardStyles.cardImg} fluid={props.imgSrc} alt={props.imgAlt} />
-            <div className={CardStyles.txtContainer}>
+            <Link to={props.linkTo}>
+                <Img className={CardStyles.cardImg} fluid={props.imgSrc} alt={props.imgAlt} />
+            </Link>
+              <div className={CardStyles.txtContainer}>
                 <h3>{props.heading}</h3>
                 <p>{props.description}</p>
                 {

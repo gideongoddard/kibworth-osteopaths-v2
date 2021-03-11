@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import ListingStyles from "./article-list.module.css"
 import { Helmet } from "react-helmet"
 import Title from "../components/Title/Title"
@@ -33,6 +33,13 @@ export default class Blog extends React.Component {
                                 linkTo={node.fields.slug}
                                 linkText="Read article"
                             />
+                        ))}
+                    </div>
+                    <div className={ListingStyles.pagination} style={{display: numPages > 1 ? 'block' : 'none'}}>
+                        {Array.from({ length: numPages }, (_, i) => (
+                            <Link key={`pagination-number${i + 1}`} to={`/blog/${i === 0 ? "" : i + 1}`}>
+                                {i + 1}
+                            </Link>
                         ))}
                     </div>
                 </section>
