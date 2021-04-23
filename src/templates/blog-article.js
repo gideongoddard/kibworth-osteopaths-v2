@@ -21,7 +21,7 @@ export default function Article({ data }) {
                 <meta property="og:url" content={`https://kibworthosteopaths.co.uk${article.fields.slug}`} />
                 <meta property="og:title" content={`${article.frontmatter.title} | Kibworth Osteopaths & Pilates`} />
                 <meta property="og:description" content={article.excerpt} />
-                <meta property="og:image" content={featuredImgFluid} />
+                <meta property="og:image" content={`https://kibworthosteopaths.co.uk${article.frontmatter.featuredImage}`} />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:url" content={`https://kibworthosteopaths.co.uk${article.fields.slug}`} />
