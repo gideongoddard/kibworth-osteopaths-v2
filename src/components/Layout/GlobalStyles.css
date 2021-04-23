@@ -121,3 +121,14 @@ a:hover {
       background-color: var(--neutral-200);
       font-size: var(--type-xxs);
   }
+
+  .callout {
+      margin: 24px 0;
+      font-size: var(--type-s);
+      font-weight: 500;
+      background-color: var(--primary-100);
+      border: 2px solid var(--primary-300);
+      border-radius: 10px;
+      color: var(--primary-800);
+      padding: 1.2em;
+  }

@@ -27,7 +27,7 @@ export default function Article({ data }) {
                 <meta name="twitter:url" content={`https://kibworthosteopaths.co.uk${article.fields.slug}`} />
                 <meta name="twitter:title" content={`${article.frontmatter.title} | Kibworth Osteopaths & Pilates`} />
                 <meta name="twitter:description" content={article.excerpt} />
-                <meta name="twitter:image" content={featuredImgFluid} />
+                <meta name="twitter:image" content={`https://kibworthosteopaths.co.uk${article.frontmatter.featuredImage}`} />
 
                 <html lang="en"></html>
             </Helmet>
