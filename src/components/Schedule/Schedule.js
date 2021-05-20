@@ -12,10 +12,9 @@ export default function Schedule(props) {
                 props.type === "Pilates" ? (
                     <>
                         <div className={ScheduleStyles.dayTime}>
-                            <p className={ScheduleStyles.day}>Tuesdays:</p><p className={ScheduleStyles.time}>08:00 - 09:00</p>
-                            <p className={ScheduleStyles.day}>Thursdays:</p><p className={ScheduleStyles.time}>18:00 - 19:00 & 19:15 - 20:15</p>
+                            <p className={ScheduleStyles.day}>Tuesdays:</p><p className={ScheduleStyles.time}>08:00 - 09:00 @ Tur Langton Village Hall</p>
+                            <p className={ScheduleStyles.day}>Thursdays:</p><p className={ScheduleStyles.time}>18:00 - 19:00 @ Foxton Village Hall</p>
                         </div>
-                        <p>Pilates classes will be on Zoom until further notice.</p>
                         <p>Individual tuition is also available. Please get in touch by phone or email to make arrangements.</p>
                     </>
                 ) : (
