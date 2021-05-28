@@ -17,6 +17,54 @@ export default function Home({ data }) {
         <meta name="description" content="Kibworth Osteopaths & Pilates offer Osteopathy treatment and Pilates instruction to provide you with the best recovery, rehabilitation and management for a range of injuries and conditions." />
         <title>Kibworth Osteopaths & Pilates | Leicestershire</title>
         <html lang="en"></html>
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Kibworth Osteopaths & Pilates",
+              "image": "https://kibworthosteopaths.co.uk/static/60b6d0dc5ba941f2b537b952625ffbcd/afb0f/emily-skeleton-color.jpg",
+              "@id": "",
+              "url": "https://kibworthosteopaths.co.uk",
+              "telephone": "07761664325",
+              "priceRange": "£8.90 - £40",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Unit 17, The Manor, Main Street",
+                "addressLocality": "Tur Langton",
+                "postalCode": "LE8 0PJ",
+                "addressCountry": "GB"
+              },
+              "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Monday",
+                "opens": "08:00",
+                "closes": "18:00"
+              },{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Tuesday",
+                "opens": "08:00",
+                "closes": "20:00"
+              },{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Wednesday",
+                "opens": "09:30",
+                "closes": "14:30"
+              },{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Thursday",
+                "opens": "18:00",
+                "closes": "19:00"
+              },{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Friday",
+                "opens": "08:00",
+                "closes": "14:30"
+              }] 
+            }
+          `}
+        </script>
       </Helmet>
       <AlertBar>
         <a href="https://youtu.be/n1K2m3bwL7g" target="_blank" rel="noopener noreferrer"><strong>WATCH:</strong> What to expect from your Osteopathic appointment during COVID-19</a>
