@@ -72,8 +72,8 @@ export default function Header() {
                         </div>
                         <Link className={HeaderStyles.navItem} to="/about">About</Link>
                         <Link className={HeaderStyles.navItem} to="/faq">FAQ</Link>
-                        <Link className={HeaderStyles.navItem} to="/appointments">Appointments</Link>
                         <Link className={HeaderStyles.navItem} to="/blog">Blog</Link>
+                        <Link className={`${HeaderStyles.navItem} ${HeaderStyles.navButton}`} to="/appointments">Book Now</Link>
                     </nav>
                 </div>
             </div>

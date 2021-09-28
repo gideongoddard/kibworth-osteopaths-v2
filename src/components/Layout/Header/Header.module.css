@@ -135,9 +135,18 @@ nav {
         background-color: var(--primary-300);
     }
 
+    .navButton {
+        background-color: var(--primary-600);
+        color: white;
+    }
+
     .navItem:hover, .subNavItem:hover {
         color: var(--neutral-900);
         text-decoration: underline;
+    }
+
+    .navButton:hover {
+        color: white;
     }
 
     .subNavItem {
@@ -175,6 +184,22 @@ nav {
 
     .navItem {
         padding: 40px 5px;
+    }
+
+    .navButton {
+        padding: 13px 20px;
+        border-radius: 10px;
+        background-color: var(--primary-600);
+        color: white;
+        text-transform: uppercase;
+        box-shadow: var(--shadow-s);
+        transition: 300ms;
+    }
+
+    .navButton:hover {
+        color: white;
+        box-shadow: var(--shadow-xs);
+        background-color: var(--primary-500);
     }
 
     .subNavItem {

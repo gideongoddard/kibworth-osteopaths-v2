@@ -7,6 +7,7 @@ import Button from "../components/Button/Button"
 import Testimonial from "../components/Testimonial/Testimonial"
 import AppointmentsStyles from "./appointments.module.css"
 import Map from "../components/Map/Map"
+import OnlineBooking from "../components/OnlineBooking/OnlineBooking"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { Helmet } from "react-helmet"
 
@@ -21,8 +22,10 @@ export default function Appointments() {
                 <title>Make a booking | Kibworth Osteopaths & Pilates</title>
                 <html lang="en"></html>
             </Helmet>
-            <Title title="Appointments" />
+            <Title title="Make a booking" />
             <BreadcrumbBar currentPage="Appointments" parentPages={parentPages} />
+            <OnlineBooking />
+            <Testimonial quote="I wish I could give more than 5 stars. I can't recommend Emily enough. She's seen both my children and with my daughter she cured her colic within 4 sessions, with me seeing a massive difference from session 1. Emily listens to everything and is thoroughly understanding of your feelings as a parent and never makes you feel that your ideas are not important. She is fantastic!" />
             <section className={AppointmentsStyles.section}>
                 <div className={AppointmentsStyles.container}>
                     <h2>Appointment & class times</h2>
@@ -92,7 +95,6 @@ export default function Appointments() {
                     </div>
                 </div>
             </section>
-            <Testimonial quote="I wish I could give more than 5 stars. I can't recommend Emily enough. She's seen both my children and with my daughter she cured her colic within 4 sessions, with me seeing a massive difference from session 1. Emily listens to everything and is thoroughly understanding of your feelings as a parent and never makes you feel that your ideas are not important. She is fantastic!" />
         </>
     )
 }
