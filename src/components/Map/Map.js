@@ -29,7 +29,6 @@ export default function Map(props) {
                 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3oKr-gZDywgtyt2vpGhrQ3s1HqjcT-M4&callback=initMap"></script>
             </Helmet>
             <div id="map" style={{ height: props.height, width: '100%'}}></div>
-            <script></script>
         </section>
     )
 }
