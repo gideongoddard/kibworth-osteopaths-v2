@@ -9,7 +9,7 @@ export default function Bookings() {
     return (
         <section className={BookingsStyles.section}>
             <h2>Make a booking</h2>
-            <p><Link to="/appointments">Book online here</Link> or your can get in touch via phone or email. Details of appointment and class times are below.</p>
+            <p className={BookingsStyles.subheading}><Link to="/appointments">Book online here</Link> or your can get in touch via phone or email. Details of appointment and class times are below.</p>
             <div className={BookingsStyles.container}>
                 <div className={BookingsStyles.gridContainer}>
                     <Schedule type="Osteopathy" displayHeading={true} />

@@ -22,7 +22,7 @@ export default function FAQ() {
         {
             id: 3,
             question: "How much does treatment cost?",
-            answer: <><p>Adult appointments are £40</p><p>Paediatric appointments are £32.</p></>,
+            answer: <><p>For adults, new patient appointments are £55, with continuation appointments costing £45.</p><p>For children, new patient appointments are £40, with continuation appointments costing £35.</p></>,
         },
         {
             id: 4,

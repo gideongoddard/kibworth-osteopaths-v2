@@ -12,12 +12,18 @@
     text-align: center;
 }
 
+.osteoContentContainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
 .boxContentContainer {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.boxContentContainer p {
+.boxContentContainer p, .osteoContentContainer p {
     margin: 5px 0;
 }
 
