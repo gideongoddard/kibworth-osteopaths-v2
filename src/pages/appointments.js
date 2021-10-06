@@ -40,10 +40,9 @@ export default function Appointments() {
                     <h2>Fees</h2>
                     <div className={AppointmentsStyles.gridContainer}>
                         <Box heading="Osteopathy fees">
-                            <div className={AppointmentsStyles.osteoContentContainer}>
-                                <p style={{gridColumnStart: 2, fontWeight: 700}}>Adult</p><p style={{fontWeight: 700}}>Child</p>
-                                <p>New patient appointment</p><p>£55</p><p>£40</p>
-                                <p>Continuation appointments</p><p>£45</p><p>£35</p>
+                            <div className={AppointmentsStyles.boxContentContainer}>
+                                <p>New patient appointment</p><p>£60</p>
+                                <p>Continuation appointments</p><p>£45</p>
                             </div>
                         </Box>
                         <Box heading="Pilates fees">
