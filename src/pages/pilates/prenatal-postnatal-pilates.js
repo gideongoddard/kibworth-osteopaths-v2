@@ -71,7 +71,7 @@ export default function PrenatalPostnatalPilates() {
                     <h2>Classes</h2>
                     <p>Pilates classes for pre/post natal clients are specially designed by Emily, so you know you are in a safe, controlled environment. Classes are limited to 8 participants, so booking is essential. Before you can start the classes, you must attend a free meeting with Emily to complete medical forms to ensure you are safe to do the classes.</p>
                     <p>These classes have also proved to be an opportunity for mums to connect with each other, helping form a community network of support and friendship.</p>
-                    <p>Classes are either held at The Fitness Box @ The Manor in Tur Langton or at the Market Harborough Congregational Church.</p>
+                    <p>Classes are either held at Tur Langton Village Hall or at Foxton Village Hall.</p>
                 </div>
                 <div className={PrePostStyles.container}>
                     <div className={PrePostStyles.gridContainer}>

@@ -59,7 +59,7 @@ export default function Pilates({ data }) {
             <section className={PilatesStyles.section}>
                 <div className={PilatesStyles.narrowContainer}>
                     <h2>Classes</h2>
-                    <p>Classes are either held at The Fitness Box @ The Manor in Tur Langton or at the Market Harborough Congregational Church.</p>
+                    <p>Classes are either held at Tur Langton Village Hall or at Foxton Village Hall.</p>
                 </div>
                 <div className={PilatesStyles.container}>
                     <div className={PilatesStyles.gridContainer}>
