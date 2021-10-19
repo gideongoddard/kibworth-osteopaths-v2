@@ -7,13 +7,12 @@ export default function Schedule(props) {
             {
                 props.displayHeading === true ? (<h3>{props.type}</h3>) : (<></>)
             }
-            <p>{props.type === "Pilates" ? "Classes" : "Appointments"} are held at the following times:</p>
+            <p>{props.type === "Pilates" ? "Classes" : "Appointments"} are currently held at the following times:</p>
             {
                 props.type === "Pilates" ? (
                     <>
                         <div className={ScheduleStyles.dayTime}>
                             <p className={ScheduleStyles.day}>Tuesdays:</p><p className={ScheduleStyles.time}>08:00 - 09:00 @ Tur Langton Village Hall</p>
-                            <p className={ScheduleStyles.day}>Thursdays:</p><p className={ScheduleStyles.time}>18:00 - 19:00 @ Foxton Village Hall</p>
                         </div>
                         <p>Individual tuition is also available. Please get in touch by phone or email to make arrangements.</p>
                     </>

@@ -71,14 +71,13 @@ export default function PrenatalPostnatalPilates() {
                     <h2>Classes</h2>
                     <p>Pilates classes for pre/post natal clients are specially designed by Emily, so you know you are in a safe, controlled environment. Classes are limited to 8 participants, so booking is essential. Before you can start the classes, you must attend a free meeting with Emily to complete medical forms to ensure you are safe to do the classes.</p>
                     <p>These classes have also proved to be an opportunity for mums to connect with each other, helping form a community network of support and friendship.</p>
-                    <p>Classes are either held at Tur Langton Village Hall or at Foxton Village Hall.</p>
+                    <p>Group classes are held at Tur Langton Village Hall.</p>
                 </div>
                 <div className={PrePostStyles.container}>
                     <div className={PrePostStyles.gridContainer}>
                         <Schedule type="Pilates" displayHeading={false} />
                         <div className={PrePostStyles.txtContainer}>
                             <p>Classes cost £12 per class. To avoid disappointment, I request that participants ‘book their mat’ for a 6 week block (total payment for a 6 week block is £72).</p>
-                            <p>If after 2 sessions you decide that Pilates is not for you, you will be refunded for the classes that have not been used. Classes missed for prolonged illness or injury are also refunded (2 or more).</p>
                             <p>One-to-one classes are also available at £35.</p>
                             <p>If you think Pilates sounds like something you would like to try or if you have any questions, please get in touch.</p>
                         </div>

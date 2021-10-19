@@ -59,14 +59,14 @@ export default function Pilates({ data }) {
             <section className={PilatesStyles.section}>
                 <div className={PilatesStyles.narrowContainer}>
                     <h2>Classes</h2>
-                    <p>Classes are either held at Tur Langton Village Hall or at Foxton Village Hall.</p>
+                    <p>Group Pilates classes are held at Tur Langton Village Hall.</p>
                 </div>
                 <div className={PilatesStyles.container}>
                     <div className={PilatesStyles.gridContainer}>
                         <Schedule type="Pilates" displayHeading={false} />
                         <div className={PilatesStyles.txtContainer}>
                             <p>Class sizes are 8 participants per class, and cost £12 per class. One-to-one classes are also available at £35.</p>
-                            <p>To avoid disappointment, I request that participants ‘book their mat’ for a 6 week block (total payment for a 6 week block is £72). However, if after 2 sessions you decide that Pilates is not for you, you will be refunded for the classes that have not been used. Classes missed for prolonged illness or injury are also refunded (2 or more).</p>
+                            <p>To avoid disappointment, I request that participants ‘book their mat’ for a 6 week block (total payment for a 6 week block is £72).</p>
                             <p>If you think Pilates sounds like something you would like to try or if you have any questions, please get in touch.</p>
                         </div>
                     </div>

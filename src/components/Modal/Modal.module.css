@@ -17,6 +17,8 @@
     max-width: 1000px;
     margin: calc(10px + 5vw) auto;
     border-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
 }
 
 .modalHeader {

@@ -28,7 +28,7 @@ class Modal extends React.Component {
                             <StaticQuery
                                 query={graphql`
                                     query {
-                                        file(relativePath: {eq: "images/osteos-are-open.jpeg"}) {
+                                        file(relativePath: {eq: "images/osteos-are-open.png"}) {
                                             childImageSharp {
                                                 fluid(maxWidth: 750, quality: 72) {
                                                     ...GatsbyImageSharpFluid
