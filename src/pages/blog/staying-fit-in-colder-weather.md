@@ -1,5 +1,5 @@
 ---
-title: Staying Fit in Colder Weather
+title: Staying fit in colder weather
 date: 2021-09-30
 featuredImage: ../../images/winter-run.jpg
 ---

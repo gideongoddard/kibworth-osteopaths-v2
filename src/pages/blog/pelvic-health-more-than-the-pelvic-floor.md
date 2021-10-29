@@ -1,5 +1,5 @@
 ---
-title: Pelvic Health - More than the pelvic floor
+title: Pelvic health - More than the pelvic floor
 date: 2021-04-23
 featuredImage: ../../images/glutes-stretch.jpg
 ---

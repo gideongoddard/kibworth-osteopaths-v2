@@ -1,5 +1,5 @@
 ---
-title: "Keeping your Physical Health a number ONE priority when at work!"
+title: "Keeping your physical health a number ONE priority when at work!"
 date: "2020-12-23"
 featuredImage: ../../images/head-and-neck.jpg
 ---

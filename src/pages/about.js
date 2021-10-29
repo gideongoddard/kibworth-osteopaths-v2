@@ -4,9 +4,7 @@ import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import TxtImg from "../components/TxtImg/TxtImg"
 import { graphql } from "gatsby"
 import Testimonial from "../components/Testimonial/Testimonial"
-import AboutStyles from "./about.module.css"
 import Bookings from "../components/Bookings/Bookings"
-import Team from "../components/Team/Team"
 import { Helmet } from "react-helmet"
 
 export default function About({ data }) {
