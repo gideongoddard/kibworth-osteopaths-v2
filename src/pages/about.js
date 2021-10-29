@@ -29,7 +29,12 @@ export default function About({ data }) {
                 <p><strong>- Emily Coombes (B'Ost Registered Osteopath)</strong></p>
             </TxtImg>
             <Testimonial quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
-            <Team />
+            <TxtImg reverse={true} imgSrc={data.emilySunset.childImageSharp.fluid} imgAlt="Emily with her husband at sunset">
+                <p>I can honestly say I love my job, and no two days are ever the same, I remember in one day my youngest patient was 9 days old, and the oldest was 99 years old! It is a privilege when people say 'help', and I understand that this can take courage, and requires trust in me.</p>
+                <p>I enjoy working out what somebody has done injury-wise, and I am passionate about rehabilitation as well as injury prevention. This is why in 2019 I trained with HFE to become a Pilates instructor, and qualified in 2020 as a Pre/Post natal Pilates instructor.</p>
+                <p>I am blessed to be married to my best friend who is superman to me. In 2011 we began the greatest adventure, I had our son, closely followed by our daughter in 2012. Being a parent opened my eyes to a new world, which is when I trained in Cranial Osteopathy, as well as learning a huge amount about treating pregnant patients.</p>
+                <p>In my spare time, I am either outside with my family and dogs, walking or camping, or I am curled up with a book and my cat!</p>
+            </TxtImg>
             <Bookings />
         </>
     )
