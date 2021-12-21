@@ -42,12 +42,12 @@ export default function Team() {
                             img={data.emily.childImageSharp.fluid}
                             alt="Emily"
                             name="Emily"
-                            para1="Emily had over a decade of experience as an Osteopath before opening Kibworth Osteopaths & Pilates. She enjoys working out what somebody has done injury-wise, and is passionate about rehabilitation as well as injury prevention."
-                            para2="This is why in 2019, Emily trained with HFE to become a Pilates instructor, and qualified in 2020 as a Pre/Post natal Pilates instructor."
+                            para1="Emily is the practice principal and owner of Kibworth Osteopaths and Pilates, and enjoys the variety of patients that she sees in general practice."
+                            para2="Emily qualified as an Osteopath in 2009 from the University College of Osteopathy (formerly the British School of Osteopathy) and worked in Leicester and Desborough in well established, busy practices."
                         >
-                            <p>Emily can honestly say she loves her job. No two days are ever the same - one day her youngest patient was 9 days old, and the oldest was 99 years old! Emily finds it a privilege when people say 'help', as she understands that this can take courage, and requires trust in her.</p>
-                            <p>Emily is married to her best friend who is superman to her. In 2011 they began their greatest adventure when she had their son, closely followed by their daughter in 2012. Being a parent opened her eyes to a new world, which is when she trained in Cranial Osteopathy, as well as learning a huge amount about treating pregnant patients.</p>
-                            <p>In her spare time, Emily is either outside with her family and dogs, walking or camping, or she is curled up with a book and her cat!</p>
+                            <p>In 2017 Emily opened Kibworth Osteopaths, growing it into Kibworth Osteopaths and Pilates in 2019 upon qualifying as a Pilates instructor. Since qualifying as an Osteopath Emily has gained skills through post graduate training in kinesiology taping, Cranial Osteopathy, and Mental Health First Aid to highlight a few.</p>
+                            <p>Emily enjoys seeing patients through the whole recovery process, building relationships with her patients, and seeing the benefits of Osteopathy in action. Emily says <em>“Recovery from any injury is a journey. Walking the road of recovery with every single patient I treat is a privilege, and I aim to provide my patients with the best care, treatments and advice possible”</em>.</p>
+                            <p>Emily is a member of the Institute of Osteopathy (IO) and is registered with the General Osteopathic Council.</p>
                         </Profile>
                         </>
                     )}

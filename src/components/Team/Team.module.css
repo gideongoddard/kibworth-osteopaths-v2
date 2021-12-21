@@ -35,10 +35,11 @@
 
     .flexContainer {
         display: flex;
+        align-items: flex-end;
     }
 
     .img {
-        width: 30%;
+        width: 25%;
     }
 
     .txtContainer {

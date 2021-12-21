@@ -6,6 +6,7 @@ import { graphql } from "gatsby"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Bookings from "../components/Bookings/Bookings"
 import { Helmet } from "react-helmet"
+import Team from "../components/Team/Team"
 
 export default function About({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
@@ -20,19 +21,11 @@ export default function About({ data }) {
             <Title title="About us" />
             <BreadcrumbBar currentPage="About us" parentPages={parentPages} />
             <TxtImg imgSrc={data.emilySkeleton.childImageSharp.fluid} imgAlt="Emily standing with a skeleton" imgRotate={true}>
-                <h4>Hello, and thank you for visiting the website!</h4>
-                <p>I qualified as an Osteopath in 2009 from the University College of Osteopathy (formerly the Brisitsh School of Osteopathy) and immediately began to work in Leicester in a well established practice, under experienced Osteopaths.</p>
-                <p>I worked there for 11 years, and learned invaluable skills, adding to those gained on my degree. In 2017 I decided it was time to spread my wings, so, I opened Kibworth Osteopaths & Pilates at the Kibworth Medical Centre.</p>
-                <p>The practice has is now located just a few minutes away at The Manor in Tur Langton, which provides a dedicated space just for my patients.</p>
-                <p><strong>- Emily Coombes (B'Ost Registered Osteopath)</strong></p>
+                <h4>Kibworth Osteopaths and Pilates is a friendly and vibrant practice which is committed to providing the best care for our patients. We always take the time to listen to you, and your body.</h4>
+                <p>We provide safe and effective hands on treatments, working alongside the natural healing processes our amazing body has. We support you through the recovery process step by step, providing top-quality and tailored advice including rehabilitation exercises that are updated as you improve.</p>
             </TxtImg>
             <Testimonial quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
-            <TxtImg reverse={true} imgSrc={data.emilySunset.childImageSharp.fluid} imgAlt="Emily with her husband at sunset">
-                <p>I can honestly say I love my job, and no two days are ever the same, I remember in one day my youngest patient was 9 days old, and the oldest was 99 years old! It is a privilege when people say 'help', and I understand that this can take courage, and requires trust in me.</p>
-                <p>I enjoy working out what somebody has done injury-wise, and I am passionate about rehabilitation as well as injury prevention. This is why in 2019 I trained with HFE to become a Pilates instructor, and qualified in 2020 as a Pre/Post natal Pilates instructor.</p>
-                <p>I am blessed to be married to my best friend who is superman to me. In 2011 we began the greatest adventure, I had our son, closely followed by our daughter in 2012. Being a parent opened my eyes to a new world, which is when I trained in Cranial Osteopathy, as well as learning a huge amount about treating pregnant patients.</p>
-                <p>In my spare time, I am either outside with my family and dogs, walking or camping, or I am curled up with a book and my cat!</p>
-            </TxtImg>
+            <Team />
             <Bookings />
         </>
     )
