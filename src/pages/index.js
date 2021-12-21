@@ -74,8 +74,9 @@ export default function Home({ data }) {
       </section>
       <TxtImg imgSrc={data.neckTreatment.childImageSharp.fluid} imgAlt="Patient receiving neck treatment">
         <h2>What is Osteopathy?</h2>
-        <p>Osteopathic treatment focuses on the musculoskeletal system. All treatments are based on a carefully derived diagnosis which is in turn based on a thorough case history and examination.</p>
-        <p>Treatment is tailored to each individual patient, using a combination of soft-tissue release work, specific joint mobilisation techniques and much more. Advice on self-help is provided to help keep the recovery process active to help prevent the injury reoccurring or keep long term issues manageable.</p>
+        <p>Osteopathy is a primary health care service, and is suitable for most people of any age. Osteopathic treatment mainly focuses on relieving pain in the musculoskeletal system (joints, muscles, ligaments, tendons) that may have occurred as a result of injury, trauma, age, or repetitive postural issues to name a few.  All treatments are based on a carefully derived diagnosis which is based on a thorough case history and examination.</p>
+        <p>Key to Osteopathy is that the body works as a whole unit - no part of the body works alone. Relevant occupational, environmental and psychosocial factors are always considered when we make our diagnosis.</p>
+        <p>Treatment is tailored to each individual patient, using a combination of safe and effective hands-on techniques to work with the body’s natural self healing mechanisms.</p>
         <Button to="/osteopathy" type="primary" contact={false}>About Osteopathy</Button>
       </TxtImg>
       <TxtImg backgroundColor="var(--neutral-200)" imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily Coombes, Osteopath" imgRotate={true} reverse={true} heading="Emily Coombes (B'Ost Registered Osteopath)">
@@ -124,7 +125,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    neckTreatment: file(relativePath: {eq: "images/neck-treatment.jpg"}) {
+    neckTreatment: file(relativePath: {eq: "images/neck-treatment-tall.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid
