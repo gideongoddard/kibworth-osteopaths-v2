@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import FAQStyles from "./faq.module.css"
@@ -77,7 +78,7 @@ export default function FAQ() {
     ]
 
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="We have the answers to your frequently asked questions about seeing an Osteopath." />
@@ -102,6 +103,6 @@ export default function FAQ() {
                     }
                 </div>
             </section>    
-        </>
+        </Layout>
     )
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import Schedule from "../components/Schedule/Schedule"
@@ -15,7 +16,7 @@ export default function Appointments() {
     const parentPages = [{name: "Home", path: "/"}]
     
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Make an appointment with an Osteopath or book your Pilates classes." />
@@ -95,6 +96,6 @@ export default function Appointments() {
                     </div>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }

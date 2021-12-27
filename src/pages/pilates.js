@@ -1,6 +1,7 @@
 import { graphql } from "gatsby"
 import React from "react"
 import PilatesStyles from "./pilates.module.css"
+import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import Banner from "../images/pilates-banner.jpg"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
@@ -14,7 +15,7 @@ import { Helmet } from "react-helmet"
 export default function Pilates({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Regular Pilates can help reduce injury risk, enhance core stability, increase strength and improve posture, flexibility & balance." />
@@ -88,7 +89,7 @@ export default function Pilates({ data }) {
                         </div>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }
 

@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import TxtImg from "../components/TxtImg/TxtImg"
@@ -11,7 +12,7 @@ import Team from "../components/Team/Team"
 export default function About({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Kibworth Osteopaths & Pilates was founded in 2017 by Emily Coombes, an experienced Osteopath who is passionate about helping people with injury prevention & rehabilitation." />
@@ -27,7 +28,7 @@ export default function About({ data }) {
             <Testimonial quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
             <Team />
             <Bookings />
-        </>
+        </Layout>
     )
 }
 

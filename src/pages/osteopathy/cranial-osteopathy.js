@@ -1,5 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import CranialStyles from "./cranial-osteopathy.module.css"
@@ -10,7 +11,7 @@ export default function CranialOsteopathy({ data }) {
     const parentPages = [{name: "Home", path: "/"}, {name: "Osteopathy", path: "/osteopathy"}]
 
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meat name="description" content="Cranial Osteopathy can help your baby with managing sickness, wind and feeding difficulties, as well as releasing strain and tension in the musculoskeletal system following birth." />
@@ -35,7 +36,7 @@ export default function CranialOsteopathy({ data }) {
                     <p>Here at Kibworth Osteopaths & Pilates, as with adult patients, a full paediatric case history is always taken, (this helps us establish if there are any other reasons for the baby’s symptoms, i.e. lactose intolerance/cow’s milk protein allergy) and paediatric tests are always conducted, for example checking for tongue-tie. Doing these things ensures that no referral is needed to the doctor.</p>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }
 

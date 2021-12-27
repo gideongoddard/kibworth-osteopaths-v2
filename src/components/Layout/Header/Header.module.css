@@ -1,6 +1,6 @@
 .contactBar {
     height: 50px;
-    background-color: var(--neutral-200);
+    background-color: var(--neutral-100);
     z-index: 6;
 }
 
@@ -76,7 +76,7 @@ nav {
 
 .navItem, .subNavItem {
     text-decoration: none;
-    color: var(--neutral-800);
+    color: var(--neutral-700);
     padding: 15px 5px;
     margin-left: 15px;
 }

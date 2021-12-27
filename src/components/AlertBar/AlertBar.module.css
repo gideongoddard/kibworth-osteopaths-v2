@@ -1,6 +1,6 @@
 .wrapper {
     min-height: 50px;
-    background-color: var(--accent-red-500);
+    background-color: var(--secondary-500);
     color: white;
 }
 

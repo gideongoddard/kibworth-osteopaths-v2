@@ -1,7 +1,7 @@
 .wrapper {
     height: 50px;
-    background-color: var(--primary-600);
-    color: white;
+    background-color: var(--neutral-700);
+    color: var(--neutral-50);
 }
 
 .content {
@@ -15,7 +15,7 @@
 }
 
 .content a {
-    color: white;
+    color: var(--neutral-50);
 }
 
 .separator {

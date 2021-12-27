@@ -1,12 +1,12 @@
 .contentsBox {
-    background-color: var(--primary-200);
+    background-color: var(--primary-100);
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: var(--shadow-s);
 }
 
 .contentsBoxHeading {
-    background-color: var(--primary-600);
+    background-color: var(--primary-500);
     color: white;
     padding: 10px 15px;
     border-radius: 10px 10px 0 0;
@@ -46,5 +46,5 @@
 
 .contentsBoxBody a:hover {
     text-decoration: none;
-    background-color: var(--primary-100);
+    background-color: var(--primary-50);
 }

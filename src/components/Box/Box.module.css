@@ -2,12 +2,12 @@
     box-shadow: var(--shadow-s);
     border-radius: 10px;
     margin-bottom: 30px;
-    background-color: var(--primary-200);
+    background-color: var(--primary-100);
     width: 100%;
 }
 
 .heading {
-    background-color: var(--primary-600);
+    background-color: var(--primary-500);
     color: white;
     padding: 10px 15px;
     border-radius: 10px 10px 0 0;
@@ -19,7 +19,7 @@
 }
 
 .body {
-    background-color: var(--primary-200);
+    background-color: var(--primary-100);
     color: var(--primary-900);
     padding: 10px 15px;
     border-radius: 0 0 10px 10px;

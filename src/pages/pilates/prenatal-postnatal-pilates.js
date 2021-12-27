@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import PrePostStyles from "./prenatal-postnatal-pilates.module.css"
@@ -12,7 +13,7 @@ import { Helmet } from "react-helmet"
 export default function PrenatalPostnatalPilates() {
     const parentPages = [{name: "Home", path: "/"}, {name: "Pilates", path: "/pilates"}]
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Book our prenatal & postnatal pilates classes to get the benefit of our in-depth understanding of recovering from birth and the physical demands of caring for a newborn." />
@@ -100,6 +101,6 @@ export default function PrenatalPostnatalPilates() {
                     </div>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }

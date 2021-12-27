@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import ExpectStyles from "./what-to-expect.module.css"
@@ -9,7 +10,7 @@ export default function WhatToExpect() {
     const parentPages = [{name: "Home", path: "/"}, {name: "Osteopathy", path: "/osteopathy"}]
 
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Find out what to expect and how we'll ensure the best care for you when you book an Osteopathy appointment with us." />
@@ -43,6 +44,6 @@ export default function WhatToExpect() {
                     </Box>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import Banner from "../images/neck-treatment-banner.jpg"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
@@ -13,7 +14,7 @@ import { Helmet } from "react-helmet"
 export default function Osteopathy({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Osteopathy looks at the often complex relationships between the different physical structures of the body in order to understand why injury or pain has occured and how to aid recovery." />
@@ -75,7 +76,7 @@ export default function Osteopathy({ data }) {
                     </Cards>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }
 

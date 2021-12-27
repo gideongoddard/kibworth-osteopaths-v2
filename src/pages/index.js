@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
+import Layout from "../components/Layout/Layout"
 import AlertBar from "../components/AlertBar/AlertBar"
 import HomeStyles from "./index.module.css"
 import TxtImg from "../components/TxtImg/TxtImg"
@@ -11,7 +12,7 @@ import Map from "../components/Map/Map"
 
 export default function Home({ data }) {
   return (
-    <>
+    <Layout>
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Kibworth Osteopaths & Pilates offer Osteopathy treatment and Pilates instruction to provide you with the best recovery, rehabilitation and management for a range of injuries and conditions." />
@@ -119,7 +120,7 @@ export default function Home({ data }) {
       </TxtImg>
       <Bookings />
       <Map height="450px" />
-    </>
+    </Layout>
   )
 }
 
@@ -147,6 +148,13 @@ export const query = graphql`
       }
     }
     prestige: file(relativePath: {eq: "images/prestige-award.jpeg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 72) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo: file(relativePath: {eq: "images/logo.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid
