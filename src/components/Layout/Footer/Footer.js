@@ -26,6 +26,7 @@ export default function Footer() {
                         <li><Link to="/faq">FAQs</Link></li>
                         <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/privacy">Privacy Policy</Link></li>
+                        <li><Link to="/covid-19">COVID-19 Guidance</Link></li>
                     </ul>
                 </div>
                 <div className={FooterStyles.right}>
