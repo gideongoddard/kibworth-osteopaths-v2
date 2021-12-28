@@ -108,7 +108,7 @@ export default function Home({ data }) {
             <li>Sporting injuries</li>
             <li>Muscle and joint deterioration</li>
             <li>Restricted mobility</li>
-            <li>Occupational ill-health</li>
+            <li>Occupational injury</li>
           </ul>
           <p>More information about these and other conditions that we treat can be found below.</p>
           <Button to="/conditions" type="primary" contact={false}>Find out more</Button>
