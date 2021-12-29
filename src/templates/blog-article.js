@@ -2,6 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import ArticleStyles from "./blog-article.module.css"
 import { Link } from "gatsby"
+import Layout from "../components/Layout/Layout"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import Title from "../components/Title/Title"
 import { Helmet } from "react-helmet"
@@ -11,7 +12,7 @@ export default function Article({ data }) {
 
     let featuredImgFluid = article.frontmatter.featuredImage.childImageSharp.fluid
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>{article.frontmatter.title} | Kibworth Osteopaths & Pilates</title>
@@ -41,13 +42,13 @@ export default function Article({ data }) {
                 <div className={ArticleStyles.recentArticles}>
                     <h2>Recent Articles</h2>
                     {data.allMarkdownRemark.edges.map(({ node }) => (
-                        <div key={node.id}>
+                        <div className={ArticleStyles.linkWrapper} key={node.id}>
                             <Link className={ArticleStyles.articleLink} to={node.fields.slug}>{node.frontmatter.title}</Link>
                         </div>
                     ))}
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }
 

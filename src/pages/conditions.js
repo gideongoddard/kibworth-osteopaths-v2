@@ -68,10 +68,10 @@ export default function Conditions({ data }) {
         <Layout>
             <Title title="Conditions we treat" />
             <BreadcrumbBar currentPage="Conditions" parentPages={parentPages} />
-            <section className={ConditionsStyles.section}>
+            <section className="condense">
                 <div className={ConditionsStyles.narrowContainer}>
-                    <p>Osteopaths work head to toe with the musculoskeletal system, which can be symptomatic for many reasons. Here at Kibworth Osteopaths & Pilates we are proud to be able to offer treatment to patients from birth onwards.</p>
-                    <p>Look below to find out more about what we treat or follow the relevant link to take you straight there.</p>
+                    <h3>Here at Kibworth Osteopaths & Pilates we are proud to be able to offer treatment to patients from birth onwards.</h3>
+                    <p>Osteopaths work head to toe with the musculoskeletal system, which can be symptomatic for many reasons. Look below to find out more about what we treat or follow the relevant link to take you straight there.</p>
                 </div>
             </section>
             <section className={ConditionsStyles.gridContainer}>

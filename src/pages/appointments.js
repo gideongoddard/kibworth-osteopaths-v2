@@ -26,8 +26,10 @@ export default function Appointments() {
             <Title title="Make a booking" />
             <BreadcrumbBar currentPage="Appointments" parentPages={parentPages} />
             <OnlineBooking />
-            <Testimonial quote="I wish I could give more than 5 stars. I can't recommend Emily enough. She's seen both my children and with my daughter she cured her colic within 4 sessions, with me seeing a massive difference from session 1. Emily listens to everything and is thoroughly understanding of your feelings as a parent and never makes you feel that your ideas are not important. She is fantastic!" />
-            <section className={AppointmentsStyles.section}>
+            <section style={{padding: 'var(--space-5) 0 var(--space-7) 0'}}>
+                <Testimonial quote="I wish I could give more than 5 stars. I can't recommend Emily enough. She's seen both my children and with my daughter she cured her colic within 4 sessions, with me seeing a massive difference from session 1. Emily listens to everything and is thoroughly understanding of your feelings as a parent and never makes you feel that your ideas are not important. She is fantastic!" />
+            </section>
+            <section>
                 <div className={AppointmentsStyles.container}>
                     <h2>Appointment & class times</h2>
                     <div className={AppointmentsStyles.gridContainer}>
@@ -36,7 +38,7 @@ export default function Appointments() {
                     </div>
                 </div>
             </section>
-            <section className={AppointmentsStyles.section} style={{paddingBottom: 20, backgroundColor: "var(--primary-100)"}}>
+            <section style={{backgroundColor: "var(--primary-50)"}}>
                 <div className={AppointmentsStyles.container}>
                     <h2>Fees</h2>
                     <div className={AppointmentsStyles.gridContainer}>
@@ -72,7 +74,7 @@ export default function Appointments() {
                     </div>
                 </div>
             </section>
-            <section className={AppointmentsStyles.section}>
+            <section>
                 <div className={AppointmentsStyles.container}>
                     <h2>Where to find us</h2>
                     <div className={AppointmentsStyles.gridContainer}>

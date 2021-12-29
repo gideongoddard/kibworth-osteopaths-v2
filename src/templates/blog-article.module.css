@@ -15,9 +15,13 @@
     margin-bottom: 0.35em;
 }
 
+.linkWrapper {
+    margin: var(--space-3) 0;
+}
+
 .articleLink {
-    display: inline-block;
-    margin: 10px 0;
+    line-height: 1.5;
+    box-shadow: none;
 }
 
 .articleBody h3 {

@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 
 function TxtImg(props) {
     return (
-        <section className={TxtImgStyles.section} style={{backgroundColor: props.backgroundColor, color: props.color}}>
+        <div>
             {
                 props.heading ? (<h2 className={TxtImgStyles.sectionHeading}>{props.heading}</h2>) : (<></>)
             }
@@ -14,10 +14,10 @@ function TxtImg(props) {
                     {props.children}
                 </div>
                 <div className={`${TxtImgStyles.imgContainer} ${props.imgRotate ? TxtImgStyles.rotate : ""}`}>
-                    <Img fluid={props.imgSrc} alt={props.imgAlt} />
+                    <Img className={TxtImgStyles.image} fluid={props.imgSrc} alt={props.imgAlt} />
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

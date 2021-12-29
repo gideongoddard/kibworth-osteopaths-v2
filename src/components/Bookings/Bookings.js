@@ -7,7 +7,7 @@ import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 export default function Bookings() {
     return (
-        <section className={BookingsStyles.section}>
+        <div className={BookingsStyles.section}>
             <h2>Make a booking</h2>
             <p className={BookingsStyles.subheading}><Link to="/appointments">Book online here</Link> or your can get in touch via phone or email. Details of appointment and class times are below.</p>
             <div className={BookingsStyles.container}>
@@ -32,6 +32,6 @@ export default function Bookings() {
                     }}>Email now</Button>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

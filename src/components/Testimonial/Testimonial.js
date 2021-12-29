@@ -3,13 +3,13 @@ import TestimonialStyles from "./Testimonial.module.css"
 
 export default function Testimonial(props) {
     return (
-        <section className={TestimonialStyles.section}>
-            <div className={TestimonialStyles.container}>
-                <h2>Testimonial</h2>
-                <div className={TestimonialStyles.quoteBox}>
+        <div className={TestimonialStyles.container}>
+            <div className={TestimonialStyles.quoteBox}>
+                <h3>Patient feedback</h3>
+                <div className={TestimonialStyles.quote}>
                     <p><em>{props.quote}</em></p>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

@@ -1,13 +1,15 @@
 .schedule {
-    padding: 20px;
+    padding: var(--space-4);
     margin-top: 30px;
     background-color: var(--primary-100);
     border-radius: 10px;
-    box-shadow: var(--shadow-xs);
+    box-shadow: var(--shadow-elevation-low);
+    color: var(--primary-800);
 }
 
 .schedule h3 {
     margin-top: 0;
+    color: var(--primary-900);
 }
 
 .dayTime {
@@ -18,15 +20,15 @@
 
 .day, .time {
     margin: 3px 0;
+    
 }
 
-.day {
+.time {
     font-weight: 600;
 }
 
 @media only screen and (min-width: 900px) {
     .schedule {
-        padding: 2.5%;
         width: 100%;
         margin-top: 0;
     }
