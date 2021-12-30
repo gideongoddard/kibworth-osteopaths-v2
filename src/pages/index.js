@@ -76,7 +76,7 @@ export default function Home({ data }) {
             <h2>Providing wholesome and whole-body healthcare for all ages in rural Leicestershire.</h2>
             <ul>
               <li>Are you looking to have or return to a more active lifestyle?</li>
-              <li>Is pain or injury stopping you do what you love?</li>
+              <li>Is pain or injury stopping you doing what you love?</li>
             </ul>
             <p>Whether you have had an injury for minutes or years, we understand it is debilitating and reduces your ability to live an active healthy life. Pain can stop you from working, doing your sport or hobby and reduces your confidence in your physical body.</p>
             <p>Here at Kibworth Osteopaths & Pilates we aim to help our patients reduce pain, improve their mobility and physical strength. With years of clinical experience and expert injury rehabilitation skills, you and your loved ones are in safe and knowledgeable hands.</p>
