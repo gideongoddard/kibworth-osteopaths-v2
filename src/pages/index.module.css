@@ -47,16 +47,6 @@
     color: var(--primary-900);
 }
 
-.conditionsSection {
-    background-color: var(--neutral-100);
-}
-
-.conditionsContainer {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-}
-
 .awardSection {
     background-color: var(--primary-100);
     color: var(--primary-800);
@@ -69,17 +59,5 @@
 @media only screen and (min-width: 750px) {
     .heroBanner {
         height: 70vh;
-    }
-
-    .conditionsContainer h2 {
-        text-align: center;
-    }
-
-    .conditionsContainer ul {
-        columns: auto 2;
-    }
-
-    .conditionsContainer a {
-        margin: 30px auto;
     }
 }

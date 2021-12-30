@@ -118,23 +118,6 @@ export default function Home({ data }) {
           <Button to="/pilates" type="primary" contact={false}>About Pilates</Button>
         </TxtImg>
       </section>
-      <section className={HomeStyles.conditionsSection}>
-        <div className={HomeStyles.conditionsContainer}>
-          <h2>Conditions we treat</h2>
-          <p>We take a very patient-centred approach and will always take the time to understand your individual symptoms before explaining and recommending any particular treatment.</p>
-          <p>Commonly treated conditions include:</p>
-          <ul>
-            <li>Back and neck pain</li>
-            <li>Postural problems</li>
-            <li>Sporting injuries</li>
-            <li>Muscle and joint deterioration</li>
-            <li>Restricted mobility</li>
-            <li>Occupational injury</li>
-          </ul>
-          <p>More information about these and other conditions that we treat can be found below.</p>
-          <Button to="/conditions" type="primary" contact={false}>Find out more</Button>
-        </div>
-      </section>
       <section className={HomeStyles.awardSection}>
         <TxtImg imgSrc={data.prestige.childImageSharp.fluid} imgAlt="Prestige Award" backgroundColor="var(--primary-500)" color="white" heading="Osteopath of the year!" reverse={true}>
           <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year.</p>
