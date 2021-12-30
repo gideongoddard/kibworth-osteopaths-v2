@@ -62,6 +62,7 @@ export default function Header() {
                             <div className={osteoSubnavOpen ? `${HeaderStyles.osteoSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.osteoSubnavClosed} ${HeaderStyles.subNav}`}>
                                 <Link className={HeaderStyles.subNavItem} to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link>
                                 <Link className={HeaderStyles.subNavItem} to="/osteopathy/what-to-expect">What to expect</Link>
+                                <Link className={HeaderStyles.subNavItem} to="/osteopathy/conditions">Conditions we treat</Link>
                             </div>
                         </div>
                         <div onMouseOver={() => setPilatesSubnavOpen(true)} onMouseOut={() => setPilatesSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>

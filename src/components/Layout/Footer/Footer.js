@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className={FooterStyles.menu}>
                     <h4>Useful links</h4>
                     <ul>
-                        <li><Link to="/conditions">Conditions we treat</Link></li>
+                        <li><Link to="/osteopathy/conditions/">Conditions we treat</Link></li>
                         <li><Link to="/osteopathy">About Osteopathy</Link></li>
                         <li><Link to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link></li>
                         <li><Link to="/osteopathy/what-to-expect">What to expect</Link></li>
