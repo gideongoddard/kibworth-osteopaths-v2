@@ -28,12 +28,12 @@
 }
 
 .accent {
-    background-color: var(--accent-700);
+    background-color: var(--secondary-700);
 }
 
 .accent:hover {
-    background-color: var(--accent-500);
-    box-shadow: var(--shadow-s);
+    background-color: var(--secondary-500);
+    box-shadow: var(--shadow-elevation-medium);
     transform: translateY(-2px);
     text-decoration: none;
 }

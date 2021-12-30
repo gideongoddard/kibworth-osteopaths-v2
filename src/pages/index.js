@@ -72,6 +72,17 @@ export default function Home({ data }) {
       <section className={HomeStyles.heroBanner}>
         <h1>Kibworth Osteopaths & Pilates</h1>
       </section>
+      <section className={HomeStyles.welcome}>
+            <h2>Providing wholesome and whole-body healthcare for all ages in rural Leicestershire.</h2>
+            <ul>
+              <li>Are you looking to have or return to a more active lifestyle?</li>
+              <li>Is pain or injury stopping you do what you love?</li>
+            </ul>
+            <p>Whether you have had an injury for minutes or years, we understand it is debilitating and reduces your ability to live an active healthy life. Pain can stop you from working, doing your sport or hobby and reduces your confidence in your physical body.</p>
+            <p>Here at Kibworth Osteopaths & Pilates we aim to help our patients reduce pain, improve their mobility and physical strength. With years of clinical experience and expert injury rehabilitation skills, you and your loved ones are in safe and knowledgeable hands.</p>
+            <p>Our patients are at the centre of everything we do. We listen carefully to ensure we fully understand your injury. We then provide hands on treatments, create tailored safe and effective exercise rehabilitation programmes, and see our patients through to recovery.</p>
+            <Button to="/conditions" type="primary" contact={false}>Conditions we treat</Button>
+      </section>
       <section className={HomeStyles.osteoSection}>
         <TxtImg
           imgSrc={data.neckTreatment.childImageSharp.fluid}

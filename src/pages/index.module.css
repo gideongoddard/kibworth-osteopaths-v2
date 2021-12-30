@@ -20,6 +20,24 @@
     font-size: var(--type-xxl);
 }
 
+.welcome {
+    width: min(90%, 800px);
+    margin: auto;
+}
+
+.welcome ul {
+    padding-left: 15px;
+}
+
+.welcome li {
+    font-weight: 700;
+    color: var(--primary-800);
+}
+
+.welcome li::marker {
+    color: var(--primary-800);
+}
+
 .osteoSection {
     background-color: var(--primary-100);
     color: var(--primary-800);
