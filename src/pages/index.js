@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import AlertBar from "../components/AlertBar/AlertBar"
 import HomeStyles from "./index.module.css"
@@ -72,16 +72,18 @@ export default function Home({ data }) {
       <section className={HomeStyles.heroBanner}>
         <h1>Kibworth Osteopaths & Pilates</h1>
       </section>
+      <div style={{margin: 'auto', fontSize: 'var(--type-xxs)', width: 'min(90%, 800px)', lineHeight: '1.6', border: '1px solid var(--secondary-200)', textAlign: 'center', padding: 'var(--space-3)', backgroundColor: 'var(--secondary-50)'}}><Link to="/covid-19">Read our latest COVID-19 information for patients.</Link></div>
       <section className={HomeStyles.welcome}>
-            <h2>Providing wholesome and whole-body healthcare for all ages in rural Leicestershire.</h2>
-            <ul>
-              <li>Are you looking to have or return to a more active lifestyle?</li>
-              <li>Is pain or injury stopping you doing what you love?</li>
-            </ul>
-            <p>Whether you have had an injury for minutes or years, we understand it is debilitating and reduces your ability to live an active healthy life. Pain can stop you from working, doing your sport or hobby and reduces your confidence in your physical body.</p>
-            <p>Here at Kibworth Osteopaths & Pilates we aim to help our patients reduce pain, improve their mobility and physical strength. With years of clinical experience and expert injury rehabilitation skills, you and your loved ones are in safe and knowledgeable hands.</p>
-            <p>Our patients are at the centre of everything we do. We listen carefully to ensure we fully understand your injury. We then provide hands on treatments, create tailored safe and effective exercise rehabilitation programmes, and see our patients through to recovery.</p>
-            <Button to="/osteopathy/conditions/" type="primary" contact={false}>Conditions we treat</Button>
+          <h2>Providing wholesome, whole-body healthcare for people of all ages in rural Leicestershire.</h2>
+          <ul>
+            <li>Are you looking to have or return to a more active lifestyle?</li>
+            <li>Is pain or injury stopping you doing what you love?</li>
+          </ul>
+          <p>Whether you have had an injury for minutes or years, we understand it is debilitating and reduces your ability to live an active healthy life. Pain can stop you from working, doing your sport or hobby and reduces your confidence in your physical body.</p>
+          <p>Here at Kibworth Osteopaths & Pilates we aim to help our patients reduce pain, improve their mobility and physical strength. With years of clinical experience and expert injury rehabilitation skills, you and your loved ones are in safe and knowledgeable hands.</p>
+          <p>Our patients are at the centre of everything we do. We listen carefully to ensure we fully understand your injury. We then provide hands on treatments, create tailored safe and effective exercise rehabilitation programmes, and see our patients through to recovery.</p>
+          <Button to="/appointments" type="accent" style={{margin: 'var(--space-2) var(--space-3) var(--space-2) 0'}} contact={false}>Book online now</Button>
+          <Button to="/osteopathy/conditions/" type="primary" style={{margin: 'var(--space-2) 0'}} contact={false}>Conditions we treat</Button>
       </section>
       <section className={HomeStyles.osteoSection}>
         <TxtImg
@@ -95,7 +97,7 @@ export default function Home({ data }) {
           <Button to="/osteopathy" type="primary" contact={false}>About Osteopathy</Button>
         </TxtImg>
       </section>
-      <section>
+   {/*   <section>
         <TxtImg imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily Coombes, Osteopath" imgRotate={true} reverse={true} heading="Emily Coombes (B'Ost Registered Osteopath)">
           <p>Emily was trained at what is now the Univerity College of Osteopathy in London (formerly the British School of Osteopathy) and qualified in 2009. She has extensive experience in structural osteopathy and has attained post-graduate qualifications in:</p>
           <ul>
@@ -106,8 +108,8 @@ export default function Home({ data }) {
           <p>Osteopaths diagnose and treat musculoskeletal problems/injuries using hands on techniques that can help to reduce pain, and restore normal function.</p>
           <p><em>All Osteopaths must be registered with the <a href="https://www.osteopathy.org.uk/home/" target="_blank" rel="noopener noreferrer">General Oteopathic Council</a>, and are fully insured so you can be sure you and your family are in safe hands.</em></p>
         </TxtImg>
-      </section>
-      <section style={{padding: 'var(--space-5) 0 var(--space-7) 0'}}>
+      </section> */}
+      <section style={{paddingBottom: 'var(--space-6)'}}>
         <Testimonial  quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
       </section>
       <section>
@@ -122,6 +124,7 @@ export default function Home({ data }) {
         <TxtImg imgSrc={data.prestige.childImageSharp.fluid} imgAlt="Prestige Award" backgroundColor="var(--primary-500)" color="white" heading="Osteopath of the year!" reverse={true}>
           <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year.</p>
           <p>It's wonderful to receive this kind of recognition but hopefully it's a reflection of our approach of always putting patient wellbeing first.</p>
+          <Button to="/about" type="primary" style={{marginTop: 'var(--space-2)'}}>About us</Button>
         </TxtImg>
       </section>
       <section>
