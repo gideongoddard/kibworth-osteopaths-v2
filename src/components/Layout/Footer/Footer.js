@@ -31,8 +31,8 @@ export default function Footer() {
                 </div>
                 <div className={FooterStyles.right}>
                     <div className={FooterStyles.socialLinks}>
-                        <a href="https://www.facebook.com/kibworthosteo/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
-                        <a href="https://www.instagram.com/kibworthosteopaths/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href="https://www.facebook.com/kibworthosteo/" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates Facebook page"><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a href="https://www.instagram.com/kibworthosteopaths/" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates Instagram page"><FontAwesomeIcon icon={faInstagram} /></a>
                     </div>
                     <StaticQuery
                         query={graphql`

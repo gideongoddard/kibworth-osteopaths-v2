@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import ArticleStyles from "./blog-article.module.css"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import Title from "../components/Title/Title"

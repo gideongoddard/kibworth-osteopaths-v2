@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import TxtImg from "../components/TxtImg/TxtImg"

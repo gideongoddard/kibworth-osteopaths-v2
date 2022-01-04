@@ -1,7 +1,7 @@
 import React from "react"
 import TeamStyles from "./Team.module.css"
 import Img from "gatsby-image"
-import { StaticQuery } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 const Profile = props => (
     <div className={TeamStyles.profile}>
