@@ -122,7 +122,7 @@ export default function Home({ data }) {
       </section>
       <section className={HomeStyles.awardSection}>
         <TxtImg imgSrc={data.prestige.childImageSharp.fluid} imgAlt="Prestige Award" backgroundColor="var(--primary-500)" color="white" heading="Osteopath of the year!" reverse={true}>
-          <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year.</p>
+          <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year for the 2nd year running!</p>
           <p>It's wonderful to receive this kind of recognition but hopefully it's a reflection of our approach of always putting patient wellbeing first.</p>
           <Button to="/about" type="primary" style={{marginTop: 'var(--space-2)'}}>About us</Button>
         </TxtImg>
@@ -157,7 +157,7 @@ export const query = graphql`
         }
       }
     }
-    prestige: file(relativePath: {eq: "images/prestige-award.jpeg"}) {
+    prestige: file(relativePath: {eq: "images/prestige-award-2.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid
