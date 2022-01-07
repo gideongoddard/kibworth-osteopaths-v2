@@ -1,5 +1,5 @@
 .card {
-    box-shadow: var(--shadow-s);
+    box-shadow: var(--shadow-elevation-medium);
     margin-bottom: 30px;
 }
 
@@ -20,6 +20,7 @@
 .txtContainer a {
     display: inline-block;
     margin: 15px 0;
+    width: max-content;
 }
 
 @media only screen and (min-width: 900px) {

@@ -1,18 +1,19 @@
 .contactBar {
     height: 50px;
-    background-color: var(--neutral-200);
+    background-color: var(--neutral-900);
     z-index: 6;
 }
 
 .contactBar a {
     text-decoration: none;
-    color: inherit;
+    color: var(--neutral-300);
     padding: 10px 5px;
     margin-left: 15px;
+    font-weight: 400;
 }
 
 .contactBar a:hover {
-    color: var(--primary-600);
+    color: white;
     text-decoration: none;
 }
 
@@ -32,7 +33,7 @@
 
 .navBar {
     height: 100px;
-    box-shadow: 0 2px 3px hsla(0, 0%, 0%, .1);
+    box-shadow: var(--shadow-elevation-low);
     z-index: 6;
 }
 
@@ -76,7 +77,7 @@ nav {
 
 .navItem, .subNavItem {
     text-decoration: none;
-    color: var(--neutral-800);
+    color: var(--neutral-700);
     padding: 15px 5px;
     margin-left: 15px;
 }
@@ -99,6 +100,14 @@ nav {
 .subNavWrapper {
     margin-left: 0;
     display: flex;
+}
+
+header a {
+    box-shadow: none;
+}
+
+header a:hover {
+    box-shadow: none;
 }
 
 @media only screen and (max-width: 900px) {
@@ -128,11 +137,12 @@ nav {
         width: 100%;
         padding: 15px 0;
         margin: 0;
+        color: var(--primary-900);
     }
 
     .navItem {
         padding-left: 8%;
-        background-color: var(--primary-300);
+        background-color: var(--primary-200);
     }
 
     .navButton {
@@ -151,7 +161,7 @@ nav {
 
     .subNavItem {
         padding-left: 12%;
-        background-color: var(--primary-200);
+        background-color: var(--primary-100);
     }
 
     .subNavItem:last-child {
@@ -192,7 +202,7 @@ nav {
         background-color: var(--primary-600);
         color: white;
         text-transform: uppercase;
-        box-shadow: var(--shadow-s);
+        box-shadow: var(--shadow-elevation-low);
         transition: 300ms;
     }
 
@@ -215,8 +225,8 @@ nav {
     .subNav {
         position: absolute;
         top: 150px;
-        border-top: 5px solid var(--primary-600);
-        box-shadow: var(--shadow-m);
+        border-top: 5px solid var(--neutral-500);
+        box-shadow: var(--shadow-elevation-medium);
         background-color: white;
         min-width: 250px;
     }

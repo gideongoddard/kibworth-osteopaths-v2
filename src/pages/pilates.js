@@ -1,6 +1,7 @@
 import { graphql } from "gatsby"
 import React from "react"
 import PilatesStyles from "./pilates.module.css"
+import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import Banner from "../images/pilates-banner.jpg"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
@@ -14,7 +15,7 @@ import { Helmet } from "react-helmet"
 export default function Pilates({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Regular Pilates can help reduce injury risk, enhance core stability, increase strength and improve posture, flexibility & balance." />
@@ -23,12 +24,14 @@ export default function Pilates({ data }) {
             </Helmet>
             <Title title="Pilates" backgroundImage={Banner} />
             <BreadcrumbBar currentPage="Pilates" parentPages={parentPages} />
-            <TxtImg imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily standing with a skeleton">
-                <h2>Why Pilates?</h2>
-                <p>Emily qualified as a Pilates instructor in 2019, as she wanted to offer more to patients in terms of aftercare post injury recovery, as well as general wellbeing. However, you do not have to be an Osteopathy patient to come to Pilates class, it is open to all!</p>
-                <p>Doing Pilates with Emily means you have continued aftercare post injury (if you’ve seen her as an Osteopath), but you also have a highly qualified pair of eyes and hands teaching you, meaning classes are safe and effective.</p>
-            </TxtImg>
-            <section className={PilatesStyles.section} style={{backgroundColor: "var(--neutral-200)"}}>
+            <section>
+                <TxtImg imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily standing with a skeleton">
+                    <h2>Why Pilates?</h2>
+                    <p>Emily qualified as a Pilates instructor in 2019, as she wanted to offer more to patients in terms of aftercare post injury recovery, as well as general wellbeing. However, you do not have to be an Osteopathy patient to come to Pilates class, it is open to all!</p>
+                    <p>Doing Pilates with Emily means you have continued aftercare post injury (if you’ve seen her as an Osteopath), but you also have a highly qualified pair of eyes and hands teaching you, meaning classes are safe and effective.</p>
+                </TxtImg>
+            </section>
+            <section style={{backgroundColor: "var(--neutral-100)"}}>
                 <div className={PilatesStyles.narrowContainer}>
                     <h2>What are the benefits of Pilates?</h2>
                     <p>Regular Pilates can help with all of the following</p>
@@ -56,7 +59,7 @@ export default function Pilates({ data }) {
                     </div>
                 </div>
             </section>
-            <section className={PilatesStyles.section}>
+            <section>
                 <div className={PilatesStyles.narrowContainer}>
                     <h2>Classes</h2>
                     <p>Group Pilates classes are held at Tur Langton Village Hall.</p>
@@ -88,7 +91,7 @@ export default function Pilates({ data }) {
                         </div>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }
 

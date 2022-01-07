@@ -2,53 +2,103 @@
 
 :root {
     /* Type scale */
-    --type-xxs: calc(12px + 0.25vw);
-    --type-xs: calc(14px + 0.25vw);
-    --type-s: calc(16px + 0.5vw);
-    --type-m: calc(18px + 0.75vw);
-    --type-l: calc(20px + 1vw);
-    --type-xl: calc(22px + 1.5vw);
-    --type-xxl: calc(24px + 2vw);
+    --type-xxs: clamp(14px, calc(6px + 0.7vw), 16px);
+    --type-xs: clamp(16px, calc(8px + 0.8vw), 18px);
+    --type-s: clamp(18px, calc(9px + 1.1vw), 22px);
+    --type-m: clamp(20px, calc(10px + 1.4vw), 28px);
+    --type-l: clamp(24px, calc(14px + 1.7vw), 36px);
+    --type-xl: clamp(30px, calc(20px + 2.1vw), 48px);
+    --type-xxl: clamp(36px, calc(24px + 2.5vw), 60px);
 
     /* Colours */
-    --primary-100: hsl(199, 100%, 97%);
-    --primary-200: hsl(199, 97%, 93%);
-    --primary-300: hsl(199, 94%, 87%);
-    --primary-400: hsl(199, 91%, 75%);
-    --primary-500: hsl(199, 88%, 65%);
-    --primary-600: hsl(199, 91%, 52%);
-    --primary-700: hsl(199, 94%, 45%);
-    --primary-800: hsl(199, 97%, 35%);
-    --primary-900: hsl(199, 100%, 20%);
+    --primary-50: hsl(198, 65%, 92%);
+    --primary-100: hsl(199, 67%, 83%); /* Core brand colour */
+    --primary-200: hsl(199, 66%, 67%);
+    --primary-300: hsl(197, 67%, 52%);
+    --primary-400: hsl(197, 100%, 41%);
+    --primary-500: hsl(200, 100%, 40%);
+    --primary-600: hsl(202, 100%, 37%);
+    --primary-700: hsl(203, 100%, 33%);
+    --primary-800: hsl(205, 100%, 30%);
+    --primary-900: hsl(211, 100%, 23%);
     
-    --neutral-100: hsl(60, 6%, 96%);
-    --neutral-200: hsl(60, 5%, 91%);
-    --neutral-300: hsl(60, 4%, 86%);
-    --neutral-400: hsl(60, 3%, 80%);
-    --neutral-500: hsl(60, 2%, 67%);
-    --neutral-600: hsl(60, 3%, 55%);    
-    --neutral-700: hsl(60, 4%, 40%);
-    --neutral-800: hsl(60, 5%, 27%);
-    --neutral-900: hsl(60, 6%, 10%);
+    --secondary-50: hsl(11, 51%, 92%);
+    --secondary-100: hsl(19, 65%, 80%);
+    --secondary-200: hsl(19, 63%, 67%);
+    --secondary-300: hsl(21, 63%, 54%);
+    --secondary-400: hsl(23, 88%, 42%);
+    --secondary-500: hsl(18, 100%, 38%);
+    --secondary-600: hsl(17, 100%, 36%);
+    --secondary-700: hsl(16, 100%, 34%);
+    --secondary-800: hsl(15, 100%, 31%);
+    --secondary-900: hsl(11, 100%, 27%);
 
-    --accent-100:hsl(169, 100%, 97%);
-    --accent-200:hsl(169, 97%, 89%);
-    --accent-300:hsl(169, 94%, 81%);
-    --accent-400:hsl(169, 91%, 73%);
-    --accent-500:hsl(169, 88%, 65%);
-    --accent-600:hsl(169, 91%, 56%);
-    --accent-700:hsl(169, 94%, 47%);
-    --accent-800:hsl(169, 97%, 38%);
-    --accent-900:hsl(169, 100%, 27%);
-
-    --accent-red-500: hsl(16, 100%, 50%);
+    --neutral-50: hsl(231, 78%, 98%);
+    --neutral-100: hsl(230, 25%, 95%);
+    --neutral-200: hsl(230, 14%, 91%);
+    --neutral-300: hsl(231, 9%, 85%);
+    --neutral-400: hsl(230, 4%, 71%);
+    --neutral-500: hsl(230, 3%, 58%); /* Core brand colour */
+    --neutral-600: hsl(230, 3%, 42%);    
+    --neutral-700: hsl(228, 3%, 35%);
+    --neutral-800: hsl(230, 5%, 23%);
+    --neutral-900: hsl(228, 10%, 10%);
 
     /* Shadows */
-    --shadow-xs: 0 1px 3px hsla(0, 0%, 0%, .12), 0 1px 2px hsla(0, 0%, 0%, .24);
-    --shadow-s: 0 3px 6px hsla(0, 0%, 0%, .15), 0 2px 4px hsla(0, 0%, 0%, .12);
-    --shadow-m: 0 10px 20px hsla(0, 0%, 0%, .15), 0 3px 6px hsla(0, 0%, 0%, .10);
-    --shadow-l: 0 15px 25px hsla(0, 0%, 0%, .15), 0 5px 10px hsla(0, 0%, 0%, .05);
-    --shadow-xl: 0 15px 35px hsla(0, 0%, 0%, .2);
+    --shadow-color: 0deg 0% 54%;
+    --shadow-elevation-low:
+      0.1px 0.4px 0.5px hsl(var(--shadow-color) / 0.22),
+      0.3px 0.8px 1.1px -0.6px hsl(var(--shadow-color) / 0.36),
+      0.6px 1.9px 2.6px -1.2px hsl(var(--shadow-color) / 0.5);
+    --shadow-elevation-medium:
+      0.1px 0.4px 0.5px hsl(var(--shadow-color) / 0.23),
+      0.6px 1.9px 2.6px -0.4px hsl(var(--shadow-color) / 0.34),
+      1.4px 4.3px 5.9px -0.8px hsl(var(--shadow-color) / 0.45),
+      3.2px 9.6px 13.3px -1.2px hsl(var(--shadow-color) / 0.57);
+    --shadow-elevation-high:
+      0.1px 0.4px 0.5px hsl(var(--shadow-color) / 0.21),
+      1.4px 4.2px 5.8px -0.2px hsl(var(--shadow-color) / 0.26),
+      2.6px 7.7px 10.7px -0.4px hsl(var(--shadow-color) / 0.32),
+      3.9px 11.9px 16.4px -0.5px hsl(var(--shadow-color) / 0.37),
+      5.8px 17.6px 24.3px -0.7px hsl(var(--shadow-color) / 0.42),
+      8.6px 25.8px 35.7px -0.9px hsl(var(--shadow-color) / 0.47),
+      12.4px 37.5px 51.8px -1.1px hsl(var(--shadow-color) / 0.53),
+      17.7px 53.4px 73.8px -1.2px hsl(var(--shadow-color) / 0.58);
+
+    /* Spacing */
+    --fixed-space-1: 0.25rem;
+    --fixed-space-2: 0.5rem;
+    --fixed-space-3: 0.75rem;
+    --fixed-space-4: 1rem;
+    --fixed-space-5: 1.5rem;
+    --fixed-space-6: 2rem;
+    --fixed-space-7: 3rem;
+    --fixed-space-8: 4rem;
+    --fixed-space-9: 6rem;
+    --fixed-space-10: 8rem;
+    --fixed-space-11: 12rem;
+    --fixed-space-12: 16rem;
+    --fixed-space-13: 24rem;
+    --fixed-space-14: 32rem;
+    --fixed-space-15: 40rem;
+    --fixed-space-16: 48rem;
+
+    --space-1: calc(0.25rem + 0.2vw);
+    --space-2: calc(0.5rem + 0.25vw);
+    --space-3: calc(0.75rem + 0.35vw);
+    --space-4: calc(1rem + 0.5vw);
+    --space-5: calc(1.5rem + 0.75vw);
+    --space-6: calc(2rem + 1vw);
+    --space-7: calc(3rem + 1.25vw);
+    --space-8: calc(4rem + 1.5vw);
+    --space-9: calc(6rem + 2vw);
+    --space-10: calc(8rem + 2.5vw);
+    --space-11: calc(12rem + 3vw);
+    --space-12: calc(16rem + 4vw);
+    --space-13: calc(24rem + 5vw);
+    --space-14: calc(32rem + 7.5vw);
+    --space-15: calc(40rem + 10vw);
+    --space-16: calc(48rem + 15vw);
 }
 
 * {
@@ -61,15 +111,22 @@ body {
     color: var(--neutral-800);
 }
 
+section {
+    padding: var(--space-8) 0;
+}
+
+.condense {
+    padding-bottom: var(--space-2);
+}
+
 h2 {
+    color: var(--neutral-900);
     font-size: var(--type-l);
-    margin-top: 0;
-    font-weight: 500;
 }
 
 h3 {
     font-size: var(--type-m);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h4 {
@@ -91,12 +148,16 @@ ul li::marker {
 }
 
 a {
-    color: var(--primary-700);
+    color: var(--secondary-800);
+    font-weight: 500;
     text-decoration: none;
+    box-shadow: 0 2px 0 hsla(15, 100%, 31%, .5);
+    transition: 400ms;
 }
 
 a:hover {
-    text-decoration: underline;
+    box-shadow: 0 2px 0 hsla(15, 100%, 31%, 1);
+    transition: 400ms;
 }
 
 .videoWrapper {

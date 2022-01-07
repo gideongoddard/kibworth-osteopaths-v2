@@ -1,7 +1,6 @@
 .wrapper {
     min-height: 50px;
-    background-color: var(--accent-red-500);
-    color: white;
+    background-color: var(--secondary-100);
 }
 
 .content {
@@ -19,9 +18,12 @@
 
 .content a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-900);
+    box-shadow: none;
+    transition: 400ms;
 }
 
 .content a:hover {
-    text-decoration: underline;
+    box-shadow: 0 2px 0;
+    transition: 400ms;
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import PrePostStyles from "./prenatal-postnatal-pilates.module.css"
@@ -12,7 +13,7 @@ import { Helmet } from "react-helmet"
 export default function PrenatalPostnatalPilates() {
     const parentPages = [{name: "Home", path: "/"}, {name: "Pilates", path: "/pilates"}]
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Book our prenatal & postnatal pilates classes to get the benefit of our in-depth understanding of recovering from birth and the physical demands of caring for a newborn." />
@@ -21,14 +22,14 @@ export default function PrenatalPostnatalPilates() {
             </Helmet>
             <Title title="Prenatal & Postnatal Pilates" />
             <BreadcrumbBar currentPage="Prenatal & Postnatal Pilates" parentPages={parentPages} />
-            <section className={PrePostStyles.section}>
+            <section>
                 <div className={PrePostStyles.narrowContainer}>
                     <p>Pregnancy is an amazing journey, and your body goes through a lot of physiological changes. This does not mean pregnancy is the time to give up exercise, however exercise needs to be adapted to keep you and your baby safe, and this is where pregnancy Pilates comes in! Having an active pregnancy is important for physical and mental well-being.</p>
                     <p>As an Osteopath I am familiar with pregnancy related issues, as well as having a deep understanding of the changes the body goes through to accommodate your growing baby. Whether your baby is born naturally or via caesarean, it is important to allow your body time to recover post birth. While there are some gentle and effective exercises that you can do straight after birth, I usually recommend 8 weeks before coming back to / starting Pilates.</p>
                     <p>Emily has in depth understanding of the recovery process as well as the physical demands of caring for a new-born.</p>
                 </div>
             </section>
-            <section className={PrePostStyles.section} style={{backgroundColor: "var(--neutral-100)"}}>
+            <section style={{backgroundColor: "var(--neutral-100)"}}>
                 <div className={PrePostStyles.container}>
                     <h2>The benefits of Pilates during pregnancy</h2>
                     <div className={PrePostStyles.iconContainer}>
@@ -66,7 +67,7 @@ export default function PrenatalPostnatalPilates() {
                     </div>
                 </div>
             </section>
-            <section className={PrePostStyles.section}>
+            <section>
                 <div className={PrePostStyles.narrowContainer}>
                     <h2>Classes</h2>
                     <p>Pilates classes for pre/post natal clients are specially designed by Emily, so you know you are in a safe, controlled environment. Classes are limited to 8 participants, so booking is essential. Before you can start the classes, you must attend a free meeting with Emily to complete medical forms to ensure you are safe to do the classes.</p>
@@ -100,6 +101,6 @@ export default function PrenatalPostnatalPilates() {
                     </div>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }

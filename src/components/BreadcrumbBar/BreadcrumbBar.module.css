@@ -1,7 +1,7 @@
 .wrapper {
     height: 50px;
-    background-color: var(--primary-600);
-    color: white;
+    background-color: var(--neutral-900);
+    color: var(--neutral-300);
 }
 
 .content {
@@ -15,7 +15,15 @@
 }
 
 .content a {
+    color: var(--neutral-50);
+    box-shadow: none;
+    transition: 400ms;
+}
+
+.content a:hover {
     color: white;
+    box-shadow: 0 2px 0 var(--neutral-50);
+    transition: 400ms;
 }
 
 .separator {

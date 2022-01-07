@@ -1,27 +1,25 @@
-.section div {
+.container {
     width: 100%;
-    min-height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     text-align: center;
-    
-    background-color: var(--primary-300);
+    background-color: var(--primary-100);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.section h1 {
+.container h1 {
     font-size: var(--type-xxl);
     font-weight: 300;
     margin: 20px 0;
     line-height: 1.25em;
 }
 
-.section h2 {
+.container h2 {
     font-size: var(--type-m);
     font-weight: 400;
     margin: 20px;

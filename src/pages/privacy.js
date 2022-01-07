@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import PrivacyStyles from "./privacy.module.css"
@@ -6,7 +7,7 @@ import PrivacyStyles from "./privacy.module.css"
 export default function Privacy() {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <>
+        <Layout>
             <Title title="Privacy Policy" />
             <BreadcrumbBar currentPage="Privacy" parentPages={parentPages} />
             <section className={PrivacyStyles.section}>
@@ -100,6 +101,6 @@ export default function Privacy() {
                 <p> The details for each of these contacts are: Emily Coombes Registered Osteopath, Kibworth Osteopaths & Pilates, Unit 17, The Manor, Main Street, Tur Langton, Leicestershire, LE8 0PJ. Telephone: <a href="tel:+447761664325" onclick="gtag('event', 'click', {'event_category' : 'contact', 'event_label' : 'telephone'});">+44 (0)7761664325</a> or email: <a href="mailto:info@kibworthosteopaths.co.uk" onclick="gtag('event', 'click', {'event_category' : 'contact', 'event_label' : 'email'});">info@kibworthosteopaths.co.uk</a></p>
                 <p>ICO: Wycliffe House, Water Lane, Wilmslow, SK9 5AF. Telephone: <a href="tel:+443031231113">+44 (0) 303 123 1113</a> or email via: <a href="https://ico.org.uk/global/contact-us/email/">https://ico.org.uk/global/contact-us/email/</a></p>
             </section>
-        </>
+        </Layout>
     )
 }

@@ -1,6 +1,6 @@
 footer {
-    background-color: var(--primary-600);
-    color: white;
+    background-color: var(--neutral-900);
+    color: var(--neutral-300);
     padding: 20px 0 10px 0;
 }
 
@@ -8,6 +8,10 @@ footer {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+}
+
+.container h4 {
+    color: white;
 }
 
 .menu ul {
@@ -20,12 +24,19 @@ footer {
 }
 
 .menu a, .socialLinks a {
+    color: var(--neutral-300);
+    box-shadow: none;
+    font-weight: 400;
+}
+
+.menu a:hover {
     color: white;
 }
 
 .socialLinks a {
     font-size: var(--type-xl);
     margin: 0 15px 0 0;
+    color: white;
 }
 
 .accreditations {
@@ -47,6 +58,11 @@ footer {
 .credit a {
     color: white;
     text-decoration: underline;
+    box-shadow: none;
+}
+
+footer a:hover {
+    box-shadow: none;
 }
 
 @media only screen and (min-width: 900px) {

@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import ExpectStyles from "./what-to-expect.module.css"
@@ -9,7 +10,7 @@ export default function WhatToExpect() {
     const parentPages = [{name: "Home", path: "/"}, {name: "Osteopathy", path: "/osteopathy"}]
 
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Find out what to expect and how we'll ensure the best care for you when you book an Osteopathy appointment with us." />
@@ -18,7 +19,7 @@ export default function WhatToExpect() {
             </Helmet>
             <Title title="What to expect" />
             <BreadcrumbBar currentPage="What to expect" parentPages={parentPages} />
-            <section className={ExpectStyles.section}>
+            <section>
                 <div className={ExpectStyles.narrowContainer}>
                     <h2>How it works</h2>
                     <p>New patients will usually have an initial appointment for consultation and treatment lasting around 1 hour, with any subsequent appointments for treatment lasting around 30 minutes.</p>
@@ -43,6 +44,6 @@ export default function WhatToExpect() {
                     </Box>
                 </div>
             </section>
-        </>
+        </Layout>
     )
 }

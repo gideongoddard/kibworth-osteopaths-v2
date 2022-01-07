@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import TxtImg from "../components/TxtImg/TxtImg"
@@ -11,7 +12,7 @@ import Team from "../components/Team/Team"
 export default function About({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
-        <>
+        <Layout>
             <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="description" content="Kibworth Osteopaths & Pilates was founded in 2017 by Emily Coombes, an experienced Osteopath who is passionate about helping people with injury prevention & rehabilitation." />
@@ -20,14 +21,22 @@ export default function About({ data }) {
             </Helmet>
             <Title title="About us" />
             <BreadcrumbBar currentPage="About us" parentPages={parentPages} />
-            <TxtImg imgSrc={data.emilySkeleton.childImageSharp.fluid} imgAlt="Emily standing with a skeleton" imgRotate={true}>
-                <h4>Kibworth Osteopaths and Pilates is a friendly and vibrant practice which is committed to providing the best care for our patients. We always take the time to listen to you, and your body.</h4>
-                <p>We provide safe and effective hands on treatments, working alongside the natural healing processes our amazing body has. We support you through the recovery process step by step, providing top-quality and tailored advice including rehabilitation exercises that are updated as you improve.</p>
-            </TxtImg>
-            <Testimonial quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
-            <Team />
-            <Bookings />
-        </>
+            <section>
+                <TxtImg imgSrc={data.emilySkeleton.childImageSharp.fluid} imgAlt="Emily standing with a skeleton" imgRotate={true}>
+                    <h4>Kibworth Osteopaths and Pilates is a friendly and vibrant practice which is committed to providing the best care for our patients. We always take the time to listen to you, and your body.</h4>
+                    <p>We provide safe and effective hands on treatments, working alongside the natural healing processes our amazing body has. We support you through the recovery process step by step, providing top-quality and tailored advice including rehabilitation exercises that are updated as you improve.</p>
+                </TxtImg>
+            </section>
+            <section style={{padding: 'var(--space-6) 0 var(--space-10) 0'}}>
+                <Testimonial quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
+            </section>
+            <section style={{backgroundColor: 'var(--neutral-100)'}}>
+                <Team />
+            </section>
+            <section>
+                <Bookings />
+            </section>
+        </Layout>
     )
 }
 

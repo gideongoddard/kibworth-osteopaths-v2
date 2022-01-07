@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className={FooterStyles.menu}>
                     <h4>Useful links</h4>
                     <ul>
-                        <li><Link to="/conditions">Conditions we treat</Link></li>
+                        <li><Link to="/osteopathy/conditions/">Conditions we treat</Link></li>
                         <li><Link to="/osteopathy">About Osteopathy</Link></li>
                         <li><Link to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link></li>
                         <li><Link to="/osteopathy/what-to-expect">What to expect</Link></li>
@@ -26,12 +26,13 @@ export default function Footer() {
                         <li><Link to="/faq">FAQs</Link></li>
                         <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/privacy">Privacy Policy</Link></li>
+                        <li><Link to="/covid-19">COVID-19 Guidance</Link></li>
                     </ul>
                 </div>
                 <div className={FooterStyles.right}>
                     <div className={FooterStyles.socialLinks}>
-                        <a href="https://www.facebook.com/kibworthosteo/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
-                        <a href="https://www.instagram.com/kibworthosteopaths/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href="https://www.facebook.com/kibworthosteo/" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates Facebook page"><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a href="https://www.instagram.com/kibworthosteopaths/" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates Instagram page"><FontAwesomeIcon icon={faInstagram} /></a>
                     </div>
                     <StaticQuery
                         query={graphql`
@@ -50,7 +51,7 @@ export default function Footer() {
                                         }
                                     }
                                 }
-                                cepa: file(relativePath: {eq: "images/prestige-award.jpeg"}) {
+                                cepa: file(relativePath: {eq: "images/prestige-award-2.jpg"}) {
                                     childImageSharp {
                                         fixed(width: 275, quality: 72) {
                                             ...GatsbyImageSharpFixed

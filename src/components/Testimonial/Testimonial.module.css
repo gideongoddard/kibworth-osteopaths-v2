@@ -1,34 +1,37 @@
-.section {
-    padding: 50px 0;
-    background-color: var(--primary-500);
-    color: white;
-}
-
 .container {
     width: 90%;
     max-width: 1000px;
     margin: auto;
 }
 
-.container h2 {
-    text-align: center;
+.quoteBox {
+    background-color: var(--primary-800);
+    color: var(--primary-50);
+    border-left: 8px solid var(--primary-100);
+    padding: 5% 3%;
+    box-shadow: var(--shadow-elevation-high);
 }
 
-.quoteBox {
+.quoteBox h3 {
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    font-size: var(--type-xxs);
+    letter-spacing: 2px;
+    color: var(--primary-100);
+}
+
+.quote {
     display: flex;
-    background-color: hsla(219, 22%, 87%, 0.4);
-    padding: 5% 3%;
-    border-left: 6px solid white;
     text-align: left;
     width: 100%;
     margin: auto;
 }
 
-.quoteBox p {
+.quote p {
     padding: 10px 0;
 }
 
-.quoteBox:before {
+.quote:before {
     content: open-quote;
     display: inline;
     line-height: 0;
@@ -36,11 +39,11 @@
     align-self: flex-start;
     position: relative;
     top: 20px;
-    color: #fff;
+    color: var(--primary-50);
     font-size: var(--type-xxl);
 }
 
-.quoteBox:after {
+.quote:after {
     content: close-quote;
     display: inline;
     line-height: 0;
@@ -48,12 +51,13 @@
     align-self: flex-end;
     position: relative;
     top: 0;
-    color: #fff;
+    color: var(--primary-50);
     font-size: var(--type-xxl);
 }
 
 @media only screen and (min-width: 900px) {
     .quoteBox {
         width: 85%;
+        margin: auto;
     }
 }

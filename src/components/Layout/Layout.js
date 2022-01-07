@@ -8,7 +8,7 @@ class Layout extends React.Component {
     constructor() {
         super()
         this.state = {
-            displayModal: true,
+            displayModal: false,
         }
 
         this.closeModal = this.closeModal.bind(this)
