@@ -2,9 +2,9 @@ import React, { useState } from "react"
 import HeaderStyles from "./Header.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone, faEnvelope, faBars, faTimes, faAngleDown } from "@fortawesome/free-solid-svg-icons"
-import { Link, StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
+import LogoSVG from "../../../images/KOPI-logo.svg"
 
 export default function Header() {
     const [navOpen, setNavOpen] = useState(false)
@@ -34,22 +34,7 @@ export default function Header() {
             <div className={HeaderStyles.navBar}>
                 <div className={HeaderStyles.navContainer}>
                     <Link to="/" className={HeaderStyles.logo} onClick={() => setNavOpen(false)}>
-                        <StaticQuery
-                            query={graphql`
-                                query {
-                                    file(name: {eq: "logo"}, extension: {eq: "jpg"}) {
-                                        childImageSharp {
-                                            fixed(width: 100, quality: 72) {
-                                                ...GatsbyImageSharpFixed_noBase64
-                                            }
-                                        }
-                                    }
-                                }
-                            `}
-                            render={data => (
-                                <Img fixed={data.file.childImageSharp.fixed} alt="logo" />
-                            )}
-                        />
+                    <img src={LogoSVG} alt="logo" height="60px" />
                     </Link>
                     <div className={HeaderStyles.toggle}>
                         {
