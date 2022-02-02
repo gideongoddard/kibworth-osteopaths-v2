@@ -56,6 +56,7 @@
     font-size: var(--type-xs);
     cursor: pointer;
     box-shadow: var(--shadow-elevation-low);
+    font-weight: 400;
     transition: 300ms;
     -webkit-appearance: none;
 }
