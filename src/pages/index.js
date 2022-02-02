@@ -131,7 +131,7 @@ export default function Home({ data }) {
       <section>
         <Bookings />
       </section>
-      <section>
+      <section style={{padding: '8px 0 calc(36px + 2vw) 0'}}>
         <Newsletter />
       </section>
     </Layout>
