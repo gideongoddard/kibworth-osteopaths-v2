@@ -40,6 +40,7 @@
     border-radius: 10px;
     background-color: var(--neutral-50);
     border: 1px solid var(--neutral-300);
+    font-size: var(--type-xxs);
 }
 
 .button {
@@ -56,6 +57,7 @@
     cursor: pointer;
     box-shadow: var(--shadow-elevation-low);
     transition: 300ms;
+    -webkit-appearance: none;
 }
 
 .button:hover {
