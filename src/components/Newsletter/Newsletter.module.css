@@ -8,13 +8,13 @@
 
 .intro {
     flex-basis: min(100%, 350px);
-    padding: 18px calc(18px + 2vw);
+    padding: 18px 0;
     flex-grow: 2;
 }
 
 .form {
     flex-basis: min(100%, 300px);
-    padding: 18px calc(18px + 2vw);
+    padding: 18px 0;
     flex-grow: 1;
 }
 
@@ -63,4 +63,14 @@
 .button:hover {
     box-shadow: var(--shadow-elevation-medium);
     transform: translateY(-1px);
+}
+
+@media only screen and (min-width: 722px) {
+    .intro {
+        padding-right: calc(18px + 2vw);
+    }
+
+    .form {
+        padding-left: calc(18px + 2vw);
+    }
 }
