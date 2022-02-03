@@ -6,6 +6,7 @@ import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import Card from "../components/Card/Card"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
+import Newsletter from "../components/Newsletter/Newsletter"
 
 export default class Blog extends React.Component {
     render() {
@@ -44,7 +45,9 @@ export default class Blog extends React.Component {
                         ))}
                     </div>
                 </section>
-                
+                <section style={{backgroundColor: 'var(--neutral-100)'}}>
+                    <Newsletter />
+                </section>
             </Layout>
         )
     }

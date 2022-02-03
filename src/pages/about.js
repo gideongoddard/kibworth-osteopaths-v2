@@ -8,6 +8,7 @@ import Testimonial from "../components/Testimonial/Testimonial"
 import Bookings from "../components/Bookings/Bookings"
 import { Helmet } from "react-helmet"
 import Team from "../components/Team/Team"
+import Newsletter from "../components/Newsletter/Newsletter"
 
 export default function About({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
@@ -35,6 +36,9 @@ export default function About({ data }) {
             </section>
             <section>
                 <Bookings />
+            </section>
+            <section style={{paddingTop: 0}}>
+                <Newsletter />
             </section>
         </Layout>
     )
