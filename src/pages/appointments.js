@@ -11,6 +11,7 @@ import Map from "../components/Map/Map"
 import OnlineBooking from "../components/OnlineBooking/OnlineBooking"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { Helmet } from "react-helmet"
+import Newsletter from "../components/Newsletter/Newsletter"
 
 export default function Appointments() {
     const parentPages = [{name: "Home", path: "/"}]
@@ -97,6 +98,9 @@ export default function Appointments() {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section style={{backgroundColor: 'var(--neutral-100)'}}>
+                <Newsletter />
             </section>
         </Layout>
     )

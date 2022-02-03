@@ -16,7 +16,7 @@ Button.propTypes = {
     to: PropTypes.string.isRequired,
     style: PropTypes.object,
     type: PropTypes.string.isRequired,
-    children: PropTypes.element.isRequired
+    children: PropTypes.string.isRequired
 }
 
 export default Button

@@ -29,7 +29,6 @@ TxtImg.propTypes = {
     imgAlt: PropTypes.string.isRequired,
     imgRotate: PropTypes.bool,
     reverse: PropTypes.bool,
-    children: PropTypes.element.isRequired
 }
 
 export default TxtImg

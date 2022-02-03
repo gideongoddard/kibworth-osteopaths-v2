@@ -8,6 +8,7 @@ import TxtImg from "../components/TxtImg/TxtImg"
 import Button from "../components/Button/Button"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Bookings from "../components/Bookings/Bookings"
+import Newsletter from "../components/Newsletter/Newsletter"
 
 export default function Home({ data }) {
   return (
@@ -124,11 +125,14 @@ export default function Home({ data }) {
         <TxtImg imgSrc={data.prestige.childImageSharp.fluid} imgAlt="Prestige Award" backgroundColor="var(--primary-500)" color="white" heading="Osteopath of the year!" reverse={true}>
           <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year for the 2nd year running!</p>
           <p>It's wonderful to receive this kind of recognition but hopefully it's a reflection of our approach of always putting patient wellbeing first.</p>
-          <Button to="/about" type="primary" style={{marginTop: 'var(--space-2)'}}>About us</Button>
+          <Button to="/about" type="primary" style={{marginTop: 'var(--space-2)'}} contact={false}>About us</Button>
         </TxtImg>
       </section>
       <section>
         <Bookings />
+      </section>
+      <section style={{padding: '8px 0 calc(36px + 2vw) 0'}}>
+        <Newsletter />
       </section>
     </Layout>
   )
