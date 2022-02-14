@@ -1,5 +1,5 @@
 ---
-title: "Kibworth Osteopaths Discussing S.M.A.R.T. Goals"
+title: "Discussing S.M.A.R.T. Goals"
 date: "2021-12-14"
 featuredImage: ../../images/goals.png
 ---
