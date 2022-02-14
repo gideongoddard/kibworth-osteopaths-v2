@@ -17,7 +17,7 @@ Often the problematic joint/s is not the main structure causing the pain - other
 
 However many ‘years young’ you are, I support my patients to have an active lifestyle as this is important for both the physical body and the mind. An active lifestyle as we get older helps in supporting continued independence as well as maintaining body condition. Lots of people sadly think that there can be no improvements made to certain age-related physical conditions, and often there are things that can be done to make things more manageable as well as more functional. This is why I provide safe and effective rehabilitation exercises for my patients, as movement is medicine for your body.
 
-The two most common age related conditions that I see in the clinic are Osteo-Arthritis, and Inflammatory Arthritis (such as Rheumatoid Arthritis). Whilst Osteopathy can not cure these conditions, what we can help with is the
+The two most common age related conditions that I see in the clinic are Osteo-Arthritis, and Inflammatory Arthritis (such as Rheumatoid Arthritis). Whilst Osteopathy can not cure these conditions, what we can help with is the symptoms.
 
 It must also be remembered that the older patient can also suffer acute injuries, not everything is wear and tear related. However the older we are the harder it is for our body to make a full recovery; therefore help is more often needed. Osteopaths can help get you back on your feet again with gentle non-invasive safe treatments, and some top tips that can help prevent sudden injuries from occurring again.
 
