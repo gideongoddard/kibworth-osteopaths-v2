@@ -26,7 +26,7 @@ export default function Team() {
             <StaticQuery
                 query={graphql`
                     query {
-                        emily: file(relativePath: {eq: "images/emily-skeleton-color.jpeg"}) {
+                        emily: file(relativePath: {eq: "images/emily-headshot-square.jpg"}) {
                             childImageSharp {
                                 fluid(maxWidth: 500, quality: 72) {
                                     ...GatsbyImageSharpFluid

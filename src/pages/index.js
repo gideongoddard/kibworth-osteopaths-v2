@@ -88,7 +88,7 @@ export default function Home({ data }) {
       </section>
       <section className={HomeStyles.osteoSection}>
         <TxtImg
-          imgSrc={data.neckTreatment.childImageSharp.fluid}
+          imgSrc={data.treatment.childImageSharp.fluid}
           imgAlt="Patient receiving neck treatment"
         >
           <h2>What is Osteopathy?</h2>
@@ -140,7 +140,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    neckTreatment: file(relativePath: {eq: "images/neck-treatment-tall.jpg"}) {
+    treatment: file(relativePath: {eq: "images/emily-treatment-2.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid
@@ -154,7 +154,7 @@ export const query = graphql`
         }
       }
     }
-    pilates: file(relativePath: {eq: "images/pilates.jpg"}) {
+    pilates: file(relativePath: {eq: "images/pilates-class.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid

@@ -23,8 +23,8 @@ export default function About({ data }) {
             <Title title="About us" />
             <BreadcrumbBar currentPage="About us" parentPages={parentPages} />
             <section>
-                <TxtImg imgSrc={data.emilySkeleton.childImageSharp.fluid} imgAlt="Emily standing with a skeleton" imgRotate={true}>
-                    <h4>Kibworth Osteopaths and Pilates is a friendly and vibrant practice which is committed to providing the best care for our patients. We always take the time to listen to you, and your body.</h4>
+                <TxtImg imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily Coombes" imgRotate={true}>
+                    <h3>Kibworth Osteopaths & Pilates is a friendly and vibrant practice which is committed to providing the best care for our patients. We always take the time to listen to you, and your body.</h3>
                     <p>We provide safe and effective hands on treatments, working alongside the natural healing processes our amazing body has. We support you through the recovery process step by step, providing top-quality and tailored advice including rehabilitation exercises that are updated as you improve.</p>
                 </TxtImg>
             </section>
@@ -46,7 +46,7 @@ export default function About({ data }) {
 
 export const data = graphql `
     query {
-        emilySkeleton: file(relativePath: {eq: "images/emily-skeleton-color.jpeg"}) {
+        emily: file(relativePath: {eq: "images/emily-headshot.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 1000, quality: 72) {
                 ...GatsbyImageSharpFluid

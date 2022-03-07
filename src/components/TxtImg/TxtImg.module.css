@@ -29,6 +29,10 @@
     margin: auto;
 }
 
+.rotate img {
+    object-position: top center !important;
+}
+
 @media only screen and (min-width: 475px) {
     .rotate {
         padding-bottom: 50px;

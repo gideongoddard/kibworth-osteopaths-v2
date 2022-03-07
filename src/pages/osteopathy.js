@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
-import Banner from "../images/neck-treatment-banner.jpg"
+import Banner from "../images/emily-treatment-3.jpg"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import TxtImg from "../components/TxtImg/TxtImg"
 import OsteopathyStyles from "./osteopathy.module.css"
@@ -32,7 +32,7 @@ export default function Osteopathy({ data }) {
                 </div>
             </section>
             <section style={{backgroundColor: 'var(--neutral-100)'}}>
-                <TxtImg imgSrc={data.hands.childImageSharp.fluid} imgAlt="Baby's hands holding adult's hands" backgroundColor="var(--neutral-200">
+                <TxtImg imgSrc={data.emily.childImageSharp.fluid} imgAlt="Emily showing a patient a chart" backgroundColor="var(--neutral-200">
                     <p>Osteopaths consider all of the predisposing factors to an injury, as well as what is preventing the body from resolving it without intervention (also called maintaining factors). This is why practical advice is often given regarding what can be done to help prevent injuries from reoccurring. This could be stretches, advice with ice and heat, or considering ergonomics.</p>
                     <p>Injuries can occur at any age or stage of life. I am qualified to work with patients from birth onwards. Osteopathy is suitable for all of the family, no matter how young or old. See <Link to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link> for more information on treatment for babies.</p>
                 </TxtImg>
@@ -86,7 +86,7 @@ export default function Osteopathy({ data }) {
 
 export const query = graphql`
     query {
-        hands: file(relativePath: {eq: "images/hands.jpg"}) {
+        emily: file(relativePath: {eq: "images/emily-treatment-4.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 1000, quality: 72) {
                     ...GatsbyImageSharpFluid
