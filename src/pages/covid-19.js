@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import TxtImg from "../components/TxtImg/TxtImg"
+import AlertBar from "../components/AlertBar/AlertBar"
 
 function Covid({ data }) {
     return (
@@ -11,6 +12,9 @@ function Covid({ data }) {
             <Helmet>
                 <title>Latest COVID-19 information | Kibworth Osteopaths & Pilates</title>
             </Helmet>
+            <AlertBar>
+                <a href="https://youtu.be/n1K2m3bwL7g" target="_blank" rel="noopener noreferrer"><strong>WATCH:</strong> What to expect from your Osteopathic appointment during COVID-19</a>
+            </AlertBar>
             <Title title="Latest COVID-19 information" subtitle="Making the clinic a safe place for you to come for treatment." />
             <section>
                 <TxtImg
