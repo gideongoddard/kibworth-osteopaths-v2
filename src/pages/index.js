@@ -68,12 +68,11 @@ export default function Home({ data }) {
         </script>
       </Helmet>
       <AlertBar>
-        <a href="https://youtu.be/n1K2m3bwL7g" target="_blank" rel="noopener noreferrer"><strong>WATCH:</strong> What to expect from your Osteopathic appointment during COVID-19</a>
+        <Link to="/covid-19"><strong>READ: </strong>Our latest COVID-19 information for patients.</Link>
       </AlertBar>
       <section className={HomeStyles.heroBanner}>
         <h1>Kibworth Osteopaths & Pilates</h1>
       </section>
-      <div style={{margin: 'auto', fontSize: 'var(--type-xxs)', width: 'min(90%, 800px)', lineHeight: '1.6', border: '1px solid var(--secondary-200)', borderTop: 'none', textAlign: 'center', padding: 'var(--space-3)', backgroundColor: 'var(--secondary-50)'}}><Link to="/covid-19">Read our latest COVID-19 information for patients.</Link></div>
       <section className={HomeStyles.welcome}>
           <h2>Providing wholesome, whole-body healthcare for people of all ages in rural Leicestershire.</h2>
           <ul>
@@ -88,7 +87,7 @@ export default function Home({ data }) {
       </section>
       <section className={HomeStyles.osteoSection}>
         <TxtImg
-          imgSrc={data.neckTreatment.childImageSharp.fluid}
+          imgSrc={data.treatment.childImageSharp.fluid}
           imgAlt="Patient receiving neck treatment"
         >
           <h2>What is Osteopathy?</h2>
@@ -140,7 +139,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    neckTreatment: file(relativePath: {eq: "images/neck-treatment-tall.jpg"}) {
+    treatment: file(relativePath: {eq: "images/emily-treatment-2.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid
@@ -154,7 +153,7 @@ export const query = graphql`
         }
       }
     }
-    pilates: file(relativePath: {eq: "images/pilates.jpg"}) {
+    pilates: file(relativePath: {eq: "images/pilates-class.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 72) {
           ...GatsbyImageSharpFluid

@@ -1,6 +1,6 @@
 .wrapper {
     min-height: 50px;
-    background-color: var(--secondary-100);
+    background-color: var(--primary-50);
 }
 
 .content {
@@ -18,7 +18,7 @@
 
 .content a {
     text-decoration: none;
-    color: var(--secondary-900);
+    color: var(--primary-900);
     box-shadow: none;
     transition: 400ms;
 }

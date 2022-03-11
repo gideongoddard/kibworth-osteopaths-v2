@@ -45,14 +45,15 @@ export default function Header() {
                         <div onMouseOver={() => setOsteoSubnavOpen(true)} onMouseOut={() => setOsteoSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
                             <Link className={HeaderStyles.navItem} to="/osteopathy">Osteopathy <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
                             <div className={osteoSubnavOpen ? `${HeaderStyles.osteoSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.osteoSubnavClosed} ${HeaderStyles.subNav}`}>
+                                <Link className={HeaderStyles.subNavItem} to="/osteopathy/conditions">Conditions we treat</Link>
                                 <Link className={HeaderStyles.subNavItem} to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link>
                                 <Link className={HeaderStyles.subNavItem} to="/osteopathy/what-to-expect">What to expect</Link>
-                                <Link className={HeaderStyles.subNavItem} to="/osteopathy/conditions">Conditions we treat</Link>
                             </div>
                         </div>
                         <div onMouseOver={() => setPilatesSubnavOpen(true)} onMouseOut={() => setPilatesSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
-                            <Link className={HeaderStyles.navItem} to="/pilates">Pilates <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
+                            <Link className={HeaderStyles.navItem} to="#">Pilates <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
                                 <div className={pilatesSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.pilatesSubnavClosed} ${HeaderStyles.subNav}`}>
+                                    <Link className={HeaderStyles.subNavItem} to="/pilates">General Pilates</Link>
                                     <Link className={HeaderStyles.subNavItem} to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link>
                                 </div>
                         </div>

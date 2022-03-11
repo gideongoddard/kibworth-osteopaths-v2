@@ -1,5 +1,5 @@
 ---
-title: "Time to Get Outside Again and Look After Your Body in the Garden"
+title: "Get Outside and Look After Your Body in the Garden"
 date: "2022-03-01"
 featuredImage: ../../images/flowers.png
 ---
