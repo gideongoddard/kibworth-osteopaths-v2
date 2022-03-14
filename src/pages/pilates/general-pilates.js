@@ -1,18 +1,18 @@
 import { graphql } from "gatsby"
 import React from "react"
-import PilatesStyles from "./pilates.module.css"
-import Layout from "../components/Layout/Layout"
-import Title from "../components/Title/Title"
-import Banner from "../images/pilates-1.jpg"
-import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
-import TxtImg from "../components/TxtImg/TxtImg"
-import Box from "../components/Box/Box"
-import Schedule from "../components/Schedule/Schedule"
-import Button from "../components/Button/Button"
+import PilatesStyles from "./general-pilates.module.css"
+import Layout from "../../components/Layout/Layout"
+import Title from "../../components/Title/Title"
+import Banner from "../../images/pilates-1.jpg"
+import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
+import TxtImg from "../../components/TxtImg/TxtImg"
+import Box from "../../components/Box/Box"
+import Schedule from "../../components/Schedule/Schedule"
+import Button from "../../components/Button/Button"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { Helmet } from "react-helmet"
 
-export default function Pilates({ data }) {
+export default function GeneralPilates({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
     return (
         <Layout>

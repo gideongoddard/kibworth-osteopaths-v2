@@ -53,7 +53,7 @@ export default function Header() {
                         <div onMouseOver={() => setPilatesSubnavOpen(true)} onMouseOut={() => setPilatesSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
                             <Link className={HeaderStyles.navItem} to="#">Pilates <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
                                 <div className={pilatesSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.pilatesSubnavClosed} ${HeaderStyles.subNav}`}>
-                                    <Link className={HeaderStyles.subNavItem} to="/pilates">General Pilates</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/pilates/general-pilates">General Pilates</Link>
                                     <Link className={HeaderStyles.subNavItem} to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link>
                                 </div>
                         </div>

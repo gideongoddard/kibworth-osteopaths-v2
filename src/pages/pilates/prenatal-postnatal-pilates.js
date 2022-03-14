@@ -11,7 +11,7 @@ import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { Helmet } from "react-helmet"
 
 export default function PrenatalPostnatalPilates() {
-    const parentPages = [{name: "Home", path: "/"}, {name: "Pilates", path: "/pilates"}]
+    const parentPages = [{name: "Home", path: "/"}]
     return (
         <Layout>
             <Helmet>
