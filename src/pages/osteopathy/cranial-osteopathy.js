@@ -4,7 +4,7 @@ import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import CranialStyles from "./cranial-osteopathy.module.css"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import TxtImg from "../../components/TxtImg/TxtImg"
 
 export default function CranialOsteopathy({ data }) {
@@ -23,19 +23,16 @@ export default function CranialOsteopathy({ data }) {
             <section>
                 <div className={CranialStyles.narrowContainer}>
                     <h2>What is Cranial Osteopathy?</h2>
-                    <p>Cranial Osteopathy is a type of treatment used by Osteopaths which involves using very gentle techniques on the body (usually the head, hence the term Cranial Osteopathy) to release strain or tension in the musculoskeletal system. Cranial Osteopathy can be helpful for many conditions (for example headaches or head trauma injuries) but can be very effective for treating babies and small children.</p>
-                </div>
-            </section>
-            <section style={{backgroundColor: 'var(--neutral-100)'}}>
-                <TxtImg imgSrc={data.cranial.childImageSharp.fluid} alt="Baby hands being held by adult hands" backgroundColor="var(--neutral-200)">
-                    <p>Watching Cranial Osteopathy is often described as watching someone read a book, it does not look like much is being done. This is because Cranial Osteopathy is very quiet, and very subtle, which is why it can be an effective way of treating babies.</p>
-                    <p>Birth, whilst being a natural phenomenon, can be traumatic for the baby, whether they are delivered naturally or by c-section. Birth can place a lot of strain on the baby, which can then result in symptoms. Babies that are a multiple birth (twins for example) are incredibly squashed in the womb, and they are more likely to have tension/strains in their body.</p>
-                </TxtImg>
-            </section>
-            <section>
-                <div className={CranialStyles.narrowContainer}>
-                    <p>Alongside offering practical advice, Osteopaths using cranial osteopathy can help in managing sickness and wind, and feeding difficulties, to name a few common presentations.</p>
-                    <p>Here at Kibworth Osteopaths & Pilates, as with adult patients, a full paediatric case history is always taken, (this helps us establish if there are any other reasons for the baby’s symptoms, i.e. lactose intolerance/cow’s milk protein allergy) and paediatric tests are always conducted, for example checking for tongue-tie. Doing these things ensures that no referral is needed to the doctor.</p>
+                    <p>Cranial Osteopathy is a type of treatment used by Osteopaths which involves using very gentle techniques on the body to release strain or tension in the musculoskeletal system. Cranial Osteopathy can be helpful for many conditions and can be very effective for treating babies and small children. Cranial Osteopathy is so named as treatment often mainly involves the head, although other regions are often incorporated into treatment such as the spine and pelvis.</p>
+                    <p>Watching Cranial Osteopathy is often described as watching someone read a book, it does not look like much is being done. This is because Cranial Osteopathy is a quiet, subtle way of treating the body. The gentle use of pressure can help to relives strains or areas of physical stress in the body.</p>
+                    <p>Cranial Osteopathy involves the practitioner feeling the small natural changes of movement in the body called involuntary motion. This feels like tiny expansions and contractions of the body. Disturbance to an individual’s involuntary motion can happen through significant trauma (a car accident or a fall), through natural trauma (a difficult birth for example) or can build up over time through repeated trauma.</p>
+                    <p>Most of the time our body can recover from physical trauma, but occasionally lasting subtle stresses and stains can remain in the injured structures. Overtime, as the ability of the body to continuously compensate for these strains is exhausted, and symptoms may begin to show.</p>
+                    <p>In adults, Cranial Osteopathy may be used to help treat headaches, facial pain, and stress. In babies, Cranial Osteopathy can be used for helping with the effects of a difficult birth, irritability and feeding problems.</p>
+                    <p>You may also be interested in:</p>
+                    <ul>
+                        <li><Link to="#">Cranial Osteopathy and babies</Link></li>
+                        <li><Link to="#">New-born check</Link></li>
+                    </ul>
                 </div>
             </section>
         </Layout>
