@@ -20,7 +20,7 @@ export default function Footer() {
                         <li><Link to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link></li>
                         <li><Link to="/osteopathy/what-to-expect">What to expect</Link></li>
                         <li><Link to="/appointments">Make a booking</Link></li>
-                        <li><Link to="/pilates">About Pilates</Link></li>
+                        <li><Link to="/pilates/general-pilates">General Pilates</Link></li>
                         <li><Link to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link></li>
                         <li><Link to="/about">About us</Link></li>
                         <li><Link to="/faq">FAQs</Link></li>

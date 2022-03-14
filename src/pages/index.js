@@ -117,7 +117,7 @@ export default function Home({ data }) {
           <h2>Pilates</h2>
           <p>Pilates is known for helping core strength, posture, balance, flexibility, increasing strength, and reducing injury risk. Pilates is also excellent for post injury rehabilitation. Emily is specially trained in pre and post natal Pilates.</p>
           <p>Find out more about Pilates, how it can help you and how to join our classes below.</p>
-          <Button to="/pilates" type="primary" contact={false}>About Pilates</Button>
+          <Button to="/pilates/general-pilates" type="primary" contact={false}>About Pilates</Button>
         </TxtImg>
       </section>
       <section className={HomeStyles.awardSection}>
