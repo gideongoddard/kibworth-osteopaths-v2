@@ -12,7 +12,10 @@ function SportsOsteo() {
     return (
         <Layout>
             <Helmet>
-
+                <meta charSet="utf-8" />
+                
+                <title>Osteopathy & Sports Injuries | Kibworth Osteopaths & Pilates</title>
+                <html lang="en" />
             </Helmet>
             <Title title="Osteopathy & Sports Injuries" />
             <BreadcrumbBar currentPage="Osteopathy & Sports Injuries" parentPages={parentPages} />
