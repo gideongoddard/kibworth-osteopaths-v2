@@ -4,13 +4,8 @@ import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import * as CranialStyles from "./cranial-osteopathy.module.css"
-import { graphql, Link } from "gatsby"
-
-function CrossLink({ to, children }) {
-    return (
-        <Link to={to}>{children}&nbsp;<span className={CranialStyles.arrow}>&#8594;</span></Link>
-    )
-}
+import { graphql } from "gatsby"
+import CrossLink, { Linkage } from "../../components/CrossLink/CrossLink"
 
 export default function CranialOsteopathy({ data }) {
     const parentPages = [{name: "Home", path: "/"}, {name: "Osteopathy", path: "/osteopathy"}]
@@ -43,16 +38,10 @@ export default function CranialOsteopathy({ data }) {
                     <p>Having completed her 4 year degree in Osteopathy in 2009, Emily then trained with the Sutherland Cranial College of Osteopathy at post – graduate level to study Cranial Osteopathy.</p>
                 </div>
             </section>
-            <section className={CranialStyles.crossLink}>
-                <div>
-                    <h2>You may also be interested in...</h2>
-                    <p>You can find out more about related topics on the following pages:</p>
-                    <div className={CranialStyles.links}>
-                        <CrossLink to="#">Cranial Osteopathy and babies</CrossLink>
-                        <CrossLink to="#">New-born check</CrossLink>
-                    </div>
-                </div>
-            </section>
+            <CrossLink>
+                <Linkage to="#">Cranial Osteopathy and babies</Linkage>
+                <Linkage to="#">New-born check</Linkage>
+            </CrossLink>
         </Layout>
     )
 }
