@@ -6,6 +6,7 @@ import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import * as CranialStyles from "./cranial-osteopathy.module.css"
 import { graphql } from "gatsby"
 import CrossLink, { Linkage } from "../../components/CrossLink/CrossLink"
+import OnlineBooking from "../../components/OnlineBooking/OnlineBooking"
 
 export default function CranialOsteopathy({ data }) {
     const parentPages = [{name: "Home", path: "/"}, {name: "Osteopathy", path: "/osteopathy"}]
@@ -20,7 +21,7 @@ export default function CranialOsteopathy({ data }) {
             </Helmet>
             <Title title="Cranial Osteopathy" />
             <BreadcrumbBar currentPage="Cranial Osteopathy" parentPages={parentPages} />
-            <section>
+            <section className="condense">
                 <div className={CranialStyles.narrowContainer}>
                     <h3>What is Cranial Osteopathy?</h3>
                     <p>Cranial Osteopathy is a type of treatment used by Osteopaths which involves using very gentle techniques on the body to release strain or tension in the musculoskeletal system. Cranial Osteopathy can be helpful for many conditions and can be very effective for treating babies and small children. Cranial Osteopathy is so named as treatment often mainly involves the head, although other regions are often incorporated into treatment such as the spine and pelvis.</p>
@@ -38,8 +39,9 @@ export default function CranialOsteopathy({ data }) {
                     <p>Having completed her 4 year degree in Osteopathy in 2009, Emily then trained with the Sutherland Cranial College of Osteopathy at post – graduate level to study Cranial Osteopathy.</p>
                 </div>
             </section>
+            <OnlineBooking />
             <CrossLink>
-                <Linkage to="#">Cranial Osteopathy and babies</Linkage>
+                <Linkage to="/osteopathy/osteopathy-and-babies">Osteopathy and babies</Linkage>
                 <Linkage to="#">New-born check</Linkage>
             </CrossLink>
         </Layout>

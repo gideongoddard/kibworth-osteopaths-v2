@@ -5,6 +5,7 @@ import Title from "../../components/Title/Title"
 import BreadcrumbBar from "../../components/BreadcrumbBar/BreadcrumbBar"
 import Testimonial from "../../components/Testimonial/Testimonial"
 import CrossLink, { Linkage } from "../../components/CrossLink/CrossLink"
+import OnlineBooking from "../../components/OnlineBooking/OnlineBooking"
 
 function SportsOsteo() {
     const parentPages = [{name: "Home", path: "/"}, {name: "Osteopathy", path: "/osteopathy"}]
@@ -19,7 +20,7 @@ function SportsOsteo() {
             </Helmet>
             <Title title="Osteopathy & Sports Injuries" />
             <BreadcrumbBar currentPage="Osteopathy & Sports Injuries" parentPages={parentPages} />
-            <section>
+            <section className="condense">
                 <div style={{width: 'min(90%, 800px)', margin: 'auto'}}>
                     <p>The importance of exercise at any age is well proven. We know that exercise benefits the physical body as well as the mind. However, injury can sometimes occur because of your sport no matter how young/old you are, whether you’re an athlete or training to keep fit, or just starting a new hobby. Having to stop what you love is very frustrating, and we understand that.</p>
                     <p style={{margin: 'var(--space-5) auto', fontSize: 'var(--type-m)', fontWeight: 600, fontStyle: 'italic'}}>When it comes to Sports Injuries Osteopaths take a different approach.</p>
@@ -31,6 +32,7 @@ function SportsOsteo() {
                     </div>
                 </div>
             </section>
+            <OnlineBooking />
             <CrossLink>
                 <Linkage to="/blog/staying-fit-in-colder-weather/">Exercising in the cold</Linkage>
                 <Linkage to="/blog/discussing-smart-goals/">The importance of SMART Goals</Linkage>
