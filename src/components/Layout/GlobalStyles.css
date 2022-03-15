@@ -122,11 +122,13 @@ section {
 h2 {
     color: var(--neutral-900);
     font-size: var(--type-l);
+    margin: var(--space-6) auto var(--space-2) auto;
 }
 
 h3 {
     font-size: var(--type-m);
     font-weight: 600;
+    margin: var(--space-5) auto var(--space-2) auto;
 }
 
 h4 {
