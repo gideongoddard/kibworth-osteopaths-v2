@@ -43,7 +43,7 @@ export default function Header() {
                     </div>
                     <nav style={{height: navOpen ? "max-content" : 0}} onClick={() => setNavOpen(false)}>
                         <div onMouseOver={() => setOsteoSubnavOpen(true)} onMouseOut={() => setOsteoSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
-                            <Link className={HeaderStyles.navItem} to="#">Services <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
+                            <Link className={HeaderStyles.navItem} to="#">Services<FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
                             <div className={osteoSubnavOpen ? `${HeaderStyles.osteoSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.osteoSubnavClosed} ${HeaderStyles.subNav}`}>
                                 <Link className={HeaderStyles.subNavItem} to="/osteopathy/">Osteopathy</Link>
                                 <Link className={HeaderStyles.subNavItem} to="/osteopathy/conditions/">Conditions we treat</Link>
