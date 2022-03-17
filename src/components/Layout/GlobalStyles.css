@@ -149,6 +149,10 @@ ul li::marker {
     color: var(--primary-500);
 }
 
+ol > li {
+    margin-bottom: var(--space-1);
+}
+
 a {
     color: var(--secondary-800);
     font-weight: 500;
