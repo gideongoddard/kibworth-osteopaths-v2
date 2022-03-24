@@ -19,9 +19,9 @@ function BabyOsteo() {
             </Helmet>
             <Title title="Osteopathy & Babies" />
             <BreadcrumbBar currentPage="Osteopathy & Babies" parentPages={parentPages} />
-            <section style={{backgroundColor: 'var(--neutral-50)'}}>
+            <section style={{paddingBottom: 0}}>
                 <div style={{width: 'min(90%, 800px)', margin: 'auto'}}>
-                <p style={{lineHeight: '1.6', fontSize: 'var(--type-m)', fontWeight: 400}}>Birth is a natural phenomenon. Whilst a baby is designed to withstand the stress of labour, the process can sometimes be traumatic. Birth trauma is more likely to occur if interventions were needed, such as forceps or an emergency c-section.</p>
+                <p style={{fontSize: 'var(--type-s)', fontWeight: 500}}>Birth is a natural phenomenon. Whilst a baby is designed to withstand the stress of labour, the process can sometimes be traumatic. Birth trauma is more likely to occur if interventions were needed, such as forceps or an emergency c-section.</p>
                 </div>
             </section>
             <section className="condense">

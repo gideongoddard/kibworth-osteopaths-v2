@@ -19,13 +19,9 @@ function NewbornCheck() {
             </Helmet>
             <Title title="The Newborn Check" />
             <BreadcrumbBar currentPage="Newborn Check" parentPages={parentPages} />
-            <section style={{backgroundColor: 'var(--neutral-50)'}}>
-                <div style={{width: 'min(90%, 800px)', margin: 'auto'}}>
-                    <p style={{fontSize: 'var(--type-s)'}}>Birth is a natural phenomenon. Whilst a baby is designed to withstand the stress of labour, the process can sometimes be traumatic for the baby. Birth trauma is more likely to occur if interventions were needed, such as forceps or an emergency c-section.</p>
-                </div>
-            </section>
             <section className="condense">
                 <div style={{width: 'min(90%, 800px)', margin: 'auto'}}>
+                    <p>Birth is a natural phenomenon. Whilst a baby is designed to withstand the stress of labour, the process can sometimes be traumatic for the baby. Birth trauma is more likely to occur if interventions were needed, such as forceps or an emergency c-section.</p>
                     <p>The Newborn check was designed by Emily for parents to have their baby / babies checked Osteopathically following birth. It is primarily for babies from 1 week to 3 months &ndash; although you can bring your little one(s) anytime you feel ready.</p>
                     <p>A full paediatric case history is always taken, (including details about the pregnancy and birth) and paediatric checks are conducted (for example checking for tongue-tie). Doing these things ensures that it is appropriate to proceed.</p>
                     <h3>What is an Osteopathic Newborn Check?</h3>

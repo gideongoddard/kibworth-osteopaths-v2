@@ -20,9 +20,9 @@ function PostnatalCheck() {
             </Helmet>
             <Title title="The New Mum Postnatal Check" />
             <BreadcrumbBar currentPage="Postnatal Check" parentPages={parentPages} />
-            <section style={{backgroundColor: 'var(--neutral-50)'}}>
+            <section style={{paddingBottom: 0}}>
                 <div style={{width: 'min(90%, 800px)', margin: 'auto'}}>
-                    <p style={{fontSize: 'var(--type-s)'}}>The New Mum Postnatal Check is designed for women once they have had their 6-8 week postnatal check with their GP, up to 2 years postpartum (after you’ve had your child / children). Don’t worry if you had your baby / babies longer ago, you can still come for this appointment.</p>
+                    <p style={{fontSize: 'var(--type-s)', fontWeight: 500}}>The New Mum Postnatal Check is designed for women once they have had their 6-8 week postnatal check with their GP, up to 2 years postpartum (after you’ve had your child / children). Don’t worry if you had your baby / babies longer ago, you can still come for this appointment.</p>
                 </div>
             </section>
             <section className="condense">
