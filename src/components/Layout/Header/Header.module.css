@@ -110,6 +110,7 @@ nav {
     font-weight: 500;
     font-size: var(--type-xs);
     box-shadow: 0 2px 0;
+    letter-spacing: 1px;
 }
 
 header a {

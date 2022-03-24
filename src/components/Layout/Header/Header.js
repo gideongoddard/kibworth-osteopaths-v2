@@ -49,7 +49,7 @@ export default function Header() {
                             <div className={servicesSubnavOpen ? `${HeaderStyles.osteoSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.subnavClosed} ${HeaderStyles.subNav}`}>
                                 <h5>Osteopathy</h5>
                                 <div className={HeaderStyles.subFlexContainer}>
-                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/">Osteopathy</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/">General Osteopathy</Link>
                                     <Link className={HeaderStyles.subNavItem} to="/osteopathy/conditions/">Conditions we treat</Link>
                                     <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-pregnancy/">Osteopathy & Pregnancy</Link>
                                     <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-sports-injuries/">Osteopathy & Sports Injuries</Link>
