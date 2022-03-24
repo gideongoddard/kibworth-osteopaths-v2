@@ -102,6 +102,16 @@ nav {
     display: flex;
 }
 
+.subNav h5 {
+    padding-bottom: 15px;
+    margin: 10px 15px;
+    text-transform: uppercase;
+    color: var(--primary-600);
+    font-weight: 500;
+    font-size: var(--type-xs);
+    box-shadow: 0 2px 0;
+}
+
 header a {
     box-shadow: none;
 }
@@ -117,13 +127,14 @@ header a:hover {
         width: 100%;
         justify-content: flex-start;
         align-items: flex-start;
-        background-color: white;
+        background-color: #fff;
         top: 150px;
         right: 0;
         z-index: 7;
         height: 0;
         overflow: hidden;
-        box-shadow: var(--shadow-m);
+        box-shadow: var(--shadow-elevation-medium);
+        border-top: 1px solid var(--primary-100);
     }
 
     .subNavWrapper {
@@ -142,7 +153,8 @@ header a:hover {
 
     .navItem {
         padding-left: 8%;
-        background-color: var(--primary-200);
+        font-weight: 700;
+        font-size: var(--type-s);
     }
 
     .navButton {
@@ -160,12 +172,19 @@ header a:hover {
     }
 
     .subNavItem {
-        padding-left: 12%;
-        background-color: var(--primary-100);
+        padding: 10px 0 10px 8%;
+        color: var(--neutral-600);
+        font-weight: 400;
     }
 
     .subNavItem:last-child {
         padding-bottom: 15px;
+    }
+
+    .subNav h5 {
+        font-size: var(--type-xxs);
+        padding-bottom: 10px;
+        margin: 10px 8%;
     }
 }
 
@@ -213,9 +232,10 @@ header a:hover {
     }
 
     .subNavItem {
-        padding: 15px;
+        padding: 10px 15px;
         width: 100%;
         margin-left: 0;
+        flex-basis: 50%;
     }
 
     .subNavIcon {
@@ -225,25 +245,29 @@ header a:hover {
     .subNav {
         position: absolute;
         top: 150px;
-        border-top: 5px solid var(--neutral-500);
+        border-top: 5px solid var(--primary-700);
         box-shadow: var(--shadow-elevation-medium);
         background-color: white;
         min-width: 250px;
+        padding: var(--space-2);
     }
 
     .osteoSubnav {
         display: flex;
+        width: 600px;
     }
 
-    .osteoSubnavClosed {
+    .subFlexContainer {
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: var(--fixed-space-4);
+    }
+
+    .subnavClosed {
         display: none;
     }
 
     .pilatesSubnav {
         display: flex;
-    }
-
-    .pilatesSubnavClosed {
-        display: none;
     }
 }
