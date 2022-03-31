@@ -67,14 +67,14 @@ export default function Header() {
                         <div onMouseOver={() => setWomenSubnavOpen(true)} onMouseOut={() => setWomenSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
                             <Link className={HeaderStyles.navItem} to="#">Women's Health<FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
                                 <div className={womenSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.subnavClosed} ${HeaderStyles.subNav}`}>
-                                    <Link className={HeaderStyles.subNavItem} to="/for-women/postnatal-check/">The New Mum Postnatal Check</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/womens-health/postnatal-check/">The New Mum Postnatal Check</Link>
                                     <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-pregnancy/">Osteopathy & Pregnancy</Link>
                                 </div>
                         </div>
                         <div onMouseOver={() => setBabiesSubnavOpen(true)} onMouseOut={() => setBabiesSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
                             <Link className={HeaderStyles.navItem} to="#">Babies<FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
                                 <div className={babiesSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.subnavClosed} ${HeaderStyles.subNav}`}>
-                                    <Link className={HeaderStyles.subNavItem} to="/for-babies/newborn-check/">The Newborn Check</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/babies/newborn-check/">The Newborn Check</Link>
                                     <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-babies/">Osteopathy & Babies</Link>
                                 </div>
                         </div>

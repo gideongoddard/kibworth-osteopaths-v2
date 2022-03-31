@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Layout from "../../components/Layout/Layout"
 import Title from "../../components/Title/Title"
@@ -67,8 +68,11 @@ export default function Conditions({ data }) {
 
     return (
         <Layout>
-            <Title title="Conditions we treat" />
-            <BreadcrumbBar currentPage="Conditions" parentPages={parentPages} />
+            <Helmet>
+                <title>What Osteopathy Can Help With | Kibworth Osteopaths & Pilates</title>
+            </Helmet>
+            <Title title="What Osteopathy Can Help With" />
+            <BreadcrumbBar currentPage="What Osteopathy Can Help With" parentPages={parentPages} />
             <section className="condense">
                 <div className={ConditionsStyles.narrowContainer}>
                     <h3>Here at Kibworth Osteopaths & Pilates we are proud to be able to offer treatment to patients from birth onwards.</h3>
