@@ -51,7 +51,7 @@ function PostnatalCheck() {
             <OnlineBooking />
             <CrossLink>
                 <Linkage to="/blog/pelvic-health-more-than-the-pelvic-floor/">The Pelvic Floor</Linkage>
-                <Linkage to="#">The Newborn Check</Linkage>
+                <Linkage to="/babies/newborn-check/">The Newborn Check</Linkage>
                 <Linkage to="/osteopathy/osteopathy-and-pregnancy/">Osteopathy & Pregnancy</Linkage>
                 <Linkage to="/pilates/prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</Linkage>
             </CrossLink>

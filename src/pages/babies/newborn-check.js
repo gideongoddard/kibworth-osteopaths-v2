@@ -41,7 +41,7 @@ function NewbornCheck() {
             <CrossLink>
                 <Linkage to="/osteopathy/osteopathy-and-babies/">Osteopathy & Babies</Linkage>
                 <Linkage to="/osteopathy/cranial-osteopathy/">Cranial Osteopathy</Linkage>
-                <Linkage to="/womens-health/postnatal-check/">Postnatal Check</Linkage>
+                <Linkage to="/womens-health/postnatal-check/">The Postnatal Check</Linkage>
             </CrossLink>
         </Layout>
     )

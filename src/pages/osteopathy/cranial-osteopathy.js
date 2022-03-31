@@ -41,8 +41,8 @@ export default function CranialOsteopathy({ data }) {
             </section>
             <OnlineBooking />
             <CrossLink>
-                <Linkage to="/osteopathy/osteopathy-and-babies">Osteopathy and babies</Linkage>
-                <Linkage to="#">New-born check</Linkage>
+                <Linkage to="/osteopathy/osteopathy-and-babies/">Osteopathy and babies</Linkage>
+                <Linkage to="/babies/newborn-check/">The Newborn Check</Linkage>
             </CrossLink>
         </Layout>
     )

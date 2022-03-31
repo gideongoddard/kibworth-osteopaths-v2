@@ -48,8 +48,8 @@ function PregnancyOsteo({ data }) {
             <OnlineBooking />
             <CrossLink>
                 <Linkage to="/pilates/prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</Linkage>
-                <Linkage to="#">Post Natal Check</Linkage>
-                <Linkage to="#">New Born Check</Linkage>
+                <Linkage to="/womens-health/postnatal-check/">Postnatal Check</Linkage>
+                <Linkage to="/babies/newborn-check/">The Newborn Check</Linkage>
                 <Linkage to="/blog/pelvic-health-more-than-the-pelvic-floor/">Osteopathy and the pelvic floor</Linkage>
             </CrossLink>
         </Layout>

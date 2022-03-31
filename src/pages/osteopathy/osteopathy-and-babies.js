@@ -40,9 +40,9 @@ function BabyOsteo() {
             </section>
             <OnlineBooking />
             <CrossLink>
-                <Linkage to="#">The new-born check</Linkage>
-                <Linkage to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Linkage>
-                <Linkage to="#">The post-natal check</Linkage>
+                <Linkage to="/babies/newborn-check/">The Newborn Check</Linkage>
+                <Linkage to="/osteopathy/cranial-osteopathy/">Cranial Osteopathy</Linkage>
+                <Linkage to="/womens-health/postnatal-check/">The Postnatal Check</Linkage>
             </CrossLink>
         </Layout>
     )
