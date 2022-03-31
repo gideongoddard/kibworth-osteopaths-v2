@@ -22,7 +22,7 @@ const Profile = props => (
 export default function Team() {
     return (
         <div className={TeamStyles.container}>
-            <h2>Meet the team</h2>
+            <h2>Meet the Team</h2>
             <StaticQuery
                 query={graphql`
                     query {

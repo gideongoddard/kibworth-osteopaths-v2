@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/Layout/Layout"
 import Title from "../components/Title/Title"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
@@ -8,6 +9,9 @@ export default function Privacy() {
     const parentPages = [{name: "Home", path: "/"}]
     return (
         <Layout>
+            <Helmet>
+                <title>Privacy Policy | Kibworth Osteopaths & Pilates</title>
+            </Helmet>
             <Title title="Privacy Policy" />
             <BreadcrumbBar currentPage="Privacy" parentPages={parentPages} />
             <section className={PrivacyStyles.section}>

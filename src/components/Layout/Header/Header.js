@@ -8,8 +8,10 @@ import LogoSVG from "../../../images/KOPI-logo.svg"
 
 export default function Header() {
     const [navOpen, setNavOpen] = useState(false)
-    const [osteoSubnavOpen, setOsteoSubnavOpen] = useState(false)
-    const [pilatesSubnavOpen, setPilatesSubnavOpen] = useState(false)
+    const [servicesSubnavOpen, setServicesSubnavOpen] = useState(false)
+    const [womenSubnavOpen, setWomenSubnavOpen] = useState(false)
+    const [babiesSubnavOpen, setBabiesSubnavOpen] = useState(false)
+
 
     return (
         <header>
@@ -42,25 +44,43 @@ export default function Header() {
                         }
                     </div>
                     <nav style={{height: navOpen ? "max-content" : 0}} onClick={() => setNavOpen(false)}>
-                        <div onMouseOver={() => setOsteoSubnavOpen(true)} onMouseOut={() => setOsteoSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
-                            <Link className={HeaderStyles.navItem} to="/osteopathy">Osteopathy <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
-                            <div className={osteoSubnavOpen ? `${HeaderStyles.osteoSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.osteoSubnavClosed} ${HeaderStyles.subNav}`}>
-                                <Link className={HeaderStyles.subNavItem} to="/osteopathy/conditions">Conditions we treat</Link>
-                                <Link className={HeaderStyles.subNavItem} to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link>
-                                <Link className={HeaderStyles.subNavItem} to="/osteopathy/what-to-expect">What to expect</Link>
+                        <div onMouseOver={() => setServicesSubnavOpen(true)} onMouseOut={() => setServicesSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
+                            <Link className={HeaderStyles.navItem} to="#">Services<FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
+                            <div className={servicesSubnavOpen ? `${HeaderStyles.osteoSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.subnavClosed} ${HeaderStyles.subNav}`}>
+                                <h5>Osteopathy</h5>
+                                <div className={HeaderStyles.subFlexContainer}>
+                                <Link className={HeaderStyles.subNavItem} to="/osteopathy/conditions/">What Osteopathy can help with</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/">General Osteopathy</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-sports-injuries/">Osteopathy & Sports Injuries</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-pregnancy/">Osteopathy & Pregnancy</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-babies/">Osteopathy & Babies</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/cranial-osteopathy/">Cranial Osteopathy</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/what-to-expect/">What to expect</Link>
+                                </div>
+                                <h5>Pilates</h5>
+                                <div className={HeaderStyles.subFlexContainer}>
+                                    <Link className={HeaderStyles.subNavItem} to="/pilates/general-pilates/">General Pilates</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/pilates/prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</Link>
+                                </div>
                             </div>
                         </div>
-                        <div onMouseOver={() => setPilatesSubnavOpen(true)} onMouseOut={() => setPilatesSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
-                            <Link className={HeaderStyles.navItem} to="#">Pilates <FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
-                                <div className={pilatesSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.pilatesSubnavClosed} ${HeaderStyles.subNav}`}>
-                                    <Link className={HeaderStyles.subNavItem} to="/pilates/general-pilates">General Pilates</Link>
-                                    <Link className={HeaderStyles.subNavItem} to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link>
+                        <div onMouseOver={() => setWomenSubnavOpen(true)} onMouseOut={() => setWomenSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
+                            <Link className={HeaderStyles.navItem} to="#">Women's Health<FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
+                                <div className={womenSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.subnavClosed} ${HeaderStyles.subNav}`}>
+                                    <Link className={HeaderStyles.subNavItem} to="/womens-health/postnatal-check/">The New Mum Postnatal Check</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-pregnancy/">Osteopathy & Pregnancy</Link>
                                 </div>
                         </div>
-                        <Link className={HeaderStyles.navItem} to="/about">About</Link>
-                        <Link className={HeaderStyles.navItem} to="/faq">FAQ</Link>
-                        <Link className={HeaderStyles.navItem} to="/blog">Blog</Link>
-                        <Link className={`${HeaderStyles.navItem} ${HeaderStyles.navButton}`} to="/appointments">Book Now</Link>
+                        <div onMouseOver={() => setBabiesSubnavOpen(true)} onMouseOut={() => setBabiesSubnavOpen(false)} className={HeaderStyles.subNavWrapper}>
+                            <Link className={HeaderStyles.navItem} to="#">Babies<FontAwesomeIcon className={HeaderStyles.subNavIcon} icon={faAngleDown} /></Link>
+                                <div className={babiesSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.subnavClosed} ${HeaderStyles.subNav}`}>
+                                    <Link className={HeaderStyles.subNavItem} to="/babies/newborn-check/">The Newborn Check</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-babies/">Osteopathy & Babies</Link>
+                                </div>
+                        </div>
+                        <Link className={HeaderStyles.navItem} to="/about/">About</Link>
+                        <Link className={HeaderStyles.navItem} to="/blog/">Blog</Link>
+                        <Link className={`${HeaderStyles.navItem} ${HeaderStyles.navButton}`} to="/appointments/">Book Now</Link>
                     </nav>
                 </div>
             </div>

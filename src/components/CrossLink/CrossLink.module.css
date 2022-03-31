@@ -1,0 +1,36 @@
+.crossLink {
+    background-color: var(--primary-50);
+}
+
+.crossLink > div {
+    width: min(90%, 800px);
+    margin: auto;
+}
+
+.crossLink h2 {
+    font-size: var(--type-xl);
+    color: var(--neutral-900);
+    margin: var(--space-3) auto;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    padding: var(--space-2);
+    color: var(--primary-900);
+    box-shadow: none;
+    border-left: 3px solid var(--primary-900);
+    margin: var(--space-1) 0;
+}
+
+.links a:hover {
+    color: var(--secondary-700);
+    border-left: 7px solid var(--secondary-700);
+}
+
+.arrow {
+    padding-left: var(--fixed-space-1);
+}

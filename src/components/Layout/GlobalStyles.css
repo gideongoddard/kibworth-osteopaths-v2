@@ -122,11 +122,13 @@ section {
 h2 {
     color: var(--neutral-900);
     font-size: var(--type-l);
+    margin: var(--space-6) 0 var(--space-2) 0;
 }
 
 h3 {
     font-size: var(--type-m);
     font-weight: 600;
+    margin: var(--space-5) 0 var(--space-2) 0;
 }
 
 h4 {
@@ -145,6 +147,10 @@ ul {
 
 ul li::marker {
     color: var(--primary-500);
+}
+
+ol > li {
+    margin-bottom: var(--space-1);
 }
 
 a {

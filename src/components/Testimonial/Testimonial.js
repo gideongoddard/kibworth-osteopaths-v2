@@ -5,7 +5,7 @@ export default function Testimonial(props) {
     return (
         <div className={TestimonialStyles.container}>
             <div className={TestimonialStyles.quoteBox}>
-                <h3>Patient feedback</h3>
+                <h3>{props.heading ? `${props.heading}` : `Patient feedback`}</h3>
                 <div className={TestimonialStyles.quote}>
                     <p><em>{props.quote}</em></p>
                 </div>
