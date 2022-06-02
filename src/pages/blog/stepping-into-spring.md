@@ -59,4 +59,4 @@ This can be a real problem especially in the older foot, as well as the younger 
 Please choose your summer footwear wisely, and if you want to ask any further questions on what footwear is best for you, or more information on how Osteopathy can help you, please get in touch.
 
 <strong>Emily Coombes</strong><br />
-<em>Registered Osteopath (7416) and principal Osteopath at Kibworth Osteopaths & Pilates</em>
+<em>Registered Osteopath (7416) and Principal Osteopath at Kibworth Osteopaths & Pilates</em>
