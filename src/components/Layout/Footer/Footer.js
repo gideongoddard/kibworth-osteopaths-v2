@@ -2,7 +2,7 @@ import React from "react"
 import FooterStyles from "./Footer.module.css"
 import { Link, StaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faInstagram, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons"
 import Img from "gatsby-image"
 
 export default function Footer() {
@@ -33,6 +33,7 @@ export default function Footer() {
                     <div className={FooterStyles.socialLinks}>
                         <a href="https://www.facebook.com/kibworthosteo/" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates Facebook page"><FontAwesomeIcon icon={faFacebook} /></a>
                         <a href="https://www.instagram.com/kibworthosteopaths/" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates Instagram page"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href="https://www.youtube.com/channel/UCYV5d_sNakdmQOLiRH_RdCw" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates YouTube channel"><FontAwesomeIcon icon={faYoutubeSquare} /></a>
                     </div>
                     <StaticQuery
                         query={graphql`
