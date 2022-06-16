@@ -84,7 +84,7 @@ export default function Footer() {
                     <span>{year} © - Kibworth Osteopaths & Pilates</span>
                 </div>
                 <div className={FooterStyles.credit}>
-                    <span>Website by <a href="https://gideongoddard.co.uk" target="_blank" rel="noopener noreferrer">Gideon Goddard Digital</a></span>
+                    <span>Website by <a href="https://goddard.digital/" target="_blank">Goddard Digital</a></span>
                 </div>
             </div>
         </footer>
