@@ -16,17 +16,17 @@ export default function Footer() {
                     <h4>Useful links</h4>
                     <ul>
                         <li><Link to="/osteopathy/conditions/">Conditions we treat</Link></li>
-                        <li><Link to="/osteopathy">About Osteopathy</Link></li>
-                        <li><Link to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link></li>
-                        <li><Link to="/osteopathy/what-to-expect">What to expect</Link></li>
-                        <li><Link to="/appointments">Make a booking</Link></li>
-                        <li><Link to="/pilates/general-pilates">General Pilates</Link></li>
-                        <li><Link to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link></li>
-                        <li><Link to="/about">About us</Link></li>
-                        <li><Link to="/faq">FAQs</Link></li>
-                        <li><Link to="/blog">Blog</Link></li>
-                        <li><Link to="/privacy">Privacy Policy</Link></li>
-                        <li><Link to="/covid-19">COVID-19 Guidance</Link></li>
+                        <li><Link to="/osteopathy/">About Osteopathy</Link></li>
+                        <li><Link to="/osteopathy/cranial-osteopathy/">Cranial Osteopathy</Link></li>
+                        <li><Link to="/osteopathy/what-to-expect/">What to expect</Link></li>
+                        <li><Link to="/appointments/">Appointments</Link></li>
+                        <li><Link to="/pilates/general-pilates/">General Pilates</Link></li>
+                        <li><Link to="/pilates/prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</Link></li>
+                        <li><Link to="/about/">About us</Link></li>
+                        <li><Link to="/faq/">FAQs</Link></li>
+                        <li><Link to="/blog/">Blog</Link></li>
+                        <li><Link to="/privacy/">Privacy Policy</Link></li>
+                        <li><Link to="/covid-19/">COVID-19 Guidance</Link></li>
                     </ul>
                 </div>
                 <div className={FooterStyles.right}>
