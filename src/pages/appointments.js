@@ -75,7 +75,7 @@ export default function Appointments() {
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="findUs">
                 <div className={AppointmentsStyles.container}>
                     <h2>Where to find us</h2>
                     <div className={AppointmentsStyles.gridContainer}>
