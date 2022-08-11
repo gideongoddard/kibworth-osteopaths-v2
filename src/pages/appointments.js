@@ -51,8 +51,8 @@ export default function Appointments() {
                         </Box>
                         <Box heading="Pilates fees">
                             <div className={AppointmentsStyles.boxContentContainer}>
-                                <p>6 x 1hr group class</p><p>£53.40</p>
-                                <p className={AppointmentsStyles.lowContrast}><em>Cost per group class</em></p><p className={AppointmentsStyles.lowContrast}><em>£8.90</em></p>
+                                <p>6 x 1hr group class</p><p>£72.00</p>
+                                <p className={AppointmentsStyles.lowContrast}><em>Cost per group class</em></p><p className={AppointmentsStyles.lowContrast}><em>£12.00</em></p>
                                 <p>1hr one-to-one class</p><p>£35</p>
                             </div>
                         </Box>
