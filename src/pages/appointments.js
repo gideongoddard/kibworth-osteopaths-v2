@@ -27,7 +27,31 @@ export default function Appointments() {
             <Title title="Make a booking" />
             <BreadcrumbBar currentPage="Appointments" parentPages={parentPages} />
             <OnlineBooking />
-            <section style={{padding: 'var(--space-5) 0 var(--space-7) 0'}}>
+            <section id="findUs" style={{padding: 'var(--space-4) 0 var(--space-7) 0'}}>
+                <div className={AppointmentsStyles.container}>
+                    <h2>Where to find us</h2>
+                    <div className={AppointmentsStyles.gridContainer}>
+                        <div className={AppointmentsStyles.mapContainer}>
+                            <p>We're based at <strong>The Manor, Tur Langton</strong> and you can find us as shown on the map below.</p>
+                            <Map height="350px" />
+                        </div>
+                        <div className={AppointmentsStyles.addressContainer}>
+                            <p>When arriving, come into The Manor up the drive, turn right and you'll find us on the right-hand side next to Natural Structures. You'll be able to park either in front of the practice or in the customer car park.</p>
+                            <Box heading="Kibworth Osteopaths & Pilates">
+                                <div className={AppointmentsStyles.address}>
+                                    <p>Unit 17</p>
+                                    <p>The Manor</p>
+                                    <p>Main Street</p>
+                                    <p>Tur Langton</p>
+                                    <p>Leicestershire</p>
+                                    <p>LE8 0PJ</p>
+                                </div>
+                            </Box>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
                 <Testimonial quote="I wish I could give more than 5 stars. I can't recommend Emily enough. She's seen both my children and with my daughter she cured her colic within 4 sessions, with me seeing a massive difference from session 1. Emily listens to everything and is thoroughly understanding of your feelings as a parent and never makes you feel that your ideas are not important. She is fantastic!" />
             </section>
             <section>
@@ -72,30 +96,6 @@ export default function Appointments() {
                                 label: "email",
                             })
                         }}>Email now</Button>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div className={AppointmentsStyles.container}>
-                    <h2>Where to find us</h2>
-                    <div className={AppointmentsStyles.gridContainer}>
-                        <div className={AppointmentsStyles.mapContainer}>
-                            <p>We're based at <strong>The Manor, Tur Langton</strong> and you can find us as shown on the map below.</p>
-                            <Map height="350px" />
-                        </div>
-                        <div className={AppointmentsStyles.addressContainer}>
-                            <p>When arriving, come into The Manor up the drive, turn right and you'll find us on the right-hand side next to Natural Structures. You'll be able to park either in front of the practice or in the customer car park.</p>
-                            <Box heading="Kibworth Osteopaths & Pilates">
-                                <div className={AppointmentsStyles.address}>
-                                    <p>Unit 17</p>
-                                    <p>The Manor</p>
-                                    <p>Main Street</p>
-                                    <p>Tur Langton</p>
-                                    <p>Leicestershire</p>
-                                    <p>LE8 0PJ</p>
-                                </div>
-                            </Box>
-                        </div>
                     </div>
                 </div>
             </section>

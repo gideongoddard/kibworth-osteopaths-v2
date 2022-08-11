@@ -2,7 +2,7 @@ import React from "react"
 import FooterStyles from "./Footer.module.css"
 import { Link, StaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook, faInstagram, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons"
 import Img from "gatsby-image"
 
 export default function Footer() {
@@ -16,23 +16,24 @@ export default function Footer() {
                     <h4>Useful links</h4>
                     <ul>
                         <li><Link to="/osteopathy/conditions/">Conditions we treat</Link></li>
-                        <li><Link to="/osteopathy">About Osteopathy</Link></li>
-                        <li><Link to="/osteopathy/cranial-osteopathy">Cranial Osteopathy</Link></li>
-                        <li><Link to="/osteopathy/what-to-expect">What to expect</Link></li>
-                        <li><Link to="/appointments">Make a booking</Link></li>
-                        <li><Link to="/pilates/general-pilates">General Pilates</Link></li>
-                        <li><Link to="/pilates/prenatal-postnatal-pilates">Prenatal & Postnatal Pilates</Link></li>
-                        <li><Link to="/about">About us</Link></li>
-                        <li><Link to="/faq">FAQs</Link></li>
-                        <li><Link to="/blog">Blog</Link></li>
-                        <li><Link to="/privacy">Privacy Policy</Link></li>
-                        <li><Link to="/covid-19">COVID-19 Guidance</Link></li>
+                        <li><Link to="/osteopathy/">About Osteopathy</Link></li>
+                        <li><Link to="/osteopathy/cranial-osteopathy/">Cranial Osteopathy</Link></li>
+                        <li><Link to="/osteopathy/what-to-expect/">What to expect</Link></li>
+                        <li><Link to="/appointments/">Appointments</Link></li>
+                        <li><Link to="/pilates/general-pilates/">General Pilates</Link></li>
+                        <li><Link to="/pilates/prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</Link></li>
+                        <li><Link to="/about/">About us</Link></li>
+                        <li><Link to="/faq/">FAQs</Link></li>
+                        <li><Link to="/blog/">Blog</Link></li>
+                        <li><Link to="/privacy/">Privacy Policy</Link></li>
+                        <li><Link to="/covid-19/">COVID-19 Guidance</Link></li>
                     </ul>
                 </div>
                 <div className={FooterStyles.right}>
                     <div className={FooterStyles.socialLinks}>
                         <a href="https://www.facebook.com/kibworthosteo/" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates Facebook page"><FontAwesomeIcon icon={faFacebook} /></a>
                         <a href="https://www.instagram.com/kibworthosteopaths/" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates Instagram page"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href="https://www.youtube.com/channel/UCYV5d_sNakdmQOLiRH_RdCw" rel="noopener noreferrer" target="_blank" aria-label="Kibworth Osteopaths & Pilates YouTube channel"><FontAwesomeIcon icon={faYoutubeSquare} /></a>
                     </div>
                     <StaticQuery
                         query={graphql`
@@ -83,7 +84,7 @@ export default function Footer() {
                     <span>{year} © - Kibworth Osteopaths & Pilates</span>
                 </div>
                 <div className={FooterStyles.credit}>
-                    <span>Website by <a href="https://gideongoddard.co.uk" target="_blank" rel="noopener noreferrer">Gideon Goddard Digital</a></span>
+                    <span>Website by <a href="https://goddard.digital/" target="_blank">Goddard Digital</a></span>
                 </div>
             </div>
         </footer>

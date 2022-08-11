@@ -27,51 +27,56 @@ export default function FAQ() {
         },
         {
             id: 4,
+            question: "Do you have parking?",
+            answer: <><p>Please be aware that we have 2 allocated parking spaces outside of the clinic. If these are taken when you arrive for your appointment please park in the main car park not in front of any other business premises. If you are unable to walk from the main car park, wait outside the unit until a space (directly outside my office) becomes free.</p><p>We also have <a href="/appointments#findUs">a map showing where to find the clinic</a> with some further guidance.</p></>
+        },
+        {
+            id: 5,
             question: "Can I see an Osteopath through the NHS?",
             answer: <><p>Currently, access to Osteopathy on the NHS is limited, but services are becoming more widespread as commissioning authorities recognise the benefits of providing Osteopathy to patients.</p><p>To find out if NHS treatment is available in your area, speak to your GP and or contact your local Primary Care Commissioning Group.</p></>,
         },
         {
-            id: 5,
+            id: 6,
             question: "Can I claim on my private medical insurance?",
             answer: <p>Many private health insurance policies provide cover for Osteopathic treatment. It may be possible to claim for a course of treatment but you should check in advance with your insurance company before seeking Osteopathic treatment, in order to confirm the available level of cover and whether you will need to have a referral from your GP or specialist.</p>,
         },
         {
-            id: 6,
+            id: 7,
             question: "What is an Osteopath?",
             answer: <><p>An Osteopath is a primary care professional, focusing on the diagnosis, treatment, prevention and rehabilitation of musculoskeletal disorders and the effects of these conditions on patients' general health.</p><p>Using many of the diagnostic proceedures applied in conventional medical assessement, Osteopaths seek to restore the optimal functioning of the body, where possible without the use of drugs or surgery.</p><p>Osteopathy is based on the principle that the body has the ability to heal, and Osteopathic care focuses on stengthening the musculoskeletal systems to treat existing conditions and to prevent illness.</p><p>Osteopaths' patient centered approach to health and well-being means they consider symptoms in the context of the patient's full medical history, as well as their lifestyle and personal circumstances. This holistic approach ensures that all treatment is tailored to the individual patient.</p></>,
         },
         {
-            id: 7,
+            id: 8,
             question: "What do Osteopaths treat?",
             answer: <p>Osteopathy focuses on the diagnosis, management, treatment and prevention of musculoskeletal and other related disorders without the use of drugs or surgery. Commonly treated conditions include back and neck pain, postural problems, sporting injuries, muscle and joint deterioration, restricted mobility and occupational ill-health.</p>,
         },
         {
-            id: 8,
+            id: 9,
             question: "Do I need a GP referral to see an Osteopath?",
             answer: <p>Most patients 'self refer' to an Osteopath for treatment. Although referral by a GP is not necessary, patients are encouraged to keep both their GP and Osteopath fully informed, so that their medical records are current and complete and the patient receives the best possible care from both healthcare practitioners.</p>,
         },
         {
-            id: 9,
+            id: 10,
             question: "Do GPs refer their patients to Osteopaths?",
             answer: <p>Yes. GPs refer patients to Osteopaths where they believe this intervention would be beneficial. Referral guidelines are provided by the General Medical Council and the British Medical Association.</p>,
         },
         {
-            id: 10,
+            id: 11,
             question: "How do I know if an Osteopath is registered?",
             answer: <p>All Osteopaths must be registered with the General Osteopathic Council. You can <a href="https://www.osteopathy.org.uk/register-search/" target="_blank" rel="noreferrer noopener">check the register here</a>.</p>,
         },
         {
-            id: 11,
+            id: 12,
             question: "What training do Osteopaths have?",
             answer: <><p>Undergraduate students follow a four or five year degree course combining academic and clinical work. Qualification generally takes the form of a bachelor's degree in Osteopathy - a BSC(Hons), BOst or BOstMed - or a master's degree in Osteopathy (MOst). Many Osteopaths continue their studies after graduating.</p><p>Osteopaths are required to update their training throughout their working lives. They must complete at least 30 hours of <a href="http://www.osteopathy.org.uk/standards/continuing-professional-development/" target="_blank" rel="noreferrer noopener">Continuing Professional Development</a> per year.</p></>,
         },
         {
-            id: 12,
+            id: 13,
             question: "Who sets the standards of training and practice for Osteopaths?",
             answer: <p>The standards of Osteopathic training and practice are maintained and developed by the General Osteopathic Council, the profession's statutory regulator established under the Osteopaths Act 1993.</p>,
         },
         {
-            id: 13,
+            id: 14,
             question: "What should I do if I have concerns about my Osteopath or treatment?",
             answer: <><p>All Osteopaths are expected to have a complaints procedure in place in their practice to address patients' concerns.</p><p>If you have concerns about the competence or the professional conduct of your Osteopath and you have been unable to resolve the issue satisfactorily with the Osteopath, or the employer, the General Osteopathic Council will advise on the next steps to take under a <a href="https://www.osteopathy.org.uk/standards/complaints/" target="_blank" rel="noreferrer noopener">formal complaints procedure</a>.</p></>,
         }
