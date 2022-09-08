@@ -1,5 +1,5 @@
 ---
-title: When to use ice and when to use heat
+title: Ice and Heat
 date: 2022-09-07
 featuredImage: ../../images/arm-pack.png
 ---
