@@ -76,6 +76,7 @@ export default function Header() {
                                 <div className={babiesSubnavOpen ? `${HeaderStyles.pilatesSubnav} ${HeaderStyles.subNav}` : `${HeaderStyles.subnavClosed} ${HeaderStyles.subNav}`}>
                                     <Link className={HeaderStyles.subNavItem} to="/babies/newborn-check/">The Newborn Check</Link>
                                     <Link className={HeaderStyles.subNavItem} to="/osteopathy/osteopathy-and-babies/">Osteopathy & Babies</Link>
+                                    <Link className={HeaderStyles.subNavItem} to="/babies/infant-feeding-coaching/">Infant Feeding Coaching</Link>
                                 </div>
                         </div>
                         <Link className={HeaderStyles.navItem} to="/about/">About</Link>
