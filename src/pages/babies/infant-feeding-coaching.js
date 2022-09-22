@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 import CrossLink, { Linkage } from "../../components/CrossLink/CrossLink"
 import OnlineBooking from "../../components/OnlineBooking/OnlineBooking"
 import Testimonial from "../../components/Testimonial/Testimonial"
+import TxtImg from "../../components/TxtImg/TxtImg"
 
 export default function IFC({ data }) {
     const parentPages = [{name: "Home", path: "/"}]
@@ -23,13 +24,19 @@ export default function IFC({ data }) {
             <Title title="Infant Feeding Coaching" />
             <BreadcrumbBar currentPage="Infant Feeding Coaching" parentPages={parentPages} />
             <section className="condense">
-                <div className={IFCStyles.narrowContainer}>
-                    <h3>What is an Infant Feeding Coach?</h3>
+                <TxtImg
+                    imgSrc={data.ifc.childImageSharp.fluid}
+                    imgAlt="Infant Feeding Coaching illustration"
+                >
+                    <h2>What is an Infant Feeding Coach?</h2>
                     <p>Infant Feeding Coaches work with families who are expecting a baby or have a baby (usually less than 3 months old – although this does not have to be the case – older babies can also be seen).</p>
                     <p>Infant Feeding Coaches provide advice regarding feeding (breast, bottle or combination feeding) antenatally as well as postnatally.</p>
                     <p>The role of an Infant Feeding Coach is to support families in their feeding journey.</p>
                     <p>As an Infant Feeding Coach, Emily firmly believes that ‘Fed is Best’ – there is no judgement or expectation on how families decide to feed their baby – you will receive support, encouragement, advice, knowledge and empowerment.</p>
-                    
+                </TxtImg>
+            </section>
+            <section className="condense" style={{paddingTop: 'var(--space-4)'}}>
+                <div className={IFCStyles.narrowContainer}>                    
                     <h3>Antenatal Support</h3>
                     <p>If families have decided that their feeding goal is to breastfeed, it is important to prepare for this.</p>
                     <p>Infant feeding coaches are qualified to teach colostrum harvesting and are knowledgeable about how to store this safely in preparation for the baby's arrival.</p>
@@ -78,3 +85,15 @@ export default function IFC({ data }) {
         </Layout>
     )
 }
+
+export const query = graphql`
+    query {
+        ifc: file(relativePath: {eq: "images/infant-feeding-coach.png"}) {
+            childImageSharp {
+                fluid(maxWidth: 1000, quality: 72) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
