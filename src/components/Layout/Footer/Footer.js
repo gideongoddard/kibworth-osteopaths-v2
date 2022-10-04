@@ -52,9 +52,9 @@ export default function Footer() {
                                         }
                                     }
                                 }
-                                cepa: file(relativePath: {eq: "images/prestige-award-2.jpg"}) {
+                                cepa: file(relativePath: {eq: "images/prestige-award-3.jpg"}) {
                                     childImageSharp {
-                                        fixed(width: 275, quality: 72) {
+                                        fixed(width: 180, quality: 72) {
                                             ...GatsbyImageSharpFixed
                                         }
                                     }
