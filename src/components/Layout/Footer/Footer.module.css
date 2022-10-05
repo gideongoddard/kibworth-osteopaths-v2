@@ -48,7 +48,7 @@ footer {
 
 .cepa {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 2;
 }
 
@@ -82,5 +82,9 @@ footer a:hover {
 
     .menu ul {
         columns: auto 2;
+    }
+
+    .cepa {
+        grid-column-start: 2;
     }
 }
