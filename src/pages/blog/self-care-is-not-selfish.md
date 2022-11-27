@@ -4,12 +4,6 @@ date: 2022-11-27
 featuredImage: ../../images/self-care.jpg
 ---
 
-Happy New Year to you all! I really hope 2023 is filled with good health, happiness and wonderful memories for you.
-
-The beginning of a new year is often a time when we get our house in order and we set goals (please see my smart goals blog [Discussing S.M.A.R.T. Goals](/blog/discussing-smart-goals/) ) but what about our physical house?
-
-Sure we often set physical goals - for example, “I want to start running or I would like to lose weight” – these are great and I am cheerleading you on towards achieving your goals, but don’t forget the rest of your ‘house’.
-
 Sometimes I think we underrate and oversimplify self-care.
 
 We live busy lives with commitments and schedules. But if we stop and think just for a moment about how much our physical body does for us daily (without us telling it to) I think self-care and appreciation would skyrocket.
