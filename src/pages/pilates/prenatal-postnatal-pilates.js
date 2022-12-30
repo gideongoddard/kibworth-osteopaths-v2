@@ -7,7 +7,6 @@ import Post from "../../images/noun_mother_baby.svg"
 import Pre from "../../images/noun_pregnant.svg"
 import Schedule from "../../components/Schedule/Schedule"
 import Button from "../../components/Button/Button"
-import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { Helmet } from "react-helmet"
 
 export default function PrenatalPostnatalPilates() {
@@ -84,20 +83,8 @@ export default function PrenatalPostnatalPilates() {
                         </div>
                     </div>
                     <div className={PrePostStyles.buttonContainer}>
-                        <Button type="primary" contact={true} to="tel:+447761664325" onClick={e => {
-                            trackCustomEvent({
-                                category: "contact",
-                                action: "click",
-                                label: "telephone",
-                            })
-                        }}>Call now</Button>
-                        <Button type="primary" contact={true} to="mailto:info@kibworthosteopaths.co.uk" onClick={e => {
-                            trackCustomEvent({
-                                category: "contact",
-                                action: "click",
-                                label: "email",
-                            })
-                        }}>Email now</Button>
+                        <Button type="primary" contact={true} to="tel:+447761664325">Call now</Button>
+                        <Button type="primary" contact={true} to="mailto:info@kibworthosteopaths.co.uk">Email now</Button>
                     </div>
                 </div>
             </section>
