@@ -1,11 +1,14 @@
 module.exports = {
     plugins: [
         {
-            resolve: `gatsby-plugin-google-analytics`,
+            resolve: `gatsby-plugin-google-gtag`,
             options: {
-                trackingId: "UA-158678369-1",
-                head: true,
-                anonymize: true,
+                trackingIds: [
+                    "G-L1KFKWTHM4",
+                ],
+                gtagConfig: {
+                    anonymize_ip: true,
+                }
             },
         },
         `gatsby-plugin-fontawesome-css`,

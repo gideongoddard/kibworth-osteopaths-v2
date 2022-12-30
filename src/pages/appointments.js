@@ -9,7 +9,6 @@ import Testimonial from "../components/Testimonial/Testimonial"
 import AppointmentsStyles from "./appointments.module.css"
 import Map from "../components/Map/Map"
 import OnlineBooking from "../components/OnlineBooking/OnlineBooking"
-import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { Helmet } from "react-helmet"
 import Newsletter from "../components/Newsletter/Newsletter"
 
@@ -82,20 +81,8 @@ export default function Appointments() {
                         </Box>
                     </div>
                     <div className={AppointmentsStyles.buttonContainer}>
-                        <Button type="primary" contact={true} to="tel:+447761664325" onClick={e => {
-                            trackCustomEvent({
-                                category: "contact",
-                                action: "click",
-                                label: "telephone",
-                            })
-                        }}>Call now</Button>
-                        <Button type="primary" contact={true} to="mailto:info@kibworthosteopaths.co.uk" onClick={e => {
-                            trackCustomEvent({
-                                category: "contact",
-                                action: "click",
-                                label: "email",
-                            })
-                        }}>Email now</Button>
+                        <Button type="primary" contact={true} to="tel:+447761664325">Call now</Button>
+                        <Button type="primary" contact={true} to="mailto:info@kibworthosteopaths.co.uk">Email now</Button>
                     </div>
                 </div>
             </section>
