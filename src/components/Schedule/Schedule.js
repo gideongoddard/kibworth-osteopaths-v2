@@ -14,7 +14,7 @@ export default function Schedule(props) {
                         <div className={ScheduleStyles.dayTime}>
                             <p className={ScheduleStyles.day}>Tuesday:</p><p className={ScheduleStyles.time}>08:00 - 09:00 @ Tur Langton Village Hall</p>
                         </div>
-                        <p>Individual tuition is also available. Please get in touch by phone or email to make arrangements.</p>
+                        <p>One-to-one sessions are also available. Please get in touch by phone or email to make arrangements.</p>
                     </>
                 ) : (
                     <div className={ScheduleStyles.dayTime}>
