@@ -1,7 +1,7 @@
 ---
 title: Let's Look at Paced Responsive Bottle Feeding
 date: 2022-11-15
-featuredImage: ../../images/bottle-feeding.png
+featuredImage: ../../images/baby-bottle.png
 ---
 
 <h3>Bottle Feeding – Let’s look at Paced Responsive Bottle Feeding.</h3>
