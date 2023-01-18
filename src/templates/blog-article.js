@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import BreadcrumbBar from "../components/BreadcrumbBar/BreadcrumbBar"
 import Title from "../components/Title/Title"
+import Button from "../components/Button/Button"
 import { Helmet } from "react-helmet"
 
 export default function Article({ data }) {
@@ -38,6 +39,10 @@ export default function Article({ data }) {
                 <div className={ArticleStyles.articleBody}>
                     <Img style={{margin: "30px 0 30px 0", maxHeight: 550}} fluid={featuredImgFluid} />
                     <div dangerouslySetInnerHTML={{ __html: article.html }} />
+                    {
+                        article.frontmatter.download &&
+                        <Button type="primary" contact={false} to={`${article.frontmatter.factsheet.publicURL}`} download={true}>Download PDF Factsheet</Button>
+                    }
                 </div>
                 <div className={ArticleStyles.recentArticles}>
                     <h2>Recent Articles</h2>
@@ -65,6 +70,10 @@ export const query = graphql`
                             ...GatsbyImageSharpFluid
                         }
                     }
+                }
+                download
+                factsheet {
+                    publicURL
                 }
             }
             fields {

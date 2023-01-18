@@ -2,6 +2,8 @@
 title: Ice and Heat
 date: 2022-09-07
 featuredImage: ../../images/arm-pack.png
+download: true
+factsheet: ../../downloads/ice-and-heat-factsheet.pdf
 ---
 
 <h4>It's common knowledge that both ice and heat packs can provide therapeutic value to injuries – but which is best for what?</h4>
@@ -39,6 +41,3 @@ This advice is generally given when an injury is more complex, and has involved 
 This is all done in one sitting and it is repeated several times over the day.
 
 Please bear in mind that ice and heat work differently – and it is important to make sure you know which is best for an injury – always check with a healthcare professional.
-
-<strong>Emily Coombes</strong><br />
-<em>Registered Osteopath (7416) and Principal Osteopath at Kibworth Osteopaths & Pilates</em>
