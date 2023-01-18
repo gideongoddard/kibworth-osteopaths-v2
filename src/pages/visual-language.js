@@ -89,11 +89,12 @@ function VisualLanguage() {
             </VisLangSection>
             <VisLangSection
                 heading="Buttons"
-                description="There are 2 core button styles: Primary is the default; Outline is for buttons that are to be de-emphasized."
+                description="There are 3 core button styles: Primary is the default; Accent is for buttons that are to be emphasised; Neutral is for buttons that are to be de-emphasised."
             >
                 <div className={VisLangStyles.buttonContainer}>
-                    <Button external={false} type="primarySolid" to="#">Primary button</Button>
-                    <Button external={false} type="primaryOutline" to="#">Outline button</Button>
+                    <Button contact={false} type="primary" to="#">Primary button</Button>
+                    <Button contact={false} type="accent" to="#">Accent button</Button>
+                    <Button contact={false} type="neutral" to="#">Neutral button</Button>
                 </div>
             </VisLangSection>
             <VisLangSection
