@@ -1,0 +1,51 @@
+.section {
+    position: relative;
+    background-color: var(--neutral-100);
+}
+
+.narrowContainer {
+    padding: var(--space-6) 0 var(--space-9) 0;
+    width: min(90%, 800px);
+    margin: auto;
+}
+
+.customShapeDividerTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.customShapeDividerTop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: calc(50px + 5vw);
+}
+
+.customShapeDividerTop .shapeFill {
+    fill: var(--primary-100);
+}
+
+.customShapeDividerBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.customShapeDividerBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: calc(50px + 5vw);
+}
+
+.customShapeDividerBottom .shapeFill {
+    fill: #FFFFFF;
+}

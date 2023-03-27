@@ -3,3 +3,7 @@
     max-width: 800px;
     margin: auto;
 }
+
+.goc {
+    background-color: var(--neutral-100);
+}

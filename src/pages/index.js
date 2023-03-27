@@ -9,6 +9,7 @@ import Button from "../components/Button/Button"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Bookings from "../components/Bookings/Bookings"
 import Newsletter from "../components/Newsletter/Newsletter"
+import Video from "../components/Video/Video"
 
 export default function Home({ data }) {
   return (
@@ -109,6 +110,7 @@ export default function Home({ data }) {
           <p><em>All Osteopaths must be registered with the <a href="https://www.osteopathy.org.uk/home/" target="_blank" rel="noopener noreferrer">General Oteopathic Council</a>, and are fully insured so you can be sure you and your family are in safe hands.</em></p>
         </TxtImg>
       </section> */}
+      <Video heading="This is a space for your heading" intro="You can also include an optional intro section. You don't have to though, this component has been created in such a way that if you don't include it, it just won't display." video="https://www.youtube-nocookie.com/embed/dQ86vnM77fc?controls=0" />
       <section style={{paddingBottom: 'var(--space-6)'}}>
         <Testimonial  quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
       </section>
