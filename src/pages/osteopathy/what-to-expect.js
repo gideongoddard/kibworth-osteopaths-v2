@@ -19,6 +19,15 @@ export default function WhatToExpect() {
             </Helmet>
             <Title title="What to expect" />
             <BreadcrumbBar currentPage="What to expect" parentPages={parentPages} />
+            <section className={ExpectStyles.goc}>
+                <div className={ExpectStyles.narrowContainer}>
+                    <h2>What happens when you visit an Osteopath?</h2>
+                    <p>This great video from General Osteopathic Council explains what happens when you visit an osteopath, what a treatment is likely to cost and how to find an Osteopath near you.</p>
+                    <div className="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hBbHWThGkkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
             <section>
                 <div className={ExpectStyles.narrowContainer}>
                     <h2>How it works</h2>

@@ -9,6 +9,7 @@ import Button from "../components/Button/Button"
 import Testimonial from "../components/Testimonial/Testimonial"
 import Bookings from "../components/Bookings/Bookings"
 import Newsletter from "../components/Newsletter/Newsletter"
+import Video from "../components/Video/Video"
 
 export default function Home({ data }) {
   return (
@@ -120,6 +121,11 @@ export default function Home({ data }) {
           <Button to="/pilates/general-pilates" type="primary" contact={false}>About Pilates</Button>
         </TxtImg>
       </section>
+      <Video
+        heading="Watch my YouTube Channel"
+        intro="My videos demonstrate specific techniques, stretches and exercises to help relieve common health symptoms and conditions."
+        video="https://www.youtube-nocookie.com/embed/QMqixyhsPE8"
+      />
       <section className={HomeStyles.awardSection}>
         <TxtImg imgSrc={data.prestige.childImageSharp.fluid} imgAlt="Prestige Award" backgroundColor="var(--primary-500)" color="white" heading="Osteopath of the year - 3 years running!" reverse={true}>
           <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year for the 3rd year running!</p>
