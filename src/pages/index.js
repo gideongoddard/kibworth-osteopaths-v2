@@ -110,7 +110,6 @@ export default function Home({ data }) {
           <p><em>All Osteopaths must be registered with the <a href="https://www.osteopathy.org.uk/home/" target="_blank" rel="noopener noreferrer">General Oteopathic Council</a>, and are fully insured so you can be sure you and your family are in safe hands.</em></p>
         </TxtImg>
       </section> */}
-      <Video heading="This is a space for your heading" intro="You can also include an optional intro section. You don't have to though, this component has been created in such a way that if you don't include it, it just won't display." video="https://www.youtube-nocookie.com/embed/dQ86vnM77fc?controls=0" />
       <section style={{paddingBottom: 'var(--space-6)'}}>
         <Testimonial  quote="Emily is a fabulous therapist. As a qualified therapist myself I'm picky about who I'll let work on me, and I have no hesitation in recommending Emily. 5 stars all the way!" />
       </section>
@@ -122,6 +121,11 @@ export default function Home({ data }) {
           <Button to="/pilates/general-pilates" type="primary" contact={false}>About Pilates</Button>
         </TxtImg>
       </section>
+      <Video
+        heading="Watch my YouTube Channel"
+        intro="My videos demonstrate specific techniques, stretches and exercises to help relieve common health symptoms and conditions."
+        video="https://www.youtube-nocookie.com/embed/QMqixyhsPE8"
+      />
       <section className={HomeStyles.awardSection}>
         <TxtImg imgSrc={data.prestige.childImageSharp.fluid} imgAlt="Prestige Award" backgroundColor="var(--primary-500)" color="white" heading="Osteopath of the year - 3 years running!" reverse={true}>
           <p>It's a very proud moment to be able to say that Kibworth Osteopaths have won the Central England Prestige Award for Osteopath of the Year for the 3rd year running!</p>

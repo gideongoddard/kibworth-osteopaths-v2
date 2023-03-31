@@ -11,7 +11,7 @@ export default function Video(props) {
             </div>
             <div className={VideoStyles.narrowContainer}>
                 <h2>{props.heading}</h2>
-                <p>{props.intro}</p>
+                <p>{props.intro} <a href='https://www.youtube.com/channel/UCYV5d_sNakdmQOLiRH_RdCw' target='_blank' rel="noreferrer noopener">See more here.</a></p>
                 <div class="videoWrapper">
                     <iframe width="560" height="315" src={props.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
