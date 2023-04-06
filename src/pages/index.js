@@ -122,8 +122,8 @@ export default function Home({ data }) {
         </TxtImg>
       </section>
       <Video
-        heading="Watch my YouTube Channel"
-        intro="My videos demonstrate specific techniques, stretches and exercises to help relieve common health symptoms and conditions."
+        heading="Watch Our YouTube Channel"
+        intro="We have a useful bank of videos on our YouTube channel. Our videos demonstrate specific techniques, stretches and exercises to help relieve common health symptoms and conditions."
         video="https://www.youtube-nocookie.com/embed/QMqixyhsPE8"
       />
       <section className={HomeStyles.awardSection}>
