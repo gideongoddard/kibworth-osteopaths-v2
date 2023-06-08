@@ -28,4 +28,4 @@ As an individual, a mother and an Osteopath, I can not recommend this book highl
 
 <br />
 
-![Cover of 'Why We Sleep by Matthew Walker](../../images/why-we-sleep-front-cover.jpg)
+![Cover of 'Why We Sleep' by Matthew Walker](../../images/why-we-sleep-front-cover.jpg)
