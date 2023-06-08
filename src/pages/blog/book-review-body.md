@@ -25,7 +25,3 @@ I had the privilege of training at University with James Davies – even before 
 In his book, Body, James talks the reader through ways of helping self-help.
 
 He provides fantastic tips on rehabilitation for specific mechanical injuries and how to know when you need to seek professional help. This book is a great resource that you will turn to for years.
-
-<br />
-
-![Cover of 'Body' by James Davies](../../images/body-cover.jpg)
