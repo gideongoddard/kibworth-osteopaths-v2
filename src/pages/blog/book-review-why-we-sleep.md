@@ -1,7 +1,7 @@
 ---
 title: "Book Review: Why We Sleep"
 date: 2023-05-17
-featuredImage: ../../images/why-we-sleep-featured.jpg
+featuredImage: ../../images/why-we-sleep.png
 ---
 
 ## Introducing the KOPI Book CLUB!
@@ -25,7 +25,3 @@ The importance of sleep is not routinely taught. Thus, it is not understood by s
 Understanding why we sleep is imperative, which we must instil in future generations. Matthew Walker (a neuroscientist), in his incredible book, Why We Sleep, shows us how good quality sleep (7-9 hours) per night can make us cleverer, more attractive, boost our health in literally life-changing ways, and increase happiness. Who wouldn’t want this – for free?
 
 As an individual, a mother and an Osteopath, I can not recommend this book highly enough – it is no exaggeration when I say this book has quite literally changed my life for the better.
-
-<br />
-
-![Cover of 'Why We Sleep' by Matthew Walker](../../images/why-we-sleep-front-cover.jpg)
