@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import ButtonStyles from "./Button.module.css"
-import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
 
