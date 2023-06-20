@@ -28,7 +28,15 @@
 }
 
 .formWrapper {
-    padding: var(--space-4) 0;
+    padding: var(--space-6) 0 0 0;
+}
+
+.downloadContainer {
+    background-color: var(--primary-50);
+    padding: var(--fixed-space-1) var(--space-3);
+    border-radius: 10px;
+    border: 1px solid var(--primary-200);
+    margin-top: var(--space-4);
 }
 
 @media only screen and (min-width: 722px) {
