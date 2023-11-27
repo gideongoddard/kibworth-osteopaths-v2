@@ -55,7 +55,7 @@ You can do a lot in 2 minutes to benefit your physical body.
 Here is a 2 minute desk stretch.
 
 <div class="videoWrapper">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jwUn1JFS6wo?si=1q5wh4bUteDmBfdp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P7ALTXCIWGA?si=5ELrcDZq3-T2oUBj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ...or this short balance challenge.
@@ -94,7 +94,7 @@ I’d also recommend this whole body stretch, but spend a little more time (perh
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SVreUzd1Uak?si=jdutcuAk--TqUvKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-You will be amazed at what adding regular stretching and movement into your day will do for your mind and physical body.
+You'll be amazed at what adding regular stretching and movement into your day will do for your mind and physical body.
 
 Your fantastic body was designed to move, so do your body and yourself a favour and start replacing one scrolling session at a time with some stretching.
 
