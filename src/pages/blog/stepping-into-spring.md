@@ -1,62 +1,89 @@
 ---
 title: "Stepping into Spring (with your best shoes on!)"
-date: "2022-03-24"
+date: "2024-03-13"
 featuredImage: ../../images/feet.png
 ---
 
-<strong>Osteopaths care about all of you, from the top of your head to the tips of your toes.</strong>
+### Osteopaths care about all of you, from the top of your head to the tips of your toes.
 
-It’s almost time to pop those trusty winter boots away and step into lighter footwear - thank goodness!
+It’s almost time to remove those trusty winter boots and step into lighter footwear - thank goodness!
 
-It can be really tempting to go for less supportive footwear, however this is often not the best environment for our feet – especially if feet are sore/arthritic/suffering from an injury.
+It can be tempting to choose fashionable footwear. However, this is often not the best environment for our feet (often, the shoes look nothing like our feet, which I always find odd), especially if our feet are sore, arthritic, or suffering from an injury.
 
-I always look at my patient’s shoes – it tells me so much about them biomechanically.
+I always look at my patients' shoes—they tell me so much about them.
 
-I can get an insight into how they walk, weight-bear and if they weight-bear equally through their legs. You can tell a lot from looking at your shoes and checking if one shoe is more worn than the other,  as well as if the shoe is right for them, for example is the shoe fitting correctly.
+I can get an insight into how they walk and weight-bear and whether they weight-bear equally through their legs.
 
-All feet are different, some people have high arches, some people have flat arches, some people have narrow feet, others wide.
+You can tell a lot from looking at shoes—check if one shoe is more worn than the other, as well as if the shoe is right for you.
 
-What all feet have in common is that they are an incredible biomechanical structure; they have 26 bones, lots of ligaments, and they take the weight of the body all day as well as absorbing ground force as we move.
+For example, is the shoe fitting correctly and the other not? Are they even comfortable?
 
-So, with this in mind it is only fair that we give our feet a good environment to work in.
+All feet are different. Some people have high arches, some have flat arches, some have narrow feet, and others are wide.
 
-I remember a long time ago one of my elderly patients said to me that he was advised by his father (so we are going back some here) “never skimp on footwear or mattresses, because if you’re not in one, you’re on the other”.
+What all feet have in common is that they are biomechanical marvels. The foot has 26 bones, 33 joints, and over 100 ligaments, muscles, and tendons. It takes the weight of the body all day and absorbs ground force as we move.
 
-Wearing the ‘wrong shoe’ or unsupportive shoes can lead to a host of problems throughout the body. Ranging from foot pain and knee pain, to lower back pain, muscles in the legs getting tight and sore, the consequences can be far reaching.
+With this in mind it is only fair that we give our feet an excellent environment to work in.
 
-<h2>My Top Tips with Footwear</h2>
+I remember a long time ago, one of my elderly patients told me that he was advised by his father (so we are going back here), “Never skimp on footwear or mattresses, because if you’re not in one, you’re on the other”.
 
-<h3>Active Footwear</h3>
+Wearing the ‘wrong shoe’ can lead to a host of problems throughout the body. From foot and knee pain to lower back pain and tight and sore muscles in the legs, the consequences can be far-reaching.
 
-There is an absolute overwhelming amount of choice/information about what is ‘right’ for your feet.
+### What about Barefoot Shoes?
 
-When it comes to trainers, I recommend getting them properly fitted in a sports shop, where your gait (how you walk and weight-bear) can be properly assessed.
+I commonly get asked about barefoot shoes in the clinic. I can absolutely see the merits of them in terms of allowing the feet freedom to move and not being crammed into shoes, and the thinner sole (after some months) of wearing them does encourage the foot to strengthen – simply because the shoe isn’t doing all the work for the foot.
 
-Wearing the wrong trainers on your feet for sports can predispose you to injury.
+Research also shows that being barefoot or wearing barefoot-style shoes improves balance, which is essential, especially as we age.
 
-Those aesthetically pleasing kicks may not be feet-pleasing – so choose what is right for your feet not your eyes!
+Research also shows that barefoot shoes are suitable for young, developing feet and improving balance and motor skills.
 
-<h3>Office Footwear</h3>
+If barefoot shoes are something you want to try – the advice is to go slowly.
 
-This is a big one. High heels - especially a stiletto heel - are just hideous for feet.
+It takes time to transition into something new for the muscles to wake up and work in a way they haven’t had to for many generations.
 
-Our weight is thrown forwards causing the muscles at the back of the body to shorten and become tight. This in turn can cause lower back pain as the joints can sit closer together.
+I am going to try a pair and see how I get on – so watch this space for some feedback!
 
-Even sitting in heels causes the calf muscles to shorten as well as the Achilles tendon, which can lead to a lot of ankle dysfunction. Likewise for the super tiny very flat shoes – they have no sole so their ability to help shock absorb is zero.
+## My top tips with footwear
 
-<h3>Out and About Footwear</h3>
+### Active footwear
 
-Trainers or a trainer type shoe is best.
+There is an absolutely overwhelming amount of choice and information about what is ‘right’ for your feet.
 
-As the weather warms it is tempting to reach for those flip flops, but walking in flip flops for a period of time is really hard work for your body.
+Did you know that when jogging became popular, there was a huge increase in lower extremity injuries?
 
-Your toes have to slightly scrunch to keep the flip flop in place, and flip flops have no shock absorption at all, so all the ground forces go straight into the ankle and knee.
+This was when trainers became chunky on the heel. Because the population had been in dress shoes for so long, the Achilles and leg muscles were shortened.
 
-This can be a real problem especially in the older foot, as well as the younger foot, as well as predisposing to plantar fasciitis (pain in the sole of the foot).
+When it comes to trainers, I recommend getting them properly fitted in a sports shop, where your gait (how you walk and weight bear) can be adequately assessed.
 
-<hr />
+Wearing the wrong trainers on your feet for sports can predispose you to injury. Those aesthetically pleasing kicks may not be feet-pleasing – so choose what is suitable for your feet, not your eyes!
 
-Please choose your summer footwear wisely, and if you want to ask any further questions on what footwear is best for you, or more information on how Osteopathy can help you, please get in touch.
+A word on Barefoot trainers for running: If you want to try them, build them up slowly. Decrease your distance and get used to them before you start racking up the miles.
 
-<strong>Emily Coombes</strong><br />
-<em>Registered Osteopath (7416) and Principal Osteopath at Kibworth Osteopaths & Pilates</em>
+### Office footwear
+
+This is a big one. High heels - especially stiletto heels - are just hideous for feet. When we wear them, our weight is thrown forward, causing the muscles at the back of the body to shorten and become tight.
+
+This, in turn, can cause lower back pain as the joints can sit closer together.
+
+Even sitting in heels causes the calf muscles and Achilles tendon to shorten, which can lead to ankle dysfunction.
+
+Pointy shoes are again a no for me. This style of shoe is literally a house of horrors for your feet and predisposes to bunions – and who would invite these in?!
+
+### Out and about footwear
+
+Pick the shoe for the job!
+
+Trainers or a trainer-type shoe are best for an active day out.
+
+Sometimes, we “need” a dressy shoe (think weddings)—avoid pointy shoes and mega heels (car to bar is a scrape of a pass from me). 
+If they are new, wear them in before their big outing.
+
+As the weather warms, it is tempting to reach for those flip flops - so maybe check out my thoughts on those [here](/blog/flipflops-are-a-flop/).
+
+---
+
+Please choose your spring/summer footwear wisely.
+
+If you have any further questions about what footwear is best for you or would like more information on how Osteopathy can help you, please get in touch.
+
+**Emily Coombes** <br/>
+*Registered Osteopath (7416) and Principal Osteopath at Kibworth Osteopaths & Pilates*
