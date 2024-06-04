@@ -48,4 +48,4 @@ So, all that remains is to get a brightly coloured set of poles, get out there a
 For more information:
 - [Book review: 52 Ways to Walk](/blog/book-review-52-ways-to-walk/)
 - [Self-care is not selfish](/blog/self-care-is-not-selfish/)
-- [Boots](/blog/boots/)
+- [Let's talk boots](/blog/boots/)
