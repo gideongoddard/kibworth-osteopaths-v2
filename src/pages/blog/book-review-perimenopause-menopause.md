@@ -10,7 +10,7 @@ As an Osteopath, I specialise in the bio-mechanics of the beautiful human body. 
 
 My book reviews are written to help you better understand and nurture your physical body. I hope you enjoy reading them, and if you have any books to suggest, I would be very interested to [hear about them](mailto:info@kibworthosteopaths.co.uk).
 
-### Book Review: The Definitive Guide to the Perimenopause & Menopause, Dr Louise Newsom
+### Book Review: The Definitive Guide to the Perimenopause & Menopause, Dr Louise Newson
 
 ---
 
