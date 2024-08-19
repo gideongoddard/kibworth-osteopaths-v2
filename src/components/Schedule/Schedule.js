@@ -20,8 +20,8 @@ export default function Schedule(props) {
                     <div className={ScheduleStyles.dayTime}>
                         <p className={ScheduleStyles.day}>Monday:</p><p className={ScheduleStyles.time}>08:00 - 17:30</p>
                         <p className={ScheduleStyles.day}>Tuesday:</p><p className={ScheduleStyles.time}>09:30 - 20:00</p>
-                        <p className={ScheduleStyles.day}>Wednesday:</p><p className={ScheduleStyles.time}>09:30 - 14:30</p>
-                        <p className={ScheduleStyles.day}>Thursday:</p><p className={ScheduleStyles.time}>09:30 - 14:30</p>
+                        <p className={ScheduleStyles.day}>Wednesday:</p><p className={ScheduleStyles.time}>09:00 - 14:30</p>
+                        <p className={ScheduleStyles.day}>Thursday:</p><p className={ScheduleStyles.time}>09:00 - 14:30</p>
                         <p className={ScheduleStyles.day}>Friday:</p><p className={ScheduleStyles.time}>08:00 - 14:30</p>
                     </div>
                 )
