@@ -45,7 +45,7 @@ Walking poles are light, take up minimal room in the car, and can be a good comp
 
 So, all that remains is to get a brightly coloured set of poles, get out there and explore our beautiful world.
 
-For more information:
+### For more information:
 - [Book review: 52 Ways to Walk](/blog/book-review-52-ways-to-walk/)
 - [Self-care is not selfish](/blog/self-care-is-not-selfish/)
 - [Let's talk boots](/blog/boots/)
