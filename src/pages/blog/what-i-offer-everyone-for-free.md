@@ -1,10 +1,8 @@
 ---
-title: 'What I offer everyone - for FREE!'
+title: 'Free Pizza* - and things I offer for free!'
 date: 2024-08-12
 featuredImage: '../../images/free.png'
 ---
-
-## Free Pizza!*
 
 \* OK, So it's not Free Pizza, but there are plenty of FREE things available at Kibworth Osteopaths, with no catch attached at all.
 
