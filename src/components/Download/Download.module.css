@@ -1,0 +1,30 @@
+.download {
+    padding: var(--space-4) var(--space-6);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: var(--shadow-elevation-low);
+}
+
+.heading {
+    font-weight: 300;
+    font-size: var(--type-s);
+    margin: var(--space-2) 0;
+    color: var(--primary-800);
+}
+
+.description {
+    font-size: var(--type-xxs);
+    font-weight: 300;
+    margin: var(--space-2) 0;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: none;
+    margin: var(--space-2) 0 0 0;
+}
+
+.icon {
+    margin-right: var(--fixed-space-3);
+}

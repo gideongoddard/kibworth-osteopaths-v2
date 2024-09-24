@@ -2,12 +2,12 @@
 
 :root {
     /* Type scale */
-    --type-xxs: clamp(14px, calc(6px + 0.7vw), 16px);
-    --type-xs: clamp(16px, calc(8px + 0.8vw), 18px);
-    --type-s: clamp(18px, calc(9px + 1.1vw), 22px);
-    --type-m: clamp(20px, calc(10px + 1.4vw), 28px);
-    --type-l: clamp(24px, calc(14px + 1.7vw), 36px);
-    --type-xl: clamp(30px, calc(20px + 2.1vw), 48px);
+    --type-xxs: clamp(13px, calc(6px + 0.7vw), 15px);
+    --type-xs: clamp(16px, calc(8px + 0.8vw), 17px);
+    --type-s: clamp(18px, calc(9px + 1.1vw), 21px);
+    --type-m: clamp(20px, calc(10px + 1.4vw), 26px);
+    --type-l: clamp(24px, calc(14px + 1.7vw), 34px);
+    --type-xl: clamp(30px, calc(20px + 2.1vw), 46px);
     --type-xxl: clamp(36px, calc(24px + 2.5vw), 60px);
 
     /* Colours */
@@ -45,25 +45,24 @@
     --neutral-900: hsl(228, 10%, 10%);
 
     /* Shadows */
-    --shadow-color: 0deg 0% 54%;
+    --shadow-color: 0deg 0% 0%;
     --shadow-elevation-low:
-      0.1px 0.4px 0.5px hsl(var(--shadow-color) / 0.22),
-      0.3px 0.8px 1.1px -0.6px hsl(var(--shadow-color) / 0.36),
-      0.6px 1.9px 2.6px -1.2px hsl(var(--shadow-color) / 0.5);
+        0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0.03),
+        0.6px 0.5px 1.1px -0.4px hsl(var(--shadow-color) / 0.07),
+        1.2px 1.1px 2.3px -0.7px hsl(var(--shadow-color) / 0.11);
     --shadow-elevation-medium:
-      0.1px 0.4px 0.5px hsl(var(--shadow-color) / 0.23),
-      0.6px 1.9px 2.6px -0.4px hsl(var(--shadow-color) / 0.34),
-      1.4px 4.3px 5.9px -0.8px hsl(var(--shadow-color) / 0.45),
-      3.2px 9.6px 13.3px -1.2px hsl(var(--shadow-color) / 0.57);
+        0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0.03),
+        1.4px 1.2px 2.6px -0.2px hsl(var(--shadow-color) / 0.06),
+        2.9px 2.5px 5.3px -0.5px hsl(var(--shadow-color) / 0.1),
+        6.2px 5.3px 11.3px -0.7px hsl(var(--shadow-color) / 0.13);
     --shadow-elevation-high:
-      0.1px 0.4px 0.5px hsl(var(--shadow-color) / 0.21),
-      1.4px 4.2px 5.8px -0.2px hsl(var(--shadow-color) / 0.26),
-      2.6px 7.7px 10.7px -0.4px hsl(var(--shadow-color) / 0.32),
-      3.9px 11.9px 16.4px -0.5px hsl(var(--shadow-color) / 0.37),
-      5.8px 17.6px 24.3px -0.7px hsl(var(--shadow-color) / 0.42),
-      8.6px 25.8px 35.7px -0.9px hsl(var(--shadow-color) / 0.47),
-      12.4px 37.5px 51.8px -1.1px hsl(var(--shadow-color) / 0.53),
-      17.7px 53.4px 73.8px -1.2px hsl(var(--shadow-color) / 0.58);
+        0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0.03),
+        3.1px 2.6px 5.6px -0.1px hsl(var(--shadow-color) / 0.05),
+        5.5px 4.7px 10px -0.2px hsl(var(--shadow-color) / 0.07),
+        8.6px 7.3px 15.7px -0.4px hsl(var(--shadow-color) / 0.09),
+        13.1px 11.1px 23.8px -0.5px hsl(var(--shadow-color) / 0.11),
+        19.8px 16.7px 35.9px -0.6px hsl(var(--shadow-color) / 0.13),
+        29.5px 24.9px 53.6px -0.7px hsl(var(--shadow-color) / 0.15);
 
     /* Spacing */
     --fixed-space-1: 0.25rem;
