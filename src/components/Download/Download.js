@@ -6,7 +6,7 @@ import Pill from '../Pill/Pill'
 import Modal from '../Modal/Modal'
 import Button from '../Button/Button'
 
-function DownloadForm({ formData, handleInputChange, handleSubmit, heading }) {
+function DownloadForm({ formData, handleInputChange, handleSubmit, heading, isSubmitting }) {
     return (
         <form onSubmit={handleSubmit}>
             <h3 className={DownloadStyles.heading}>Download {heading}</h3>
@@ -44,7 +44,7 @@ function DownloadForm({ formData, handleInputChange, handleSubmit, heading }) {
                     onChange={handleInputChange}
                     required
                 />
-                <input className={DownloadStyles.button} type="submit" value="Submit" />
+                <input className={DownloadStyles.button} style={ isSubmitting ? {backgroundColor: 'var(--neutral-600)', cursor: 'wait'}: {}} type="submit" value="Submit" />
             </fieldset>
         </form>
     )
@@ -81,7 +81,24 @@ function Download({ category, heading, description, link }) {
         lastName: '',
         email: '',
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const [formSubmitted, setFormSubmitted] = useState(false);
+
+    // HubSpot API details (replace with your HubSpot Portal ID and Form GUID)
+    const hubspotPortalId = '27185733';
+    const hubspotAccessToken = process.env.HUBSPOT_ACCESS_TOKEN;
+    const hubspotFormId = '3e573741-a795-4560-ae74-8f62e3bc0634';
+    const hubspotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${hubspotPortalId}/${hubspotFormId}`;
+
+    // Prepare form data for HubSpot
+    const bodyData = {
+        fields: [
+            { name: 'firstname', value: formData.firstName },
+            { name: 'lastname', value: formData.lastName },
+            { name: 'email', value: formData.email },
+            { name: 'download', value: heading}
+        ]
+    };
 
     function handleInputChange(e) {
         const { name, value } = e.target;
@@ -98,22 +115,7 @@ function Download({ category, heading, description, link }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-
-        // HubSpot API details (replace with your HubSpot Portal ID and Form GUID)
-        const hubspotPortalId = '27185733';
-        const hubspotAccessToken = process.env.HUBSPOT_ACCESS_TOKEN;
-        const hubspotFormId = '3e573741-a795-4560-ae74-8f62e3bc0634';
-        const hubspotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${hubspotPortalId}/${hubspotFormId}`;
-
-        // Prepare form data for HubSpot
-        const bodyData = {
-            fields: [
-                { name: 'firstname', value: formData.firstName },
-                { name: 'lastname', value: formData.lastName },
-                { name: 'email', value: formData.email },
-                { name: 'download', value: heading}
-            ]
-        };
+        setIsSubmitting(true);
 
         // Submit form data to HubSpot
         fetch(hubspotUrl, {
@@ -127,8 +129,12 @@ function Download({ category, heading, description, link }) {
         .then(response => response.json())
         .then(() => {
             setFormSubmitted(true);  // Show success message
+            setIsSubmitting(false); // Reset submitting state
         })
-        .catch(error => console.error('Error:', error));
+        .catch(error => {
+            console.error('Error:', error);
+            setIsSubmitting(false); // Reset submitting state
+        });
     }
 
     return (
@@ -145,6 +151,7 @@ function Download({ category, heading, description, link }) {
                         handleInputChange={handleInputChange}
                         handleSubmit={handleSubmit}
                         heading={heading}
+                        isSubmitting={isSubmitting}
                     />
                 ) : (
                     <SuccessMessage heading={heading} link={link} onClose={() => setShowModal(false)} />

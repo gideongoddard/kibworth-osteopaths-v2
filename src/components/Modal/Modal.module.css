@@ -34,6 +34,6 @@
   
   .icon {
     color: var(--neutral-900);
-    font-size: var(--type-l);
-    font-weight: 200;
+    font-size: var(--type-xl);
+    font-weight: 400;
   }
