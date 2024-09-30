@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
 import Pill from '../Pill/Pill'
 import Modal from '../Modal/Modal'
+import Button from '../Button/Button'
 
 function DownloadForm({ formData, handleInputChange, handleSubmit, heading }) {
     return (
@@ -43,18 +44,18 @@ function DownloadForm({ formData, handleInputChange, handleSubmit, heading }) {
                     onChange={handleInputChange}
                     required
                 />
-                <input type="submit" value="Submit" />
+                <input className={DownloadStyles.button} type="submit" value="Submit" />
             </fieldset>
         </form>
     )
 }
 
-function SuccessMessage({ onClose }) {
+function SuccessMessage({ onClose, heading, link }) {
     return (
         <div>
-            <h3 className={DownloadStyles.heading}>Success!</h3>
-            <p className={DownloadStyles.description}>Your download will be sent to your email.</p>
-            <button onClick={onClose}>Close</button>
+            <h3 className={DownloadStyles.heading}>Thank you!</h3>
+            <p className={DownloadStyles.description}>Your can now download <strong>{heading}</strong> below.</p>
+            <Button onClick={onClose} to={link} type="primary" download>Download now</Button>
         </div>
     )
     
@@ -100,8 +101,9 @@ function Download({ category, heading, description, link }) {
 
         // HubSpot API details (replace with your HubSpot Portal ID and Form GUID)
         const hubspotPortalId = '27185733';
-        const hubspotFormGuid = '';
-        const hubspotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${hubspotPortalId}/${hubspotFormGuid}`;
+        const hubspotAccessToken = process.env.HUBSPOT_ACCESS_TOKEN;
+        const hubspotFormId = '3e573741-a795-4560-ae74-8f62e3bc0634';
+        const hubspotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${hubspotPortalId}/${hubspotFormId}`;
 
         // Prepare form data for HubSpot
         const bodyData = {
@@ -109,13 +111,17 @@ function Download({ category, heading, description, link }) {
                 { name: 'firstname', value: formData.firstName },
                 { name: 'lastname', value: formData.lastName },
                 { name: 'email', value: formData.email },
+                { name: 'download', value: heading}
             ]
         };
 
         // Submit form data to HubSpot
         fetch(hubspotUrl, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${hubspotAccessToken}`,
+            },
             body: JSON.stringify(bodyData)
         })
         .then(response => response.json())
@@ -141,7 +147,7 @@ function Download({ category, heading, description, link }) {
                         heading={heading}
                     />
                 ) : (
-                    <SuccessMessage onClose={() => setShowModal(false)} />
+                    <SuccessMessage heading={heading} link={link} onClose={() => setShowModal(false)} />
                 )}
             </Modal>
         </div>
