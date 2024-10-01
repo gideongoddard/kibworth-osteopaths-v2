@@ -44,6 +44,7 @@ function DownloadForm({ formData, handleInputChange, handleSubmit, heading, isSu
                     onChange={handleInputChange}
                     required
                 />
+                <p style={{fontSize: 'var(--type-xxs)', color: 'var(--neutral-600)', textAlign: 'left', padding: '0 2.5%'}}>By submitting this form, you agree to receive email communications from Kibworth Osteopaths & Pilates. You can unsubscribe at any time.</p>
                 <input className={DownloadStyles.button} style={ isSubmitting ? {backgroundColor: 'var(--neutral-600)', cursor: 'wait'}: {}} type="submit" value="Submit" />
             </fieldset>
         </form>

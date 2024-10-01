@@ -11,7 +11,7 @@ function Modal({ show, onClose, children }) {
     return (
       <div className={ModalStyles.modalBackdrop}>
         <div className={ModalStyles.modalPanel}>
-          <button className={ModalStyles.closeButton} onClick={onClose}><FontAwesomeIcon className={ModalStyles.icon} icon={faTimes} /></button>
+          <button className={ModalStyles.closeButton} onClick={onClose}><FontAwesomeIcon className={ModalStyles.icon} icon={faTimes} size="2x" /></button>
           <div className={ModalStyles.modalContent}>
             {children}
           </div>
