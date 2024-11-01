@@ -1,70 +1,42 @@
-.modal {
+.modalBackdrop {
     position: fixed;
-    z-index: 100;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: hsla(0, 0%, 0%, .4);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
-    align-items: flex-start;
-    overflow: auto;
-}
-
-.modalBox {
-    box-shadow: var(--shadow-l);
-    width: 90%;
-    max-width: 1000px;
-    margin: calc(10px + 5vw) auto;
-    border-radius: 10px;
-    background-color: white;
-    padding-bottom: 10px;
-}
-
-.modalHeader {
-    background-color: var(--primary-600);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    align-items: center;
     justify-content: center;
-}
+    align-items: center;
+    z-index: 1000;
+  }
 
-.modalHeader h1 {
-    grid-column-start: 2;
-    margin: 10px 0;
-    font-weight: 600;
-}
-
-.modalHeader svg {
-    margin: auto;
-    font-size: 1.25em;
+  .modalPanel {
+    background: white;
+    border-radius: 8px;
+    width: min(90%, 700px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modalContent {
+    padding: 0 var(--space-4) var(--space-6) var(--space-4);
+    text-align: center;
+  }
+  
+  .closeButton {
+    background: transparent;
+    border: none;
     cursor: pointer;
-}
+    align-self: flex-end;
+    padding: var(--space-3);
+  }
+  
+  .icon {
+    color: var(--neutral-600);
+  }
 
-.modalBody {
-    background-color: white;
-    color: var(--primary-900);
-    padding: 5px 20px;
-    border-radius: 0 0 10px 10px;
-}
-
-.imgContainer {
-    width: 100%;
-    margin-top: 15px;
-}
-
-@media only screen and (min-width: 700px) {
-    .imgContainer {
-        float: right;
-        width: 50%;
-        padding: 0 0 10px 50px;
-    }
-
-    .txtContainer {
-        clear: both;
-    }
-}
+  .icon:hover {
+    color: var(--neutral-800);
+    transition: 300ms;
+  }

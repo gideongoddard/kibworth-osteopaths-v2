@@ -23,8 +23,57 @@
     text-decoration: none;
     box-shadow: none;
     margin: var(--space-2) 0 0 0;
+    color: var(--secondary-800);
+    transition: 400ms;
+}
+
+.link:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 0 hsla(15, 100%, 31%, 1);
+    transition: 400ms;
 }
 
 .icon {
     margin-right: var(--fixed-space-3);
+}
+
+.formFields {
+    border: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--space-5);
+}
+
+.label {
+    display: block;
+    align-self: flex-start;
+    width: min(100%, 400px);
+    margin: 0 auto;
+    text-align: left;
+}
+
+input[type=text], input[type=email] {
+    display: block;
+    padding: var(--space-3) var(--space-2);
+    border-radius: 10px;
+    width: min(100%, 400px);
+    margin: var(--space-1) 0 var(--space-3) 0;
+    border: 1px solid var(--neutral-400);
+    font-size: var(--type-xs);
+}
+
+.button {
+    background-color: var(--primary-600);
+    color: white;
+    border: none;
+    padding: var(--space-3) var(--space-2);
+    border-radius: 10px;
+    width: min(100%, 400px);
+    margin: var(--space-2) 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: var(--type-xs);
 }
