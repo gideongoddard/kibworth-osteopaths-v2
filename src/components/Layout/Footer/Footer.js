@@ -23,10 +23,10 @@ export default function Footer() {
                         <li><Link to="/pilates/general-pilates/">General Pilates</Link></li>
                         <li><Link to="/pilates/prenatal-postnatal-pilates/">Prenatal & Postnatal Pilates</Link></li>
                         <li><Link to="/about/">About us</Link></li>
+                        <li><Link to="/resources/">Free Resources</Link></li>
                         <li><Link to="/faq/">FAQs</Link></li>
                         <li><Link to="/blog/">Blog</Link></li>
                         <li><Link to="/privacy/">Privacy Policy</Link></li>
-                        <li><Link to="/covid-19/">COVID-19 Guidance</Link></li>
                     </ul>
                 </div>
                 <div className={FooterStyles.right}>

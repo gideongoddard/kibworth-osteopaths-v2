@@ -23,11 +23,11 @@ function Resources() {
             <section style={{backgroundColor: 'var(--neutral-100)'}}>
                 <div style={{width: 'min(90%, 1400px)', margin: 'auto'}}>
                     <Cards>
-                        <Download category="posture" heading="Ergonomic Guidelines for Computer Users" description="Sit ipsum proident qui ipsum tempor ipsum cillum magna adipisicing ipsum nisi." link={ErgonomicGuidelines} />
-                        <Download category="infant-feeding" heading="Advice Sheet: Infant Feeding Guide" description="Exercitation officia minim officia nisi exercitation in laborum ut exercitation nisi quis." link={InfantFeedingGuide} />
-                        <Download category="infant-feeding" heading="Advice Sheet: Laid Back Feeding Position" description="Minim commodo sunt reprehenderit consectetur ullamco culpa sint dolor nostrud ipsum dolor." link={LaidBackFeeding} />
-                        <Download category="infant-feeding" heading="Advice Sheet: Cross Cradle Feeding Position" description="Commodo sint veniam eu sunt ad cupidatat voluptate sint exercitation tempor sit cupidatat." link={CrossCradleFeeding} />
-                        <Download category="infant-feeding" heading="Advice Sheet: Rugby Hold Feeding Position" description="Labore fugiat fugiat officia consequat do commodo eu cupidatat sit sint laboris amet." link={RugbyHoldFeeding} />
+                        <Download category="posture" heading="Ergonomic Guidelines for Computer Users" description="A helpful guide to help you sit with good ergonomics in mind." link={ErgonomicGuidelines} />
+                        <Download category="infant-feeding" heading="Advice Sheet: Infant Feeding Guide" description="A guide to help you understand if breastfeeding is going well." link={InfantFeedingGuide} />
+                        <Download category="infant-feeding" heading="Advice Sheet: Laid Back Feeding Position" description="A guide to help you understand the Laid Back feeding position." link={LaidBackFeeding} />
+                        <Download category="infant-feeding" heading="Advice Sheet: Cross Cradle Feeding Position" description="A guide to help you understand the Cross Cradle feeding position." link={CrossCradleFeeding} />
+                        <Download category="infant-feeding" heading="Advice Sheet: Rugby Hold Feeding Position" description="A guide to help you understand the Rugby Hold feeding position." link={RugbyHoldFeeding} />
                     </Cards>
                 </div>
             </section>
