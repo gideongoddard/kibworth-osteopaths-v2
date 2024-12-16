@@ -6,6 +6,7 @@ import FAQStyles from "./faq.module.css"
 import Box from "../components/Box/Box"
 import Contents from "../components/Contents/Contents"
 import { Helmet } from "react-helmet"
+import { pricing } from "../utils/pricing"
 
 export default function FAQ() {
     const parentPages = [{name: "Home", path: "/"}]
@@ -23,7 +24,7 @@ export default function FAQ() {
         {
             id: 3,
             question: "How much does treatment cost?",
-            answer: <p>New patient appointments are £60, with continuation appointments costing £45.</p>,
+            answer: <p>New patient appointments are £{pricing.osteoInitial}, with continuation appointments costing £{pricing.osteoStandard}.</p>,
         },
         {
             id: 4,
