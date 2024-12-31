@@ -11,6 +11,7 @@ import Map from "../components/Map/Map"
 import OnlineBooking from "../components/OnlineBooking/OnlineBooking"
 import { Helmet } from "react-helmet"
 import Newsletter from "../components/Newsletter/Newsletter"
+import { pricing } from "../utils/pricing"
 
 export default function Appointments() {
     const parentPages = [{name: "Home", path: "/"}]
@@ -68,15 +69,15 @@ export default function Appointments() {
                     <div className={AppointmentsStyles.gridContainer}>
                         <Box heading="Osteopathy fees">
                             <div className={AppointmentsStyles.boxContentContainer}>
-                                <p>New patient appointment</p><p>£60</p>
-                                <p>Continuation appointments</p><p>£45</p>
+                                <p>New patient appointment</p><p>£{pricing.osteoInitial}</p>
+                                <p>Continuation appointments</p><p>£{pricing.osteoStandard}</p>
                             </div>
                         </Box>
                         <Box heading="Pilates fees">
                             <div className={AppointmentsStyles.boxContentContainer}>
-                                <p>6 x 1hr group class</p><p>£72.00</p>
-                                <p className={AppointmentsStyles.lowContrast}><em>Cost per group class</em></p><p className={AppointmentsStyles.lowContrast}><em>£12.00</em></p>
-                                <p>1hr one-to-one class</p><p>£35</p>
+                                <p>6 x 1hr group class</p><p>£{pricing.pilatesGroupBlock}</p>
+                                <p className={AppointmentsStyles.lowContrast}><em>Cost per group class</em></p><p className={AppointmentsStyles.lowContrast}><em>£{pricing.pilatesGroupSingle}</em></p>
+                                <p>1hr one-to-one class</p><p>£{pricing.pilatesIndividual}</p>
                             </div>
                         </Box>
                     </div>
