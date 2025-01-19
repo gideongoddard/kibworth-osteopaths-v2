@@ -19,7 +19,7 @@ export default function FAQ() {
         {
             id: 2,
             question: "How long do Osteopathic appointments usually last?",
-            answer: <p>In general, the first treatment lasts about 60 minutes, and subsequent treatments around half an hour. Your first appointment is usually slightly longer to allow for a full case history to be taken.</p>
+            answer: <p>In general, the first treatment lasts about 60 minutes, and subsequent treatments around half an hour for adult appointments or 45 minutes for paediatric appointments. Your first appointment is usually slightly longer to allow for a full case history to be taken.</p>
         },
         {
             id: 3,

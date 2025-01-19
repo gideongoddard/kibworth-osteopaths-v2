@@ -31,7 +31,7 @@ export default function WhatToExpect() {
             <section>
                 <div className={ExpectStyles.narrowContainer}>
                     <h2>How it works</h2>
-                    <p>New patients will usually have an initial appointment for consultation and treatment lasting around 1 hour, with any subsequent appointments for treatment lasting around 30 minutes.</p>
+                    <p>New patients will usually have an initial appointment for consultation and treatment lasting around 1 hour, with any subsequent appointments for treatment lasting around 30 minutes for adult appointments or 45 minutes for paediatric appointments.</p>
                     <p>Here's how you can expect things to work:</p>
                     <Box heading="Case history">
                         <p>A case history is taken about your symptoms so that the Osteopath has a complete understanding of what has happened, why, and when.</p>
@@ -48,7 +48,7 @@ export default function WhatToExpect() {
                     <Box heading="Treatment">
                         <p>During the initial appointment, treatment is usually provided using a combination of soft-tissue release work for tight muscles, tendons or ligaments, specific joint mobilisation techniques and much more.</p>
                         <p>Advice on self-help is provided to help keep the recovery process active - e.g. stretches, ice or heat, ergonomic advice.</p>
-                        <p>Any subsequent treatments are then 30 minutes, unless an injury is complex or there are multiple injury sites, then more time may be required.</p>
+                        <p>Any subsequent treatments are then 30 minutes for adult appointments or 45 minutes for paediatric appointments, unless an injury is complex or there are multiple injury sites, then more time may be required.</p>
                         <p>Self-help advice is regularly updated to keep the recovery process moving forward as injury moves towards total recovery. Advice is given on what can be done to keep symptom reoccurrace risk at a minimum.</p>
                     </Box>
                 </div>
